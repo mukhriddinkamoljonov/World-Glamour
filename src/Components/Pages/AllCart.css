@@ -215,3 +215,6 @@ select option {
   text-align: justify;
   width: 720px;
 }
+.property-video {
+  width: 500px;
+}
