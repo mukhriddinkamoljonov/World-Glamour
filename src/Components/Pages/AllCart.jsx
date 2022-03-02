@@ -154,7 +154,7 @@ const AllCart = () => {
                       class="video-popup"
                       href="yout"
                       title="Virtual Tour"
-                      style={{width: '300px'}}
+                      style={{ width: "300px" }}
                       dangerouslySetInnerHTML={{
                         __html: item.video_link,
                       }}
