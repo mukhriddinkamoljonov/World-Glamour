@@ -17,7 +17,6 @@ const AllCatsRight = () => {
         console.log(error);
       });
   }, []);
-  console.log(setItems);
   return (
     <div class="panel panel-default sidebar-menu similar-property-wdg wow fadeInRight animated">
       <div class="panel-heading">
