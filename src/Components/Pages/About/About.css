@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.aboutWe {
+  background-image: url("https://uzbekistan.travel/storage/app/uploads/public/5e9/029/e82/thumb_669_1920_0_0_0_auto.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-bottom: 350px;
+
+  background-image: url("https://uzbekistan.travel/storage/app/uploads/public/5e9/029/e82/thumb_669_1920_0_0_0_auto.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-bottom: 350px;
+}
+
+.about-title {
+  font-size: 48px;
+  color: #fff;
+  font-family: "Montserrat", serif;
+  max-width: 860px;
+  line-height: 1.2;
+  justify-content: start;
+}
+
+.slider-courusel {
+  margin-right: 30px;
+}
+
+.carousel .control-dots {
+  display: none;
+}
+
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 7px;
+}
+
+.map {
+  width: 50rem;
+  height: 45rem;
+  justify-content: center;
+  text-align: center;
+  margin-left: 28rem;
+}
+.date-change {
+  margin-bottom: 20px;
+}
+.date1 {
+  border-radius: 3px;
+  margin-right: 8px;
+  padding: 8px;
+  font-size: 3rem;
+  color: #fff;
+  background-color: #ffca2c;
+}
+.date-change {
+  padding: 10px;
+}
+.date2 {
+  background-color: #a4a4a4;
+  font-size: 2.2rem;
+  border: 1px solid;
+  padding: 8px;
+  color: #fff;
+}
+
+.date1 {
+  color: #fff;
+  border-radius: 2px;
+  padding: 15px;
+  font-size: 3rem;
+  background-color: rgb(255, 165, 0);
+}
+
+.info {
+  text-align: justify;
+  width: 800px;
+}
+.text {
+  background-color: rgb(229, 228, 228);
+}
+.textinfo {
+  text-align: justify;
+}
