@@ -2,13 +2,15 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import NoImage from "../../img/no-image.jpg";
 
-const AllCatsRight = () => {
+const AllCatsRight = ({ title, count }) => {
   const [items, setItems] = useState([]);
   const [isReady, setIsReady] = useState(null);
 
   useEffect(() => {
     axios
-      .get("https://wgtour.pythonanywhere.com/api/places/shuffle?count=7")
+      .get(
+        `https://wgtour.pythonanywhere.com/api/places/shuffle?count=7${count}`
+      )
       .then((res) => {
         setItems(res.data);
         setIsReady(true);
@@ -20,7 +22,7 @@ const AllCatsRight = () => {
   return (
     <div class="panel panel-default sidebar-menu similar-property-wdg wow fadeInRight animated">
       <div class="panel-heading">
-        <h3 class="panel-title">TAVSYA ETAMIZ !</h3>
+        <h3 class="panel-title">{title}</h3>
       </div>
       {isReady ? (
         <div class="panel-body recent-property-widget">

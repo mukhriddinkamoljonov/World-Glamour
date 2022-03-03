@@ -1,8 +1,25 @@
-import React from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 import biz_haqimizda from "../../../img/biz_haqimizda.jpg";
 import "./About.css";
+import NoImage from "../../../img/no-image.jpg";
+import AllCatsRight from "../Tavsiya";
 
 function AboutWe() {
+  const [items, setItems] = useState([]);
+  const [isReady, setIsReady] = useState(null);
+
+  useEffect(() => {
+    axios
+      .get("https://wgtour.pythonanywhere.com/api/places/shuffle?count=4")
+      .then((res) => {
+        setItems(res.data);
+        setIsReady(true);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
   return (
     <div className="">
       <div className="page-head">
@@ -72,23 +89,28 @@ function AboutWe() {
                   className="post-body single wow fadeInLeft animated"
                 >
                   <h2>Hurmatli mehmon!</h2>
-                  <div className="textinfo" >
-                    <p >
+                  <div className="textinfo">
+                    <p>
                       ✔️ <strong>WORLD GLAMOUR TOUR</strong> MChJ kompaniyasi
-                      O‘zbekiston sayyohlik xizmatlari bozorida yangi hisoblanadi.
+                      O‘zbekiston sayyohlik xizmatlari bozorida yangi
+                      hisoblanadi.
                     </p>
                     <p>
                       ✔️ <strong>WORLD GLAMOUR TOUR</strong> kompaniyasining
                       asosiy yo‘nalishlari mamlakatimizning tarixiy joylari, eng
-                      maftunkor go‘shalariga va bir qancha chet el davlatlariga maroqli sayohat uyushtirishingiz mumkin..
-                    </p>
-                    <p>✔️ Kompaniyaning rivojlanishi bilan sayyohlik yo'nalishlari
-                      geografiyasi kengayadi. Bizning arsenalimiz ham guruh, ham
-                      individual ekskursiyalar o'z ichiga oladi.
+                      maftunkor go‘shalariga va bir qancha chet el davlatlariga
+                      maroqli sayohat uyushtirishingiz mumkin..
                     </p>
                     <p>
-                      ✔️ Har bir mehmon bizning do'stimiz va hamkorimiz!
-                      Biz mehmonlarimizga ularning talablari va ehtiyojlariga to'liq javob beradigan yuqori sifatli turistik mahsulotni taklif etamiz.
+                      ✔️ Kompaniyaning rivojlanishi bilan sayyohlik
+                      yo'nalishlari geografiyasi kengayadi. Bizning arsenalimiz
+                      ham guruh, ham individual ekskursiyalar o'z ichiga oladi.
+                    </p>
+                    <p>
+                      ✔️ Har bir mehmon bizning do'stimiz va hamkorimiz! Biz
+                      mehmonlarimizga ularning talablari va ehtiyojlariga to'liq
+                      javob beradigan yuqori sifatli turistik mahsulotni taklif
+                      etamiz.
                     </p>
                   </div>
                   <div className="date-change">
@@ -98,7 +120,8 @@ function AboutWe() {
 
                   <ol>
                     <li>
-                      Xizmatlarimiz sifatli bo'lishiga qaramasdan, narxlar ham albatta hamyonbop.
+                      Xizmatlarimiz sifatli bo'lishiga qaramasdan, narxlar ham
+                      albatta hamyonbop.
                     </li>
                     <li>Aliquam tincidunt mauris eu risus.</li>
                   </ol>
@@ -111,19 +134,26 @@ function AboutWe() {
                     </p>
                   </blockquote>
 
-                  <h3 >Qiziqarli sayohatlar olamida bizning mehmonimiz bo'ling!</h3>
+                  <h3>
+                    Qiziqarli sayohatlar olamida bizning mehmonimiz bo'ling!
+                  </h3>
 
-                 <div >
-                   <p>
-                     Sayohat - bu hayotingizning eng yaxshi vaqti! Shuning uchun biz hayotni sevadigan odamlar tomonidan ataylab tanlanganmiz. Ular uchun sayohat - bu yangi bilimlarni izlash, yangi hayot tajribasi, yangi his-tuyg'ularni o'zlashtirish.
-                   </p>
-                   <p>
-                     Sizning sayohatingizni muhokama qilishdan xursandmiz. Istalgan vaqtda biz bilan bog'laning. Bizni tanlaganingiz uchun tashakkur.
-                     Biz har doim sizga qulay narxlardagi qulay mehmonxonalarni topishda yordam berishdan mamnunmiz.
-                   </p>
-                 </div>
+                  <div>
+                    <p>
+                      Sayohat - bu hayotingizning eng yaxshi vaqti! Shuning
+                      uchun biz hayotni sevadigan odamlar tomonidan ataylab
+                      tanlanganmiz. Ular uchun sayohat - bu yangi bilimlarni
+                      izlash, yangi hayot tajribasi, yangi his-tuyg'ularni
+                      o'zlashtirish.
+                    </p>
+                    <p>
+                      Sizning sayohatingizni muhokama qilishdan xursandmiz.
+                      Istalgan vaqtda biz bilan bog'laning. Bizni tanlaganingiz
+                      uchun tashakkur. Biz har doim sizga qulay narxlardagi
+                      qulay mehmonxonalarni topishda yordam berishdan mamnunmiz.
+                    </p>
+                  </div>
                 </div>
-
               </section>
             </div>
             <div className="blog-asside-right col-md-3">
@@ -132,140 +162,63 @@ function AboutWe() {
                   <h3 className="panel-title">Turizm Agentligi</h3>
                 </div>
                 <div className="panel-body text-widget">
-                  <p >
+                  <p>
                     Bizning kompaniyamiz ichki va tashqi turizm kompanyasi
                     hisoblanadi. O'zbekiston bo'ylab barcha shaharlarga va
-                    ko'plab xalqaro mamlakatlarga sayohatingizni  uyushtirib
+                    ko'plab xalqaro mamlakatlarga sayohatingizni uyushtirib
                     beradi.
                   </p>
                 </div>
               </div>
-              <div className="panel panel-default sidebar-menu wow fadeInRight animated">
-                <div className="panel-heading">
-                  <h3 className="panel-title">SIZGA HAM YOQISHI MUMKIN</h3>
-                </div>
-                <div className="panel-body recent-property-widget">
-                  <ul>
-                    <li>
-                      <div className="col-md-3 col-sm-3 col-xs-3 blg-thumb p0">
-                        <a href="single.html">
-                          <img src="assets/img/demo/small-property-2.jpg" alt="title"/>
-                        </a>
-                        <span className="property-seeker">
-                          <b className="b-1">A</b>
-                          <b className="b-2">S</b>
-                        </span>
-                      </div>
-                      <div className="col-md-8 col-sm-8 col-xs-8 blg-entry">
-                        <h6>
-                          <a href="single.html">Super nice villa </a>
-                        </h6>
-                        <span className="property-price">3000000$</span>
-                      </div>
-                    </li>
-                    <li>
-                      <div className="col-md-3 col-sm-3 col-xs-3 blg-thumb p0">
-                        <a href="single.html">
-                          <img src="assets/img/demo/small-property-1.jpg" alt="title"/>
-                        </a>
-                        <span className="property-seeker">
-                          <b className="b-1">A</b>
-                          <b className="b-2">S</b>
-                        </span>
-                      </div>
-                      <div className="col-md-8 col-sm-8 col-xs-8 blg-entry">
-                        <h6>
-                          <a href="single.html">Super nice villa </a>
-                        </h6>
-                        <span className="property-price">3000000$</span>
-                      </div>
-                    </li>
-                    <li>
-                      <div className="col-md-3 col-sm-3 col-xs-3 blg-thumb p0">
-                        <a href="single.html">
-                          <img src="assets/img/demo/small-property-3.jpg" alt="title"/>
-                        </a>
-                        <span className="property-seeker">
-                          <b className="b-1">A</b>
-                          <b className="b-2">S</b>
-                        </span>
-                      </div>
-                      <div className="col-md-8 col-sm-8 col-xs-8 blg-entry">
-                        <h6>
-                          <a href="single.html">Super nice villa </a>
-                        </h6>
-                        <span className="property-price">3000000$</span>
-                      </div>
-                    </li>
-
-                    <li>
-                      <div className="col-md-3 col-sm-3 col-xs-3 blg-thumb p0">
-                        <a href="single.html">
-                          <img src="assets/img/demo/small-property-2.jpg" alt="title"/>
-                        </a>
-                        <span className="property-seeker">
-                          <b className="b-1">A</b>
-                          <b className="b-2">S</b>
-                        </span>
-                      </div>
-                      <div className="col-md-8 col-sm-8 col-xs-8 blg-entry">
-                        <h6>
-                          <a href="single.html">Super nice villa </a>
-                        </h6>
-                        <span className="property-price">3000000$</span>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+              <AllCatsRight title="SIZGA HAM YOQISHI MUMKIN" count="4" />
             </div>
             <div className="panel sidebar-menu wow fadeInRight animated">
               <div className="panel-heading">
                 <h3 className="panel-title">Tags</h3>
               </div>
               <div className="panel-body">
-                {/*<ul className="tag-cloud">*/}
-                {/*  <li>*/}
-                {/*    <a href="/">*/}
-                {/*      <i className="fa fa-tags"></i> html5*/}
-                {/*    </a>*/}
-                {/*  </li>*/}
-                {/*  <li>*/}
-                {/*    <a href="/">*/}
-                {/*      <i className="fa fa-tags"></i> css3*/}
-                {/*    </a>*/}
-                {/*  </li>*/}
-                {/*  <li>*/}
-                {/*    <a href="/">*/}
-                {/*      <i className="fa fa-tags"></i> jquery*/}
-                {/*    </a>*/}
-                {/*  </li>*/}
-                {/*  <li>*/}
-                {/*    <a href="/">*/}
-                {/*      <i className="fa fa-tags"></i> ajax*/}
-                {/*    </a>*/}
-                {/*  </li>*/}
-                {/*  <li>*/}
-                {/*    <a href="/">*/}
-                {/*      <i className="fa fa-tags"></i> php*/}
-                {/*    </a>*/}
-                {/*  </li>*/}
-                {/*  <li>*/}
-                {/*    <a href="/">*/}
-                {/*      <i className="fa fa-tags"></i> responsive*/}
-                {/*    </a>*/}
-                {/*  </li>*/}
-                {/*  <li>*/}
-                {/*    <a href="/">*/}
-                {/*      <i className="fa fa-tags"></i> visio*/}
-                {/*    </a>*/}
-                {/*  </li>*/}
-                {/*  <li>*/}
-                {/*    <a href="/">*/}
-                {/*      <i className="fa fa-tags"></i> bootstrap*/}
-                {/*    </a>*/}
-                {/*  </li>*/}
-                {/*</ul>*/}
+                <ul className="tag-cloud">
+                  <li>
+                    <a href="/">
+                      <i className="fa fa-tags"></i> html5
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/">
+                      <i className="fa fa-tags"></i> css3
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/">
+                      <i className="fa fa-tags"></i> jquery
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/">
+                      <i className="fa fa-tags"></i> ajax
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/">
+                      <i className="fa fa-tags"></i> php
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/">
+                      <i className="fa fa-tags"></i> responsive
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/">
+                      <i className="fa fa-tags"></i> visio
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/">
+                      <i className="fa fa-tags"></i> bootstrap
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>{" "}
             <hr />

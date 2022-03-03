@@ -3,6 +3,7 @@ import NoImage from "../../img/no-image.jpg";
 import React, { useEffect, useState } from "react";
 import logo from "../icons/logo.png";
 import "./Main.css";
+import AllCatsRight from "../Pages/Tavsiya";
 
 const Footer = () => {
   const [items, setItems] = useState([]);
@@ -107,7 +108,7 @@ const Footer = () => {
                             alt={""}
                           />
                         </a>
-                        {/* <span className="blg-date">5-01-2021</span> */}
+                        <span className="blg-date">5-01-2021</span>
                       </div>
                       <div className="col-md-8 col-sm-8 col-xs-8 blg-entry">
                         <h6>
