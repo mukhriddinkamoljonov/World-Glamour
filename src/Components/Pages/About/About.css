@@ -91,3 +91,21 @@
 .textinfo {
   text-align: justify;
 }
+.count-area {
+  background-color: rgb(246,246,246);
+  display: inline-block;
+  /* margin-top: 0; */
+}
+.count-area h5 {
+  text-transform: capitalize;
+  color: red;
+  
+}
+.count-area p {
+  max-width: 200px;
+  text-align: center;
+  margin: auto;
+  background-color: rgb(255,165,0);
+  margin-top: 20px;
+  color: #fff;
+}

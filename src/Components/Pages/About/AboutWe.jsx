@@ -118,6 +118,81 @@ function AboutWe() {
                     <span className="date2">Xizmatingizda</span>
                   </div>
 
+                  <div className="count-area">
+                    <div className="container">
+                      <div className="row">
+                        <div className="col-md-10 col-md-offset-1 col-sm-12 text-center page-title">
+                          <h2>NIMA UCHUN 80% SAYYOHLAR BIZNI TANLAYDILAR?</h2>
+                        </div>
+                      </div>
+                      <div className="row">
+                        <div
+                          className="col-md-12 col-xs-12 percent-blocks m-main"
+                          data-waypoint-scroll="true"
+                        >
+                          <div className="row">
+                            <div className="col-sm-3 col-xs-6">
+                              <div className="count-item">
+                                <div className="count-item-circle">
+                                  {/* rasm */}
+                                </div>
+                                <div className="chart" data-percent="5000">
+                                  <h5>Eng yaxshi turlar</h5>
+                                  <p>
+                                    Faqat eng qiziqarli va sinalgan turlarni
+                                    taklif etamiz.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div className="col-sm-3 col-xs-6">
+                              <div className="count-item">
+                                <div className="count-item-circle">
+                                  {/* rasm */}
+                                </div>
+                                <div className="chart" data-percent="12000">
+                                  <h5>Tezkor bronlashtirish</h5>
+                                  <p>
+                                    Erta bronlashtirish 30 % gacha tejash
+                                    imkonini beradi.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div className="col-sm-3 col-xs-6">
+                              <div className="count-item">
+                                <div className="count-item-circle">
+                                  {/* rasm */}
+                                </div>
+                                <div className="chart" data-percent="120">
+                                  <h5>Vizali qo‘llab-quvvatlash</h5>
+                                  <p>
+                                    Viza bilan bog‘liq eng murakkab muammolarni
+                                    hal qilishga yordam .
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div className="col-sm-3 col-xs-6">
+                              <div className="count-item">
+                                <div className="count-item-circle">
+                                  {/* rasm */}
+                                </div>
+                                <div className="chart" data-percent="5000">
+                                  <h5>Istalgan turlar</h5>
+                                  <p>
+                                    Sizning hamyon va qiziqishlaringizga mos
+                                    turlarni tanlab beramiz
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
                   <ol>
                     <li>
                       Xizmatlarimiz sifatli bo'lishiga qaramasdan, narxlar ham
@@ -125,14 +200,6 @@ function AboutWe() {
                     </li>
                     <li>Aliquam tincidunt mauris eu risus.</li>
                   </ol>
-
-                  <blockquote>
-                    <p>
-                      Biz bilan bog'lansangiz, o'zingizni kuttirib qo'ymaysiz.
-                      Bizning turoperatorlarimiz har qanday so'rovingizga tez va
-                      samarali javob beradi.
-                    </p>
-                  </blockquote>
 
                   <h3>
                     Qiziqarli sayohatlar olamida bizning mehmonimiz bo'ling!

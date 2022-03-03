@@ -7,16 +7,16 @@ const Slider = () => {
         <div className="slider">
           <div id="bg-slider" className="owl-carousel owl-theme">
             <div className="item">
-              <img src="assets/img/slide1/rasm 1.jpg" alt="GTA V" />
+              <img src="assets/img/slide1/sohil1.jpg" alt="GTA V" />
             </div>
             <div className="item">
               <img
-                src="assets/img/slide1/slider-image-2.jpg"
+                src="assets/img/slide1/sohil2.jpg"
                 alt="The Last of"
               />
             </div>
             <div className="item">
-              <img src="assets/img/slide1/slider-image-4.jpg" alt="GTA V" />
+              <img src="assets/img/slide1/sohil3.jpg" alt="GTA V" />
             </div>
           </div>
         </div>
