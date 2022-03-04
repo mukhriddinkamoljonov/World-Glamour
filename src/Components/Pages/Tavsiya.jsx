@@ -7,7 +7,9 @@ const Tavsiya = ({ title, count }) => {
   const [isReady, setIsReady] = useState(null);
   useEffect(() => {
     axios
-      .get(`https://wgtour.pythonanywhere.com/api/places/shuffle?count=3`)
+      .get(
+        `https://wgtour.pythonanywhere.com/api/places/shuffle?count=${count}`
+      )
       .then((res) => {
         setItems(res.data);
         setIsReady(true);
@@ -16,7 +18,7 @@ const Tavsiya = ({ title, count }) => {
         console.log(error);
       });
   }, []);
-  console.log();
+  console.log(count);
   return (
     <div class="panel panel-default sidebar-menu similar-property-wdg wow fadeInRight animated">
       <div class="panel-heading">
