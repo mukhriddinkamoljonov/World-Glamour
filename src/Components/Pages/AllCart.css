@@ -218,3 +218,7 @@ select option {
 .property-video {
   width: 500px;
 }
+
+.icheckbox_square-yellow {
+  left: -8px;
+}

@@ -64,7 +64,7 @@ const Carts = ({ query }) => {
                           </Link>{" "}
                         </span>
                         <span className="proerty-price pull-right">
-                          {item.prices}
+                          {item.price1} so'm
                         </span>
                       </div>
                     </div>

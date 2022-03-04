@@ -7,16 +7,16 @@ const Tavsiya = ({ title, count }) => {
   const [isReady, setIsReady] = useState(null);
   useEffect(() => {
     axios
-    .get(`https://wgtour.pythonanywhere.com/api/places/shuffle?count=3`)
-    .then((res) => {
-      setItems(res.data);
-      setIsReady(true);
-    })
-    .catch((error) => {
-      console.log(error);
-    });
+      .get(`https://wgtour.pythonanywhere.com/api/places/shuffle?count=3`)
+      .then((res) => {
+        setItems(res.data);
+        setIsReady(true);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   }, []);
-  console.log(count);
+  console.log();
   return (
     <div class="panel panel-default sidebar-menu similar-property-wdg wow fadeInRight animated">
       <div class="panel-heading">

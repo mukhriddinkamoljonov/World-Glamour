@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Tavsiya from "./Tavsiya";
+import NoImage from "../../img/no-image.jpg";
 
 function Shaharlar() {
   const [type, setType] = useState([]);
@@ -9,7 +10,7 @@ function Shaharlar() {
 
   useEffect(() => {
     axios
-      .get(`https://wgtour.pythonanywhere.com/api/places?${addType}`)
+      .get(`https://wgtour.pythonanywhere.com/api/places/shuffle?count=7`)
       .then((res) => {
         setItem(res.data);
         setIsReady(true);
@@ -19,10 +20,21 @@ function Shaharlar() {
       });
   }, []);
 
-  const addType = async (Uzbekistan) => {
-    setType(false);
-    const response = `https://wgtour.pythonanywhere.com/api/places?type=${Uzbekistan}`;
-  };
+  // const addType = async (uzbekistan) => {
+  //   axios
+  //     .get(`https://wgtour.pythonanywhere.com/api/places?${uzbekistan}`)
+  //     .then((res) => {
+  //       setItem(res.data);
+  //       setIsReady(true);
+  //       console.log(res);
+  //     })
+  //     .catch((error) => {
+  //       console.log(error);
+  //     });
+  //   setType(false);
+  //   const response = `https://wgtour.pythonanywhere.com/api/places?type=${Uzbekistan}`;
+  // };
+  console.log(item);
   return (
     <div>
       <div className="page-head">
@@ -74,7 +86,7 @@ function Shaharlar() {
                       </fieldset>
                     </form>
                     <div className="checkbox-container">
-                      <input type="checkbox" onClick={addType} />
+                      <input type="checkbox" />
                       <span>Ormgohlar</span>
                     </div>
                     <div className="checkbox-container1">
@@ -95,7 +107,6 @@ function Shaharlar() {
               </div>
             </div>
 
-            {/* {isReady ? ( */}
             <div className="col-md-9 pr0 padding-top-40 properties-page">
               <div className="col-md-12 clear">
                 <div className="col-xs-2 layout-switcher">
@@ -107,294 +118,262 @@ function Shaharlar() {
                   </a>
                 </div>
               </div>
+              {isReady ? (
+                <div className="col-md-12 clear">
+                  <div className="proerty-th" id="list-type">
+                    {item.map((item) => (
+                      <div className="col-sm-6 col-md-4 p0">
+                        <div className="box-two proerty-item">
+                          <div className="item-thumb">
+                            <img
+                              src={
+                                item.images.length
+                                  ? item.images[0].file
+                                  : NoImage
+                              }
+                              alt={""}
+                            />
+                          </div>
 
-              <div className="col-md-12 clear">
-                <div className="proerty-th" id="list-type">
-                  <div className="col-sm-6 col-md-4 p0">
-                    {/* {item.map((item) => {
-                        const { name, price } = item;
-                        return ( */}
-                    <div className="box-two proerty-item">
-                      <div className="item-thumb">
-                        <a href="property-1.html">
-                          <img
-                            src="assets/img/demo/property-3.jpg"
-                            alt="title"
-                          />
-                        </a>
+                          <div className="item-entry overflow">
+                            <h5>
+                              <a href="property-1.html"> {item.name}</a>
+                            </h5>
+                            <div className="dot-hr"></div>
+                            <span className="pull-left">
+                              <b> Umumiy summa :</b>
+                            </span>
+                            <span className="proerty-price pull-right">
+                              {item.price1} so'm
+                            </span>
+                            <p style={{ display: "none" }}>
+                              <span style={{ color: "orange" }}>Samarqand</span>{" "}
+                              - Jahon sivilizatsiyasining qadimiy o‘choqlaridan
+                              biri, yer yuzining sayqali nomini olgan Samarqand
+                              mustaqil O‘zbekistonning yirik iqtisodiy va
+                              ilmiy-madaniy markazlaridan biri hisoblanadi.
+                            </p>
+                          </div>
+                        </div>
                       </div>
+                    ))}
 
-                      <div className="item-entry overflow">
-                        <h5>
-                          <a href="property-1.html">{/* {name} */}</a>
-                        </h5>
-                        <div className="dot-hr"></div>
-                        <span className="pull-left">
-                          <b> Area :</b> 120m{" "}
-                        </span>
-                        <span className="proerty-price pull-right">
-                          {" "}
-                          {/* {price} */}
-                          so'm
-                        </span>
-                        <p style={{ display: "none" }}>
-                          <span style={{ color: "orange" }}>
+                    <div className="col-sm-6 col-md-4 p0">
+                      <div className="box-two proerty-item">
+                        <div className="item-thumb">
+                          <a href="property-1.html">
+                            <img src="assets/img/demo/property-1.jpg" />
+                          </a>
+                        </div>
+
+                        <div className="item-entry overflow">
+                          <h5>
+                            <a href="property-1.html">Buxoro shahri</a>
+                          </h5>
+                          <div className="dot-hr"></div>
+                          <span className="pull-left">
+                            <b> Area :</b> 120m{" "}
+                          </span>
+                          <span className="proerty-price pull-right">
                             {" "}
-                            Toshkent shahri
-                          </span>{" "}
-                          – O‘zbekistonning poytaxti va shu bilan birga Markaziy
-                          Osiyodagi eng yirik shahardir.
-                        </p>
+                            $ 300,000
+                          </span>
+                          <p style={{ display: "none" }}>
+                            <span style={{ color: "orange" }}>Buxoro</span> -
+                            O'zbekistonning sayyohlik durdonalaridan biridir.
+                            Tarixiy shahar markazi YUNESKOning Butunjahon merosi
+                            ro'yxatiga kiritilgan.
+                          </p>
+                        </div>
                       </div>
                     </div>
-                    {/* )
-                       })} */}
-                  </div>
 
-                  <div className="col-sm-6 col-md-4 p0">
-                    <div className="box-two proerty-item">
-                      <div className="item-thumb">
-                        <a href="property-1.html">
-                          <img src="assets/img/demo/property-2.jpg" />
-                        </a>
-                      </div>
+                    <div className="col-sm-6 col-md-4 p0">
+                      <div className="box-two proerty-item">
+                        <div className="item-thumb">
+                          <a href="property-1.html">
+                            <img src="assets/img/demo/property-3.jpg" />
+                          </a>
+                        </div>
 
-                      <div className="item-entry overflow">
-                        <h5>
-                          <a href="property-1.html"> Samarqand shahri</a>
-                        </h5>
-                        <div className="dot-hr"></div>
-                        <span className="pull-left">
-                          <b> Area :</b> 120m{" "}
-                        </span>
-                        <span className="proerty-price pull-right">
-                          {" "}
-                          $ 300,000
-                        </span>
-                        <p style={{ display: "none" }}>
-                          <span style={{ color: "orange" }}>Samarqand</span> -
-                          Jahon sivilizatsiyasining qadimiy o‘choqlaridan biri,
-                          yer yuzining sayqali nomini olgan Samarqand mustaqil
-                          O‘zbekistonning yirik iqtisodiy va ilmiy-madaniy
-                          markazlaridan biri hisoblanadi.
-                        </p>
+                        <div className="item-entry overflow">
+                          <h5>
+                            <a href="property-1.html">Xiva shahri</a>
+                          </h5>
+                          <div className="dot-hr"></div>
+                          <span className="pull-left">
+                            <b> Area :</b> 120m{" "}
+                          </span>
+                          <span className="proerty-price pull-right">
+                            {" "}
+                            $ 300,000
+                          </span>
+                          <p style={{ display: "none" }}>
+                            <span style={{ color: "orange" }}> Xiva</span> -
+                            qadimiy devorlar, minoralar va loydan qurilgan
+                            betakror binolar shahri.Sharqning haqiqiy
+                            go‘zalligini ko‘rishni istasangiz, Xivaga tashrif
+                            buyuring.
+                          </p>
+                        </div>
                       </div>
                     </div>
-                  </div>
 
-                  <div className="col-sm-6 col-md-4 p0">
-                    <div className="box-two proerty-item">
-                      <div className="item-thumb">
-                        <a href="property-1.html">
-                          <img src="assets/img/demo/property-1.jpg" />
-                        </a>
-                      </div>
+                    <div className="col-sm-6 col-md-4 p0">
+                      <div className="box-two proerty-item">
+                        <div className="item-thumb">
+                          <a href="property-1.html">
+                            <img src="assets/img/demo/property-1.jpg" />
+                          </a>
+                        </div>
 
-                      <div className="item-entry overflow">
-                        <h5>
-                          <a href="property-1.html">Buxoro shahri</a>
-                        </h5>
-                        <div className="dot-hr"></div>
-                        <span className="pull-left">
-                          <b> Area :</b> 120m{" "}
-                        </span>
-                        <span className="proerty-price pull-right">
-                          {" "}
-                          $ 300,000
-                        </span>
-                        <p style={{ display: "none" }}>
-                          <span style={{ color: "orange" }}>Buxoro</span> -
-                          O'zbekistonning sayyohlik durdonalaridan biridir.
-                          Tarixiy shahar markazi YUNESKOning Butunjahon merosi
-                          ro'yxatiga kiritilgan.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="col-sm-6 col-md-4 p0">
-                    <div className="box-two proerty-item">
-                      <div className="item-thumb">
-                        <a href="property-1.html">
-                          <img src="assets/img/demo/property-3.jpg" />
-                        </a>
-                      </div>
-
-                      <div className="item-entry overflow">
-                        <h5>
-                          <a href="property-1.html">Xiva shahri</a>
-                        </h5>
-                        <div className="dot-hr"></div>
-                        <span className="pull-left">
-                          <b> Area :</b> 120m{" "}
-                        </span>
-                        <span className="proerty-price pull-right">
-                          {" "}
-                          $ 300,000
-                        </span>
-                        <p style={{ display: "none" }}>
-                          <span style={{ color: "orange" }}> Xiva</span> -
-                          qadimiy devorlar, minoralar va loydan qurilgan
-                          betakror binolar shahri.Sharqning haqiqiy go‘zalligini
-                          ko‘rishni istasangiz, Xivaga tashrif buyuring.
-                        </p>
+                        <div className="item-entry overflow">
+                          <h5>
+                            <a href="property-1.html"> Qoqon shahri </a>
+                          </h5>
+                          <div className="dot-hr"></div>
+                          <span className="pull-left">
+                            <b> Area :</b> 120m{" "}
+                          </span>
+                          <span className="proerty-price pull-right">
+                            {" "}
+                            $ 300,000
+                          </span>
+                          <p style={{ display: "none" }}>
+                            <span style={{ color: "orange" }}>Qo'qon</span> -
+                            Shahar hashamatli yodgorliklarga va ulug‘vor
+                            madrasalarga boy va bu ajablanarli emas, chunki
+                            Qo‘qon ilm-fan rivojlanishining markazi edi.
+                          </p>
+                        </div>
                       </div>
                     </div>
-                  </div>
 
-                  <div className="col-sm-6 col-md-4 p0">
-                    <div className="box-two proerty-item">
-                      <div className="item-thumb">
-                        <a href="property-1.html">
-                          <img src="assets/img/demo/property-1.jpg" />
-                        </a>
-                      </div>
+                    <div className="col-sm-6 col-md-4 p0">
+                      <div className="box-two proerty-item">
+                        <div className="item-thumb">
+                          <a href="property-1.html">
+                            <img src="assets/img/demo/property-2.jpg" />
+                          </a>
+                        </div>
 
-                      <div className="item-entry overflow">
-                        <h5>
-                          <a href="property-1.html"> Qoqon shahri </a>
-                        </h5>
-                        <div className="dot-hr"></div>
-                        <span className="pull-left">
-                          <b> Area :</b> 120m{" "}
-                        </span>
-                        <span className="proerty-price pull-right">
-                          {" "}
-                          $ 300,000
-                        </span>
-                        <p style={{ display: "none" }}>
-                          <span style={{ color: "orange" }}>Qo'qon</span> -
-                          Shahar hashamatli yodgorliklarga va ulug‘vor
-                          madrasalarga boy va bu ajablanarli emas, chunki Qo‘qon
-                          ilm-fan rivojlanishining markazi edi.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="col-sm-6 col-md-4 p0">
-                    <div className="box-two proerty-item">
-                      <div className="item-thumb">
-                        <a href="property-1.html">
-                          <img src="assets/img/demo/property-2.jpg" />
-                        </a>
-                      </div>
-
-                      <div className="item-entry overflow">
-                        <h5>
-                          <a href="property-1.html"> Qarshi shahri</a>
-                        </h5>
-                        <div className="dot-hr"></div>
-                        <span className="pull-left">
-                          <b> Area :</b> 120m{" "}
-                        </span>
-                        <span className="proerty-price pull-right">
-                          {" "}
-                          $ 300,000
-                        </span>
-                        <p style={{ display: "none" }}>
-                          <span style={{ color: "orange" }}>Qarshi</span> -
-                          Qadimiy Qarshi shahri 2006 yilda YUNESKO shafeligida
-                          2700 yillik yubileyini nishonladi. Buyuk Aleksandr
-                          Makedonskiy bu yerda bo‘lgan.
-                        </p>
+                        <div className="item-entry overflow">
+                          <h5>
+                            <a href="property-1.html"> Qarshi shahri</a>
+                          </h5>
+                          <div className="dot-hr"></div>
+                          <span className="pull-left">
+                            <b> Area :</b> 120m{" "}
+                          </span>
+                          <span className="proerty-price pull-right">
+                            {" "}
+                            $ 300,000
+                          </span>
+                          <p style={{ display: "none" }}>
+                            <span style={{ color: "orange" }}>Qarshi</span> -
+                            Qadimiy Qarshi shahri 2006 yilda YUNESKO shafeligida
+                            2700 yillik yubileyini nishonladi. Buyuk Aleksandr
+                            Makedonskiy bu yerda bo‘lgan.
+                          </p>
+                        </div>
                       </div>
                     </div>
-                  </div>
 
-                  <div className="col-sm-6 col-md-4 p0">
-                    <div className="box-two proerty-item">
-                      <div className="item-thumb">
-                        <a href="property-1.html">
-                          <img src="assets/img/demo/property-3.jpg" />
-                        </a>
-                      </div>
+                    <div className="col-sm-6 col-md-4 p0">
+                      <div className="box-two proerty-item">
+                        <div className="item-thumb">
+                          <a href="property-1.html">
+                            <img src="assets/img/demo/property-3.jpg" />
+                          </a>
+                        </div>
 
-                      <div className="item-entry overflow">
-                        <h5>
-                          <a href="property-1.html">Andijon shahri</a>
-                        </h5>
-                        <div className="dot-hr"></div>
-                        <span className="pull-left">
-                          <b> Area :</b> 120m{" "}
-                        </span>
-                        <span className="proerty-price pull-right">
-                          {" "}
-                          $ 300,000
-                        </span>
-                        <p style={{ display: "none" }}>
-                          <span style={{ color: "orange" }}> Andijon </span> -
-                          Bir vaqtlar Buyuk Ipak yo‘li bo‘ylab joylashgan,
-                          arxeologik yodgorliklar va tarixiy obidalarga boy
-                          bo‘lgan shahar.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="col-sm-6 col-md-4 p0">
-                    <div className="box-two proerty-item">
-                      <div className="item-thumb">
-                        <a href="property-1.html">
-                          <img src="assets/img/demo/property-2.jpg" />
-                        </a>
-                      </div>
-
-                      <div className="item-entry overflow">
-                        <h5>
-                          <a href="property-1.html">Mo'ynoq shahri</a>
-                        </h5>
-                        <div className="dot-hr"></div>
-                        <span className="pull-left">
-                          <b> Area :</b> 120m{" "}
-                        </span>
-                        <span className="proerty-price pull-right">
-                          {" "}
-                          $ 300,000
-                        </span>
-                        <p style={{ display: "none" }}>
-                          <span style={{ color: "orange" }}>Mo‘ynoq</span> -
-                          O‘rta Osiyodagi eng yirik baliq ovlash shaharlaridan
-                          biri edi.Bu yerda toza suv bilan daryo baliqlari,
-                          ko‘plab dam olish joylari bo‘lgan ajoyib plyajlar bor
-                          edi.
-                        </p>
+                        <div className="item-entry overflow">
+                          <h5>
+                            <a href="property-1.html">Andijon shahri</a>
+                          </h5>
+                          <div className="dot-hr"></div>
+                          <span className="pull-left">
+                            <b> Area :</b> 120m{" "}
+                          </span>
+                          <span className="proerty-price pull-right">
+                            {" "}
+                            $ 300,000
+                          </span>
+                          <p style={{ display: "none" }}>
+                            <span style={{ color: "orange" }}> Andijon </span> -
+                            Bir vaqtlar Buyuk Ipak yo‘li bo‘ylab joylashgan,
+                            arxeologik yodgorliklar va tarixiy obidalarga boy
+                            bo‘lgan shahar.
+                          </p>
+                        </div>
                       </div>
                     </div>
-                  </div>
 
-                  <div className="col-sm-6 col-md-4 p0">
-                    <div className="box-two proerty-item">
-                      <div className="item-thumb">
-                        <a href="property-1.html">
-                          <img src="assets/img/demo/property-1.jpg" />
-                        </a>
+                    <div className="col-sm-6 col-md-4 p0">
+                      <div className="box-two proerty-item">
+                        <div className="item-thumb">
+                          <a href="property-1.html">
+                            <img src="assets/img/demo/property-2.jpg" />
+                          </a>
+                        </div>
+
+                        <div className="item-entry overflow">
+                          <h5>
+                            <a href="property-1.html">Mo'ynoq shahri</a>
+                          </h5>
+                          <div className="dot-hr"></div>
+                          <span className="pull-left">
+                            <b> Area :</b> 120m{" "}
+                          </span>
+                          <span className="proerty-price pull-right">
+                            {" "}
+                            $ 300,000
+                          </span>
+                          <p style={{ display: "none" }}>
+                            <span style={{ color: "orange" }}>Mo‘ynoq</span> -
+                            O‘rta Osiyodagi eng yirik baliq ovlash shaharlaridan
+                            biri edi.Bu yerda toza suv bilan daryo baliqlari,
+                            ko‘plab dam olish joylari bo‘lgan ajoyib plyajlar
+                            bor edi.
+                          </p>
+                        </div>
                       </div>
+                    </div>
 
-                      <div className="item-entry overflow">
-                        <h5>
-                          <a href="property-1.html">Zomin shaharchasi</a>
-                        </h5>
-                        <div className="dot-hr"></div>
-                        <span className="pull-left">
-                          <b> Area :</b> 120m{" "}
-                        </span>
-                        <span className="proerty-price pull-right">
-                          {" "}
-                          $ 300,000
-                        </span>
-                        <p style={{ display: "none" }}>
-                          <span style={{ color: "orange" }}>Zomin</span> -
-                          Ajoyib landshaftlar va toza tog‘ havosi, flora va
-                          faunaning xilma-xilligi, qadimiy ziyoratgohlar va
-                          noyob milliy sihatgoh - bularning barchasi Zomin.
-                        </p>
+                    <div className="col-sm-6 col-md-4 p0">
+                      <div className="box-two proerty-item">
+                        <div className="item-thumb">
+                          <a href="property-1.html">
+                            <img src="assets/img/demo/property-1.jpg" />
+                          </a>
+                        </div>
+
+                        <div className="item-entry overflow">
+                          <h5>
+                            <a href="property-1.html">Zomin shaharchasi</a>
+                          </h5>
+                          <div className="dot-hr"></div>
+                          <span className="pull-left">
+                            <b> Area :</b> 120m{" "}
+                          </span>
+                          <span className="proerty-price pull-right">
+                            {" "}
+                            $ 300,000
+                          </span>
+                          <p style={{ display: "none" }}>
+                            <span style={{ color: "orange" }}>Zomin</span> -
+                            Ajoyib landshaftlar va toza tog‘ havosi, flora va
+                            faunaning xilma-xilligi, qadimiy ziyoratgohlar va
+                            noyob milliy sihatgoh - bularning barchasi Zomin.
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-
+              ) : (
+                ""
+              )}
               <div className="col-md-12">
                 <div className="pull-right">
                   <div className="pagination">
