@@ -43,11 +43,13 @@ const Form = () => {
           <div>
             <div className="count">
               <h3>Summa:</h3>
-              <h1>{count}</h1>
             </div>
-            <div className="buttons">
-              <Button title={"-"} action={decrementCount} />
-              <Button title={"+"} action={incrementCount} />
+            <div className="form-flex" style={{ display: "flex" }}>
+              <h1>{count}</h1>
+              <div className="buttons">
+                <Button title={"-"} action={decrementCount} /> <br />
+                <Button title={"+"} action={incrementCount} />
+              </div>
             </div>
           </div>
           {/* <div className="col-half">
@@ -69,7 +71,11 @@ const Form = () => {
                 <option>2016</option>
               </select>
             </div>
-          </div>
+          </div>{" "}
+          <br />
+          <button class="button-48" role="button">
+            <span class="texta">Button 48</span>
+          </button>
         </div>
         <div className="row">
           <h4>Ushbu turni bron qiling!</h4>

@@ -1,6 +1,11 @@
 import React from "react";
+import "./Form.css";
 
 export default function Button(props) {
   let { action, title } = props;
-  return <button onClick={action}>{title}</button>;
+  return (
+    <button className="btn-form" onClick={action}>
+      {title}
+    </button>
+  );
 }
