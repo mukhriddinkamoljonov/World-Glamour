@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import biz_haqimizda from "../../../img/biz_haqimizda.jpg";
+import biz_haqimizda from "../../../img/biz_haqimizda1.jpg";
 import "./About.css";
 import globe from "../../../img/globe.png";
 import calendar from "../../../img/calendar2.ico";
