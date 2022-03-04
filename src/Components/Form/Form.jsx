@@ -17,50 +17,50 @@ const Form = () => {
   };
 
   return (
-    <div class="container2">
+    <div className="container2">
       <form onChange={handleSubmit} onSubmit={(e) => e.preventDefault()}>
-        <div class="row">
+        <div className="row">
           <h4>Buyurtma qilish</h4>
-          <div class="input-group input-group-icon">
+          <div className="input-group input-group-icon">
             <input type="text" placeholder="F.I.O" />
-            <div class="input-icon">
-              <i class="fa fa-user"></i>
+            <div className="input-icon">
+              <i className="fa fa-user"></i>
             </div>
           </div>
-          <div class="input-group input-group-icon">
+          <div className="input-group input-group-icon">
             <input type="email" placeholder="Pasport seriya raqam" />
-            <div class="input-icon">
-              <i class="fa fa-envelope"></i>
+            <div className="input-icon">
+              <i className="fa-solid fa-passport"></i>{" "}
             </div>
           </div>
-          <div class="input-group input-group-icon">
+          <div className="input-group input-group-icon">
             <input type="password" placeholder="Telefon raqam" />
-            <div class="input-icon">
-              <i class="fa fa-key"></i>
+            <div className="input-icon">
+              <i className="fa-solid fa-square-phone-flip"></i>{" "}
             </div>
           </div>
         </div>
-        <div class="row">
+        <div className="row">
           <div>
-            <div class="count">
-              <h3>Count:</h3>
+            <div className="count">
+              <h3>Summa:</h3>
               <h1>{count}</h1>
             </div>
-            <div class="buttons">
+            <div className="buttons">
               <Button title={"-"} action={decrementCount} />
               <Button title={"+"} action={incrementCount} />
             </div>
           </div>
-          <div class="col-half">
-            <div class="input-group input-group-icon">
+          {/* <div className="col-half">
+            <div className="input-group input-group-icon">
               <input type="text" placeholder="Card CVC" />
-              <div class="input-icon">
-                <i class="fa fa-user"></i>
+              <div className="input-icon">
+                <i className="fa fa-user"></i>
               </div>
             </div>
-          </div>
-          <div class="col-half">
-            <div class="input-group">
+          </div> */}
+          <div className="col-half">
+            <div className="input-group">
               <select>
                 <option>01 Jan</option>
                 <option>02 Jan</option>
@@ -72,9 +72,9 @@ const Form = () => {
             </div>
           </div>
         </div>
-        <div class="row">
+        <div className="row">
           <h4>Ushbu turni bron qiling!</h4>
-          <div class="input-group">
+          <div className="input-group">
             <input id="terms" type="checkbox" />
             <label for="terms">
               I accept the terms and conditions for signing up to this service,
