@@ -120,7 +120,7 @@ const Footer = () => {
                           }}
                         ></p>
                       </div>
-                    </li>                   
+                    </li>
                   </ul>
                 ))}
               </div>
@@ -158,7 +158,7 @@ const Footer = () => {
                         className="wow fadeInUp animated"
                         href="https://twitter.com/kimarotec"
                       >
-                        <i className="fa fa-twitter"></i>
+                        <i className="fa-brands fa-twitter"></i>
                       </a>
                     </li>
                     <li>
@@ -167,7 +167,7 @@ const Footer = () => {
                         href="https://www.facebook.com/kimarotec"
                         data-wow-delay="0.2s"
                       >
-                        <i className="fa fa-facebook"></i>
+                        <i className="fa-brands fa-facebook-f"></i>
                       </a>
                     </li>
                     <li>
@@ -176,7 +176,7 @@ const Footer = () => {
                         href="https://plus.google.com/kimarotec"
                         data-wow-delay="0.3s"
                       >
-                        <i className="fa fa-google-plus"></i>
+                        <i className="fa-brands fa-google"></i>
                       </a>
                     </li>
                     <li>
@@ -185,7 +185,7 @@ const Footer = () => {
                         href="https://instagram.com/kimarotec"
                         data-wow-delay="0.4s"
                       >
-                        <i className="fa fa-instagram"></i>
+                        <i className="fa-brands fa-instagram"></i>
                       </a>
                     </li>
                     <li>
@@ -194,7 +194,7 @@ const Footer = () => {
                         href="https://instagram.com/kimarotec"
                         data-wow-delay="0.6s"
                       >
-                        <i className="fa fa-dribbble"></i>
+                        <i className="fa-solid fa-car-crash"></i>
                       </a>
                     </li>
                   </ul>
