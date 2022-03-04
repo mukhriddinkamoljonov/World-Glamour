@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Button from "./button";
 
-
 const Form = () => {
   const [count, setCount] = useState(1);
 
@@ -73,10 +72,6 @@ const Form = () => {
               </select>
             </div>
           </div>{" "}
-          <br />
-          <button class="button-48" role="button">
-            <span class="texta">Button 48</span>
-          </button>
         </div>
         <div className="row">
           <h4>Ushbu turni bron qiling!</h4>
@@ -87,7 +82,10 @@ const Form = () => {
               and hereby confirm I have read the privacy policy.
             </label>
           </div>
-        </div>
+        </div>{" "}
+        <button class="button-48" role="button">
+          <span class="texta">Button 48</span>
+        </button>
       </form>
     </div>
   );

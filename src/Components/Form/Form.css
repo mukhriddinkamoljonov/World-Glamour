@@ -103,6 +103,9 @@
   touch-action: manipulation;
   vertical-align: baseline;
   white-space: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: 90px;
 }
 
 .button-48:before {
