@@ -44,7 +44,7 @@ const Form = () => {
             <div className="count">
               <h3>Summa:</h3>
             </div>
-            <div className="form-flex" style={{ display: "flex" }}>
+            <div className="form-flex">
               <h1>{count}</h1>
               <div className="buttons">
                 <Button title={"-"} action={decrementCount} /> <br />

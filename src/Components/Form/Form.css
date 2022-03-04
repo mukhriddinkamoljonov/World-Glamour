@@ -12,13 +12,13 @@
   color: #1a202c;
   display: inline-flex;
   font-family: Inter, sans-serif;
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: 700;
-  height: 36px;
+  /* height: 36px; */
   justify-content: center;
   line-height: 10px;
   overflow-wrap: break-word;
-  padding: 20px;
+  padding: 5px;
   text-decoration: none;
   width: auto;
   border-radius: 8px;
@@ -141,4 +141,11 @@
 .texta {
     color: #fff;
     background-color: #F5C65D;
+}
+.form-flex {
+  background-color: #f5c65d;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
