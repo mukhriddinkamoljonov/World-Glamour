@@ -9,9 +9,9 @@ import "./Main.css";
 const Home = ({ query }) => {
   return (
     <div>
-      <div id="preloader">
+      {/* <div id="preloader">
         <div id="status">&nbsp;</div>
-      </div>
+      </div> */}
       <Slider />
       <Carts query={query} />
       <WelcomeArea />
