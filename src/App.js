@@ -12,6 +12,7 @@ import { useState } from "react";
 
 function App() {
   const [query, setQuery] = useState("");
+  console.log(query);
   return (
     <div>
       <Navbar setQuery={setQuery} />
@@ -23,7 +24,7 @@ function App() {
         <Route path="/amirsoy" element={<AllCart />} />
         <Route path="/chimyon" element={<AllCart />} />
         <Route path="/bostonliq" element={<AllCart />} />
-        <Route path="/shaharlar" element={<Shaharlar />} />
+        <Route path="/shaharlar" element={<Shaharlar setQuery={setQuery} query={query}/>} />
       </Routes>
       <Footer />
     </div>

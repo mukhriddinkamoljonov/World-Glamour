@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import Tavsiya from "./Tavsiya";
 import NoImage from "../../img/no-image.jpg";
 
-function Shaharlar() {
+function Shaharlar({ query, setQuery }) {
   const [type, setType] = useState([]);
   const [isReady, setIsReady] = useState(null);
   const [item, setItem] = useState([]);
@@ -68,6 +68,7 @@ function Shaharlar() {
                               className="form-control"
                               placeholder="izlash..."
                               type="text"
+                              onChange={(e) => setQuery(e.target.value)}
                             />
                           </div>
                         </div>
@@ -121,42 +122,47 @@ function Shaharlar() {
               {isReady ? (
                 <div className="col-md-12 clear">
                   <div className="proerty-th" id="list-type">
-                    {item.map((item) => (
-                      <div className="col-sm-6 col-md-4 p0">
-                        <div className="box-two proerty-item">
-                          <div className="item-thumb">
-                            <img
-                              src={
-                                item.images.length
-                                  ? item.images[0].file
-                                  : NoImage
-                              }
-                              alt={""}
-                            />
-                          </div>
+                    {item
+                      .filter((item) => item.name.toLowerCase().includes(query))
+                      .map((item) => (
+                        <div className="col-sm-6 col-md-4 p0">
+                          <div className="box-two proerty-item">
+                            <div className="item-thumb">
+                              <img
+                                src={
+                                  item.images.length
+                                    ? item.images[0].file
+                                    : NoImage
+                                }
+                                alt={""}
+                              />
+                            </div>
 
-                          <div className="item-entry overflow">
-                            <h5>
-                              <a href="property-1.html"> {item.name}</a>
-                            </h5>
-                            <div className="dot-hr"></div>
-                            <span className="pull-left">
-                              <b> Umumiy summa :</b>
-                            </span>
-                            <span className="proerty-price pull-right">
-                              {item.price1} so'm
-                            </span>
-                            <p style={{ display: "none" }}>
-                              <span style={{ color: "orange" }}>Samarqand</span>{" "}
-                              - Jahon sivilizatsiyasining qadimiy o‘choqlaridan
-                              biri, yer yuzining sayqali nomini olgan Samarqand
-                              mustaqil O‘zbekistonning yirik iqtisodiy va
-                              ilmiy-madaniy markazlaridan biri hisoblanadi.
-                            </p>
+                            <div className="item-entry overflow">
+                              <h5>
+                                <a href="property-1.html"> {item.name}</a>
+                              </h5>
+                              <div className="dot-hr"></div>
+                              <span className="pull-left">
+                                <b> Umumiy summa :</b>
+                              </span>
+                              <span className="proerty-price pull-right">
+                                {item.price1} so'm
+                              </span>
+                              <p style={{ display: "none" }}>
+                                <span style={{ color: "orange" }}>
+                                  Samarqand
+                                </span>{" "}
+                                - Jahon sivilizatsiyasining qadimiy
+                                o‘choqlaridan biri, yer yuzining sayqali nomini
+                                olgan Samarqand mustaqil O‘zbekistonning yirik
+                                iqtisodiy va ilmiy-madaniy markazlaridan biri
+                                hisoblanadi.
+                              </p>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    ))}
+                      ))}
 
                     <div className="col-sm-6 col-md-4 p0">
                       <div className="box-two proerty-item">
