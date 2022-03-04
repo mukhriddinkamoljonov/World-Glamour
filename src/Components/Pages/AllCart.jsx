@@ -3,7 +3,7 @@ import "./AllCart.css";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import axios from "axios";
-import AllCatsRight from "./Tavsiya";
+import Tavsiya from "./Tavsiya";
 import { useParams } from "react-router-dom";
 
 const AllCart = () => {
@@ -226,7 +226,7 @@ const AllCart = () => {
                   </div>
                 </div>
 
-                <AllCatsRight />
+                <Tavsiya />
 
                 <div class="panel panel-default sidebar-menu wow fadeInRight animated">
                   <div class="panel-heading">

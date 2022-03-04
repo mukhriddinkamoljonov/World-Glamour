@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import biz_haqimizda from "../../../img/biz_haqimizda.jpg";
 import "./About.css";
 import NoImage from "../../../img/no-image.jpg";
-import AllCatsRight from "../Tavsiya";
+import Tavsiya from "../Tavsiya";
 
 function AboutWe() {
   const [items, setItems] = useState([]);
@@ -237,7 +237,7 @@ function AboutWe() {
                   </p>
                 </div>
               </div>
-              <AllCatsRight title="SIZGA HAM YOQISHI MUMKIN" count="4" />
+              <Tavsiya title="SIZGA HAM YOQISHI MUMKIN" count="4" />
             </div>
             <div className="panel sidebar-menu wow fadeInRight animated">
               <div className="panel-heading">

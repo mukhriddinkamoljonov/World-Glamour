@@ -3,7 +3,6 @@ import NoImage from "../../img/no-image.jpg";
 import React, { useEffect, useState } from "react";
 import logo from "../icons/logo.png";
 import "./Main.css";
-import AllCatsRight from "../Pages/Tavsiya";
 
 const Footer = () => {
   const [items, setItems] = useState([]);

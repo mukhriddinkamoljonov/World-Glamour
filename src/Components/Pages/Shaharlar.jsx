@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import AllCatsRight from "./Tavsiya";
+import Tavsiya from "./Tavsiya";
 
 function Shaharlar() {
   const [type, setType] = useState([]);
@@ -91,7 +91,7 @@ function Shaharlar() {
                     </div>{" "}
                   </div>
                 </div>
-                <AllCatsRight />
+                <Tavsiya />
               </div>
             </div>
 
