@@ -12,7 +12,7 @@ function Navbar({ setQuery }) {
               type="button"
               className="navbar-toggle collapsed"
               data-toggle="collapse"
-              data-target="#navigation"
+              data-target="#navigation" 
             >
               <span className="sr-only">Toggle navigation</span>
               <span className="icon-bar"></span>

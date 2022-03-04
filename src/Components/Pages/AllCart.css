@@ -223,3 +223,40 @@ select option {
   left: -8px;
 }
 
+.btn-grad1 {
+  background-image: linear-gradient(
+    to right,
+    #ffb347 0%,
+    #ffcc33 51%,
+    #ffb347 100%
+  );
+}
+.btn-grad1 {
+  margin: 10px;
+  padding: 15px 85px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 2px;
+  display: block;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-grad1:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.payment {
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}

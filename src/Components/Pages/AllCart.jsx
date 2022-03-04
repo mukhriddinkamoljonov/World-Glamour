@@ -3,8 +3,9 @@ import "./AllCart.css";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import axios from "axios";
-import Tavsiya from "./Tavsiya";
 import { useParams } from "react-router-dom";
+import Tavsiya from "./Tavsiya";
+import Form from "../Form/Form";
 
 const AllCart = () => {
   let { id } = useParams();
@@ -24,7 +25,6 @@ const AllCart = () => {
       });
   }, [id]);
 
-  console.log(items);
   return (
     <div>
       <div class="page-head">
@@ -225,8 +225,7 @@ const AllCart = () => {
                     </div>
                   </div>
                 </div>
-
-                <Tavsiya />
+                <Tavsiya title="Tavsiya Etamiz!" count="4" />
 
                 <div class="panel panel-default sidebar-menu wow fadeInRight animated">
                   <div class="panel-heading">
@@ -238,100 +237,7 @@ const AllCart = () => {
                 </div>
 
                 <div class="panel panel-default sidebar-menu wow fadeInRight animated">
-                  <div class="panel-heading">
-                    <h3 class="panel-title">Smart search</h3>
-                  </div>
-                  <div class="container2">
-                    <form>
-                      <div class="row">
-                        <h4>Account</h4>
-                        <div class="input-group input-group-icon">
-                          <input type="text" placeholder="Full Name" />
-                          <div class="input-icon">
-                            <i class="fa fa-user"></i>
-                          </div>
-                        </div>
-                        <div class="input-group input-group-icon">
-                          <input type="email" placeholder="Email Adress" />
-                          <div class="input-icon">
-                            <i class="fa fa-envelope"></i>
-                          </div>
-                        </div>
-                        <div class="input-group input-group-icon">
-                          <input type="password" placeholder="Password" />
-                          <div class="input-icon">
-                            <i class="fa fa-key"></i>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <h4>Payment Details</h4>
-                        <div class="input-group">
-                          <input
-                            id="payment-method-card"
-                            type="radio"
-                            name="payment-method"
-                            value="card"
-                            checked="true"
-                          />
-                          <label for="payment-method-card">
-                            <span>
-                              <i class="fa fa-cc-visa"></i>Credit Card
-                            </span>
-                          </label>
-                          <input
-                            id="payment-method-paypal"
-                            type="radio"
-                            name="payment-method"
-                            value="paypal"
-                          />
-                          <label for="payment-method-paypal">
-                            {" "}
-                            <span>
-                              <i class="fa fa-cc-paypal"></i>Paypal
-                            </span>
-                          </label>
-                        </div>
-                        <div class="input-group input-group-icon">
-                          <input type="text" placeholder="Card Number" />
-                          <div class="input-icon">
-                            <i class="fa fa-credit-card"></i>
-                          </div>
-                        </div>
-                        <div class="col-half">
-                          <div class="input-group input-group-icon">
-                            <input type="text" placeholder="Card CVC" />
-                            <div class="input-icon">
-                              <i class="fa fa-user"></i>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-half">
-                          <div class="input-group">
-                            <select>
-                              <option>01 Jan</option>
-                              <option>02 Jan</option>
-                            </select>
-                            <select>
-                              <option>2015</option>
-                              <option>2016</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <h4>Ushbu turni bron qiling!</h4>
-                        <div class="input-group">
-                          <input id="terms" type="checkbox" />
-                          <label for="terms">
-                            I accept the terms and conditions for signing up to
-                            this service, and hereby confirm I have read the
-                            privacy policy.
-                          </label>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
+                  <Form item={item} />
                 </div>
               </aside>
             </div>

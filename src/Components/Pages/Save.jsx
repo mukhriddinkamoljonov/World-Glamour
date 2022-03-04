@@ -90,7 +90,7 @@ function Shaharlar() {
                             <b class="pull-right color">100000$</b>
                           </div>
                           <div class="col-xs-6">
-                            <label for="property-geo">
+                            <label htmlFor="property-geo">
                               Property geo (m2) :
                             </label>
                             <input
