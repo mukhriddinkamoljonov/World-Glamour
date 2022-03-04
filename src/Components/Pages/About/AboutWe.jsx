@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import biz_haqimizda from "../../../img/biz_haqimizda.jpg";
 import "./About.css";
 import globe from "../../../img/globe.png";
-import calendar from "../../../img/calendar.png";
+import calendar from "../../../img/calendar2.ico";
 import chat from "../../../img/chat.png";
 import heart from "../../../img/heart.png";
 import Tavsiya from "../Tavsiya";
@@ -235,7 +235,7 @@ function AboutWe() {
                             <img src={globe} className="about-img" alt="" />
                           </div>
                           <div className="chart" data-percent="5000">
-                            <h5>Eng yaxshi turlar</h5>
+                            <h4 className="about-h4">Eng yaxshi turlar</h4>
                             <p>
                               Faqat eng qiziqarli va sinalgan turlarni taklif
                               etamiz.
@@ -249,7 +249,7 @@ function AboutWe() {
                             <img src={calendar} className="about-img" alt="" />
                           </div>
                           <div className="chart" data-percent="12000">
-                            <h5>Tezkor bronlashtirish</h5>
+                            <h4 className="about-h4">Tezkor bronlashtirish</h4>
                             <p>
                               Erta bronlashtirish 30 % gacha tejash imkonini
                               beradi.
@@ -259,11 +259,16 @@ function AboutWe() {
                       </div>
                       <div className="col-sm-3 col-xs-6">
                         <div className="count-item">
-                          <div className="count-item-circle">
+                          <div
+                            className="count-item-circle"
+                            style={{ marginBottom: "7px" }}
+                          >
                             <img src={chat} className="about-img" alt="" />
                           </div>
                           <div className="chart" data-percent="120">
-                            <h5>Vizali qo‘llab-quvvatlash</h5>
+                            <h5 className="about-h5">
+                              Vizali qo‘llab-quvvatlash
+                            </h5>
                             <p>
                               Viza bilan bog‘liq eng murakkab muammolarni hal
                               qilishga yordam .
@@ -277,7 +282,7 @@ function AboutWe() {
                             <img src={heart} className="about-img" alt="" />
                           </div>
                           <div className="chart" data-percent="5000">
-                            <h5>Istalgan turlar</h5>
+                            <h4 className="about-h4">Istalgan turlar</h4>
                             <p>
                               Sizning hamyon va qiziqishlaringizga mos turlarni
                               tanlab beramiz

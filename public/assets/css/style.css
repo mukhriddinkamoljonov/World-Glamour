@@ -2528,7 +2528,7 @@ count-area
 .count-area .count-item-circle {
   height: 100px;
   width: 100px;
-  border: 1px solid #777;
+  border: 1px dashed #777;
   border-radius: 100%;
   margin: 0px auto;
   position: relative;
@@ -2559,12 +2559,12 @@ count-area
   position: absolute;
 }
 .count-item h5 {
-  font: 500 15px "Open Sans", sans-serif;
+  font: 500 20px "Open Sans", sans-serif;
   padding: 2px 15px;
   text-transform: uppercase;
   margin: 0px;
-  border-left: 2px solid #fdc600;
-  border-right: 2px solid #fdc600;
+  border-left: 1px solid #fdc600;
+  border-right: 1px solid #fdc600;
   display: inline-block;
 }
 .boy-sale-area {

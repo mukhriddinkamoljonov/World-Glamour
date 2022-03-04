@@ -4,6 +4,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.about-h5 {
+  font-size: 20px;
+}
+
 .aboutWe {
   background-image: url("https://uzbekistan.travel/storage/app/uploads/public/5e9/029/e82/thumb_669_1920_0_0_0_auto.jpg");
   background-position: center center;
@@ -98,7 +102,7 @@
 }
 .count-area h5 {
   text-transform: capitalize;
-  color: red;
+  color: #f0a500;
 }
 .count-area p {
   max-width: 200px;
@@ -107,9 +111,17 @@
   background-color: rgb(255, 165, 0);
   margin-top: 20px;
   color: #fff;
+  border-radius: 7px;
 }
 
 .about-img {
   width: 60px;
   margin-top: 15px;
+  color: #fff;
+}
+
+.about-h4 {
+  /* padding: 2px 15px; */
+  border-left: 1px solid #fdc600;
+  border-right: 1px solid #fdc600;
 }
