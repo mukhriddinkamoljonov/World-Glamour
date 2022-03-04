@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Button from "./button";
 
 const Form = () => {
   const [count, setCount] = useState(1);
@@ -41,16 +42,12 @@ const Form = () => {
         <div class="row">
           <div>
             <div class="count">
-              <span>Count:</span>
-              <span>{count}</span>
+              <h3>Count:</h3>
+              <h1>{count}</h1>
             </div>
             <div class="buttons">
-              <button title={"-"} action={decrementCount}>
-                -
-              </button>
-              <button title={"+"} action={incrementCount}>
-                +
-              </button>
+              <Button title={"-"} action={decrementCount} />
+              <Button title={"+"} action={incrementCount} />
             </div>
           </div>
           <div class="col-half">
