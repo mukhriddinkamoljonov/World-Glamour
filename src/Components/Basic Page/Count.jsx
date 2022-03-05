@@ -7,19 +7,26 @@ import "./Main.css";
 import axios from "axios";
 
 const Count = () => {
+  const endpoint = "latest";
+  const access_key = "b24fc9c36b4906425df7a5868d118ef7";
+
   const [items, setItems] = useState([]);
-  useEffect(() => {
-    axios
-      .get(
-        "https://api.fastforex.io/fetch-all?api_key=7289af5f01-81ed14a04f-r7p8u5"
-      )
-      .then((res) => {
-        setItems(res.data.results);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, []);
+  // useEffect(() => {
+  //   axios({
+  //     url:
+  //       "https://api.exchangeratesapi.io/v1/" +
+  //       endpoint +
+  //       "?access_key=" +
+  //       access_key,
+  //   })
+  //     .then((res) => {
+  //       console.log(res.data.results);
+  //     })
+  //     .catch((error) => {
+  //       console.log(error);
+  //     });
+  // }, []);
+
   return (
     <div className="count-area">
       <div className="container">
