@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
 import Button from "./button";
+import payme from "../../img/payme_01.png"
 
 const Form = ({ item }) => {
   const [fullname, setFullName] = useState([]);
@@ -124,7 +125,7 @@ const Form = ({ item }) => {
               value={number}
               onChange={(e) => setNumber(e.target.value)}
             />
-            <div className="input-icon">+998</div>
+            <div style={{top:"5px"}} className="input-icon">+998</div>
           </div>
         </div>
         <div className="row">
@@ -135,13 +136,14 @@ const Form = ({ item }) => {
             <div className="form-flex">
               <div className="buttons">
                 <Button title={"-"} action={decrementCount} />
-                  <h1>{count}</h1>
+                  <h2>{count}</h2>
                 <Button title={"+"} action={incrementCount} />
               </div>
             </div>
             <button class="button-48" onClick={payButton}>
               <span class="texta">To'lov</span>
             </button>
+            <img className="payme" src={payme} alt="" />
           </div>
         </div>
       </form>
