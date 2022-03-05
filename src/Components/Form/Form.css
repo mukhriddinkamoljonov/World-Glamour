@@ -8,7 +8,7 @@
   color: #1a202c;
   display: inline-flex;
   font-family: Inter, sans-serif;
-  font-size: 2rem;
+  font-size: 25px;
   font-weight: 700;
   justify-content: center;
   line-height: 10px;
@@ -96,7 +96,7 @@
   touch-action: manipulation;
   vertical-align: baseline;
   white-space: nowrap;
-    left: 185px;
+    left: 210px;
     bottom: 60px;
 }
 
@@ -136,16 +136,27 @@
 }
 .form-flex {
   background-color: #f5c65d;
-  width: 130px;
+  width: 200px;
   height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 10px;
+  
+}
+.form-flex .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 
 }
 .form-flex button {
-  background-color:rgb(80,83,89);
-  padding: 10px;
+  background-color:#fff;
+    padding: 15px 20px;
+    align-items: center;
+
+}
+.form-flex h1 {
+  padding: 0 20px;
   
 }
