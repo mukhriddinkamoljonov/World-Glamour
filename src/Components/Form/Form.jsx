@@ -84,7 +84,7 @@ const Form = () => {
           </div>
         </div>{" "}
         <button class="button-48" role="button">
-          <span class="texta">Button 48</span>
+          <span class="texta">To'lov</span>
         </button>
       </form>
     </div>

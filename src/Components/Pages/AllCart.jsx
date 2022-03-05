@@ -235,10 +235,7 @@ const AllCart = () => {
                     <img src="assets/img/ads.jpg" alt="title" />
                   </div>
                 </div>
-
-                <div class="panel panel-default sidebar-menu wow fadeInRight animated">
-                  <Form item={item} />
-                </div>
+                <Form item={item} />
               </aside>
             </div>
           </div>
