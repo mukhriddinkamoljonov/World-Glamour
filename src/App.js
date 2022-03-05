@@ -12,7 +12,6 @@ import { useState } from "react";
 
 function App() {
   const [query, setQuery] = useState("");
-  console.log(query);
   return (
     <div>
       <Navbar setQuery={setQuery} />

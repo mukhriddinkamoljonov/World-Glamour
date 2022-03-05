@@ -2,66 +2,69 @@ import React, { useState, useEffect } from "react";
 import Button from "./button";
 
 const Form = ({ item }) => {
-  const [name, setName] = useState("");
   const [fullname, setFullName] = useState([]);
   const [passport, setPassport] = useState([]);
+  const [number, setNumber] = useState([]);
   const [count, setCount] = useState(1);
   const [prices, setPrices] = useState([]);
-  const [priceItem, setPriceItem] = useState(0);
+  const [price, setPrice] = useState(100);
 
-  useEffect(() => {
-    createPriceList();
-  }, []);
+  console.log(item);
+  //   useEffect((item) => {
+  //     console.log(item);
+  //     createPriceList(item);
+  //   }, []);
+  //   const createPriceList = (item) => {
+  //     let pricesList = [
+  //       {
+  //         price: item.price1,
+  //         about: item.price1_description,
+  //       },
+  //     ];
+  //     if (item.price2) {
+  //       prices.push({
+  //         price: item.price2,
+  //         about: item.price2_description,
+  //       });
+  //     }
+  //     if (item.price3) {
+  //       prices.push({
+  //         price: item.price3,
+  //         about: item.price3_description,
+  //       });
+  //     }
+  //     setPrices(pricesList);
+  //     setPrice(pricesList[0].price);
+  //   };
 
-  const createPriceList = () => {
-    let pricesList = [
-      {
-        price: item.price1,
-        about: item.price1_description,
-      },
-    ];
-    if (item.price2) {
-      prices.push({
-        price: item.price2,
-        about: item.price2_description,
-      });
-    }
-    if (item.price3) {
-      prices.push({
-        price: item.price3,
-        about: item.price3_description,
-      });
-    }
-    setPrices(pricesList);
-    setPriceItem(prices[0]);
-    console.log(pricesList);
-  };
+  console.log(prices);
+  console.log(price);
 
   let incrementCount = () => {
     setCount(count + 1);
   };
+
   let decrementCount = () => {
-    setCount(count - 1);
+    if (count > 1) setCount(count - 1);
   };
 
-  const handleSubmit = (e, item) => {
-    console.log(item);
-    e.preventDefault();
+  const payButton = () => {
+    console.log();
     const data = {
-      id: item.id,
-      name,
-      fullname,
-      passport,
+      amount: price,
+      number_of_people: count,
+      place_id: item.id,
+      place_name: item.name,
+      customer_full_name: fullname,
+      customer_passport: passport,
+      customer_phone_number: number,
     };
     console.log(data);
   };
-  console.log(item.id);
-
-  const payButton = () => {};
 
   return (
     <div className="container2">
-      <form onChange={handleSubmit} onSubmit={(e) => e.preventDefault()}>
+      <form onSubmit={(e) => e.preventDefault()}>
         <div className="row">
           <h4>Buyurtma qilish</h4>
           <div className="input-group input-group-icon">
@@ -77,7 +80,7 @@ const Form = ({ item }) => {
           </div>
           <div className="input-group input-group-icon">
             <input
-              type="email"
+              type="text"
               placeholder="Pasport seriya raqam"
               value={passport}
               onChange={(e) => setPassport(e.target.value)}
@@ -87,7 +90,12 @@ const Form = ({ item }) => {
             </div>
           </div>
           <div className="input-group input-group-icon">
-            <input type="password" placeholder="Telefon raqam" />
+            <input
+              type="number"
+              placeholder="Telefon raqam"
+              value={number}
+              onChange={(e) => setNumber(e.target.value)}
+            />
             <div className="input-icon">
               <i className="fa-solid fa-square-phone-flip"></i>{" "}
             </div>
@@ -96,7 +104,7 @@ const Form = ({ item }) => {
         <div className="row">
           <div>
             <div className="count">
-              {/* <h3>Summa: {priceItem.price} so'm</h3> */}
+              <h3>Summa: {price} so'm</h3>
             </div>
             <div className="form-flex">
               <h1>{count}</h1>
@@ -116,7 +124,9 @@ const Form = ({ item }) => {
           </div>{" "}
         </div>
         <button class="button-48">
-          <span class="texta">To'lov</span>
+          <span class="texta" onClick={payButton}>
+            To'lov
+          </span>
         </button>
       </form>
     </div>
