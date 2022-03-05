@@ -40,8 +40,10 @@ const Form = ({ item }) => {
   };
 
   let incrementCount = () => {
-    setCount(count + 1);
-    setActivePrice(activePrice + price);
+    if (count < 5) {
+      setCount(count + 1);
+      setActivePrice(activePrice + price);
+    }
   };
 
   let decrementCount = () => {
