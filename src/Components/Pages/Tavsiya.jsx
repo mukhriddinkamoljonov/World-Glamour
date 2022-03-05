@@ -18,7 +18,6 @@ const Tavsiya = ({ title, count }) => {
         console.log(error);
       });
   }, []);
-  console.log(count);
   return (
     <div class="panel panel-default sidebar-menu similar-property-wdg wow fadeInRight animated">
       <div class="panel-heading">
