@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { useState, useEffect } from "react";
 import Button from "./button";
 
@@ -39,8 +40,10 @@ const Form = ({ item }) => {
   };
 
   let incrementCount = () => {
-    setCount(count + 1);
-    setActivePrice(activePrice + price);
+    if (count < 5) {
+      setCount(count + 1);
+      setActivePrice(activePrice + price);
+    }
   };
 
   let decrementCount = () => {
@@ -60,7 +63,31 @@ const Form = ({ item }) => {
       customer_passport: passport,
       customer_phone_number: number,
     };
-    console.log(data);
+
+    const createOrderUrl = `https://paymewgtour.pythonanywhere.com/api/order/create/`;
+    const paymentCheckoutUrl = `https://paymewgtour.pythonanywhere.com/api/payment/checkout/`;
+
+    function getCheckoutUrl(data) {
+      axios
+        .post(paymentCheckoutUrl, data)
+        .then((response) => console.log(response.data));
+    }
+
+    axios.post(createOrderUrl, data).then(
+      (response) => {
+        if (response.status === 201) {
+          const data = {
+            id: response.data.id,
+            amount: response.data.amount_for_payme,
+            return_url: `https://worldglamour.uz/places/${item.id}`,
+          };
+          getCheckoutUrl(data);
+        }
+      },
+      (error) => {
+        console.log(error);
+      }
+    );
   };
 
   return (
