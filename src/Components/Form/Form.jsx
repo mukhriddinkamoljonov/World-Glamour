@@ -8,44 +8,51 @@ const Form = ({ item }) => {
   const [count, setCount] = useState(1);
   const [prices, setPrices] = useState([]);
   const [price, setPrice] = useState(100);
+  const [activePrice, setActivePrice] = useState(100);
 
   console.log(item);
-  //   useEffect((item) => {
-  //     console.log(item);
-  //     createPriceList(item);
-  //   }, []);
-  //   const createPriceList = (item) => {
-  //     let pricesList = [
-  //       {
-  //         price: item.price1,
-  //         about: item.price1_description,
-  //       },
-  //     ];
-  //     if (item.price2) {
-  //       prices.push({
-  //         price: item.price2,
-  //         about: item.price2_description,
-  //       });
-  //     }
-  //     if (item.price3) {
-  //       prices.push({
-  //         price: item.price3,
-  //         about: item.price3_description,
-  //       });
-  //     }
-  //     setPrices(pricesList);
-  //     setPrice(pricesList[0].price);
-  //   };
+
+  useEffect(() => {
+    createPriceList();
+  }, []);
+
+  const createPriceList = () => {
+    let pricesList = [
+      {
+        price: item.price1,
+        about: item.price1_description,
+      },
+    ];
+    if (item.price2) {
+      prices.push({
+        price: item.price2,
+        about: item.price2_description,
+      });
+    }
+    if (item.price3) {
+      prices.push({
+        price: item.price3,
+        about: item.price3_description,
+      });
+    }
+    setPrices(pricesList);
+    setPrice(Number(pricesList[0].price));
+    setActivePrice(Number(pricesList[0].price));
+  };
 
   console.log(prices);
   console.log(price);
 
   let incrementCount = () => {
     setCount(count + 1);
+    setActivePrice(activePrice + price);
   };
 
   let decrementCount = () => {
-    if (count > 1) setCount(count - 1);
+    if (count > 1) {
+      setCount(count - 1);
+      setActivePrice(activePrice - price);
+    }
   };
 
   const payButton = () => {
@@ -104,7 +111,7 @@ const Form = ({ item }) => {
         <div className="row">
           <div>
             <div className="count">
-              <h3>Summa: {price} so'm</h3>
+              <h3>Summa: {activePrice} so'm</h3>
             </div>
             <div className="form-flex">
               <h1>{count}</h1>
@@ -113,24 +120,11 @@ const Form = ({ item }) => {
                 <Button title={"+"} action={incrementCount} />
               </div>
             </div>
-          <button class="button-48">
-            <span class="texta">To'lov</span>
-          </button>
+            <button class="button-48" onClick={payButton}>
+              <span class="texta">To'lov</span>
+            </button>
           </div>
-          {/* <div className="col-half">
-            <div className="input-group">
-            <select>
-            <option>01 Jan</option>
-            <option>02 Jan</option>
-            </select>
-            </div>
-          </div>{" "} */}
         </div>
-        <button class="button-48">
-          <span class="texta" onClick={payButton}>
-            To'lov
-          </span>
-        </button>
       </form>
     </div>
   );
