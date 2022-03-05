@@ -41,14 +41,14 @@ const Footer = () => {
                 </h6>
                 <ul className="footer-adress">
                   <li>
-                    <i className="pe-7s-map-marker strong"> </i> Farg'ona
-                    shahar, Birodarlik 28 uy
+                    <i className="pe-7s-map-marker strong"> </i> Farg'ona sh,
+                    B.Al-Marg'inoniy k, 12{" "}
                   </li>
                   <li>
                     <i className="pe-7s-mail strong"> </i> rnj-787@mail.ru
                   </li>
                   <li>
-                    <i className="pe-7s-call strong"> </i> (998) 97 214 44 01
+                    <i className="pe-7s-call strong"> </i> +(998) 97 214 44 01
                   </li>
                 </ul>
               </div>
@@ -116,7 +116,7 @@ const Footer = () => {
                           <a href="single.html">{item.name} </a>
                         </h6>
                         <p
-                          style={{ lineHeight: "17px", padding: "8px 2px" }}
+                          style={{ lineHeight: "17px" }}
                           dangerouslySetInnerHTML={{
                             __html: item.direction,
                           }}
@@ -133,7 +133,7 @@ const Footer = () => {
                 <div className="footer-title-line"></div>
                 <p>Barcha xuquqlar himoyalangan. Batafsil ma'lumot uchun:</p>
 
-                <p>(998) 90 353-01-04</p>
+                <p>+(998) 97 413 93 11</p>
 
                 <form>
                   <div className="input-group">

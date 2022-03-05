@@ -7,16 +7,16 @@ function smallCard({ item }) {
     <div className="col-sm-6 col-md-3 p0 card-image1">
       <div className="box-two proerty-item">
         <div className="item-thumb">
-          <a href="property-1.html">
+          <Link to={`/places/${item.id}`}>
             <img
               src={item.images.length ? item.images[0].file : NoImage}
               alt={""}
             />
-          </a>
+          </Link>
         </div>
         <div className="item-entry overflow">
           <h5>
-            <a href="property-1.html">{item.name} </a>
+            <Link to={`/places/${item.id}`}>{item.name} </Link>
           </h5>
           <div className="dot-hr"></div>
           <span className="pull-left">
