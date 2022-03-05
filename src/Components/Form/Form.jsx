@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useState, useEffect } from "react";
 import { Link, Route } from "react-router-dom";
 import Button from "./button";
-import payme from "../../img/payme_01.png"
+import payme from "../../img/payme_01.png";
 
 const Form = ({ item }) => {
   const [fullname, setFullName] = useState([]);
@@ -98,7 +98,7 @@ const Form = ({ item }) => {
       <form onSubmit={(e) => payButton(e)}>
         <div className="row">
           <h4>Buyurtma qilish</h4>
-            
+
           <div className="input-group input-group-icon">
             <input
               required
@@ -152,7 +152,6 @@ const Form = ({ item }) => {
             <button class="button-48" onClick={payButton}>
               <span class="texta">To'lov</span>
             </button>
-            <img className="payme" src={payme} alt="" />
           </div>
         </div>
       </form>
