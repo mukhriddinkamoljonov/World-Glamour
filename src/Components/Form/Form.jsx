@@ -106,9 +106,8 @@ const Form = ({ item }) => {
               <h3>Summa: {activePrice} so'm</h3>
             </div>
             <div className="form-flex">
-              <h1>{count}</h1>
               <div className="buttons">
-                <Button title={"-"} action={decrementCount} /> <br />
+                <Button title={"-"} action={decrementCount} /> <h1>{count}</h1>
                 <Button title={"+"} action={incrementCount} />
               </div>
             </div>
