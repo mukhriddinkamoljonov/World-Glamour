@@ -52,38 +52,16 @@ const Form = () => {
               </div>
             </div>
           </div>
-          {/* <div className="col-half">
-            <div className="input-group input-group-icon">
-              <input type="text" placeholder="Card CVC" />
-              <div className="input-icon">
-                <i className="fa fa-user"></i>
-              </div>
-            </div>
-          </div> */}
           <div className="col-half">
             <div className="input-group">
               <select>
                 <option>01 Jan</option>
                 <option>02 Jan</option>
               </select>
-              <select>
-                <option>2015</option>
-                <option>2016</option>
-              </select>
             </div>
           </div>{" "}
         </div>
-        <div className="row">
-          <h4>Ushbu turni bron qiling!</h4>
-          <div className="input-group">
-            <input id="terms" type="checkbox" />
-            <label for="terms">
-              I accept the terms and conditions for signing up to this service,
-              and hereby confirm I have read the privacy policy.
-            </label>
-          </div>
-        </div>{" "}
-        <button class="button-48" role="button">
+        <button class="button-48" onClick={""}>
           <span class="texta">To'lov</span>
         </button>
       </form>

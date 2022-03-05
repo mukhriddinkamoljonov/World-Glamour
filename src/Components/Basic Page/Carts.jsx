@@ -1,8 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import "./Main.css";
-import NoImage from "../../img/no-image.jpg";
+import SmallCard from "./SmallCard";
 
 const Carts = ({ query }) => {
   const [items, setItems] = useState([]);
@@ -41,34 +40,7 @@ const Carts = ({ query }) => {
               {items
                 .filter((item) => item.name.toLowerCase().includes(query))
                 .map((item) => (
-                  <div className="col-sm-6 col-md-3 p0 card-image1">
-                    <div className="box-two proerty-item">
-                      <div className="item-thumb">
-                        <a href="property-1.html">
-                          <img
-                            src={
-                              item.images.length ? item.images[0].file : NoImage
-                            }
-                            alt={""}
-                          />
-                        </a>
-                      </div>
-                      <div className="item-entry overflow">
-                        <h5>
-                          <a href="property-1.html">{item.name} </a>
-                        </h5>
-                        <div className="dot-hr"></div>
-                        <span className="pull-left">
-                          <Link to={`/places/${item.id}`} className="btn-grad">
-                            Batafsil
-                          </Link>{" "}
-                        </span>
-                        <span className="proerty-price pull-right">
-                          {item.price1} so'm
-                        </span>
-                      </div>
-                    </div>
-                  </div>
+                  <SmallCard item={item} id={item.id} />
                 ))}
 
               <div className="col-sm-6 col-md-3 p0 card-image1">
@@ -198,8 +170,7 @@ const Carts = ({ query }) => {
                       href="https://www.worldometers.info/coronavirus/"
                     >
                       <button
-                        className="border-btn more-black"
-                        className="btn "
+                        className="btn border-btn more-black"
                         value="All properties"
                       >
                         Batafsil
