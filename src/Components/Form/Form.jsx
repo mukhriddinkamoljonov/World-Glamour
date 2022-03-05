@@ -1,6 +1,8 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
+import { Link, Route } from "react-router-dom";
 import Button from "./button";
+import payme from "../../img/payme_01.png"
 
 const Form = ({ item }) => {
   const [fullname, setFullName] = useState([]);
@@ -53,9 +55,10 @@ const Form = ({ item }) => {
     }
   };
 
-  const payButton = () => {
+  const payButton = (e) => {
+    e.preventDefault();
     const data = {
-      amount: price,
+      amount: activePrice,
       number_of_people: count,
       place_id: item.id,
       place_name: item.name,
@@ -70,7 +73,7 @@ const Form = ({ item }) => {
     function getCheckoutUrl(data) {
       axios
         .post(paymentCheckoutUrl, data)
-        .then((response) => console.log(response.data));
+        .then((response) => window.location.assign(response.data.url));
     }
 
     axios.post(createOrderUrl, data).then(
@@ -92,11 +95,13 @@ const Form = ({ item }) => {
 
   return (
     <div className="container2">
-      <form onSubmit={(e) => e.preventDefault()}>
+      <form onSubmit={(e) => payButton(e)}>
         <div className="row">
           <h4>Buyurtma qilish</h4>
+            
           <div className="input-group input-group-icon">
             <input
+              required
               type="text"
               placeholder="F.I.O"
               value={fullname}
@@ -108,6 +113,7 @@ const Form = ({ item }) => {
           </div>
           <div className="input-group input-group-icon">
             <input
+              required
               type="text"
               placeholder="Pasport seriya raqam"
               value={passport}
@@ -119,12 +125,13 @@ const Form = ({ item }) => {
           </div>
           <div className="input-group input-group-icon">
             <input
+              required
               type="number"
               placeholder="Telefon raqam"
               value={number}
               onChange={(e) => setNumber(e.target.value)}
             />
-            <div className="input-icon">+998</div>
+            <div style={{top:"5px"}} className="input-icon">+998</div>
           </div>
         </div>
         <div className="row">
@@ -135,13 +142,14 @@ const Form = ({ item }) => {
             <div className="form-flex">
               <div className="buttons">
                 <Button title={"-"} action={decrementCount} />
-                  <h1>{count}</h1>
+                <h1>{count}</h1>
                 <Button title={"+"} action={incrementCount} />
               </div>
             </div>
-            <button class="button-48" onClick={payButton}>
-              <span class="texta">To'lov</span>
+            <button className="button-48" type="submit">
+              <span className="texta">To'lov</span>
             </button>
+            <img className="payme" src={payme} alt="" />
           </div>
         </div>
       </form>
