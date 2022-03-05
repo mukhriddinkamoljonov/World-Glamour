@@ -5,6 +5,9 @@
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
   box-sizing: border-box;
   color: #1a202c;
+  border-radius: 3px;
+  padding: 10px 15px;
+  background-color: #fff;
   display: inline-flex;
   font-family: Inter, sans-serif;
   font-size: 25px;
@@ -129,7 +132,7 @@
 
 .texta {
   color: #fff;
-  background-color: #f5c65d;
+  /* background-color: #f5c65d; */
 }
 .form-flex {
   background-color: #f5c65d;
@@ -138,6 +141,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 3px;
   
 }
 .form-flex .buttons {

@@ -127,11 +127,17 @@ const Form = ({ item }) => {
         <div className="row">
           <div>
             <div className="count">
-              <h3>Summa: {activePrice} so'm</h3>
+              <h3>Qiymat: 
+                {activePrice} so'm
+              </h3>
             </div>{" "}
             <div>
               <div class="input-group">
-                <select ref={selectPrice} onChange={select}>
+                <select
+                  style={{ width: "273px", height: "35px", padding: "0" }}
+                  ref={selectPrice}
+                  onChange={select}
+                >
                   {item.price1 ? (
                     <option value={item.price1}>
                       {item.price1_description} {item.price1}
