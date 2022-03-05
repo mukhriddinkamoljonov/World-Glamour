@@ -125,7 +125,9 @@ const Form = ({ item }) => {
               value={number}
               onChange={(e) => setNumber(e.target.value)}
             />
-            <div style={{top:"5px"}} className="input-icon">+998</div>
+            <div style={{ top: "5px" }} className="input-icon">
+              +998
+            </div>
           </div>
         </div>
         <div className="row">
@@ -136,14 +138,14 @@ const Form = ({ item }) => {
             <div className="form-flex">
               <div className="buttons">
                 <Button title={"-"} action={decrementCount} />
-                  <h2>{count}</h2>
+                <h2>{count}</h2>
                 <Button title={"+"} action={incrementCount} />
               </div>
             </div>
+            <img className="payme" src={payme} alt="" />
             <button class="button-48" onClick={payButton}>
               <span class="texta">To'lov</span>
             </button>
-            <img className="payme" src={payme} alt="" />
           </div>
         </div>
       </form>
