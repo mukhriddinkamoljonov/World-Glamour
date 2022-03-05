@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Tavsiya from "./Tavsiya";
 import NoImage from "../../img/no-image.jpg";
+import { Link } from "react-router-dom";
 
 function Shaharlar({ query, setQuery }) {
   const [type, setType] = useState([]);
@@ -134,13 +135,17 @@ function Shaharlar({ query, setQuery }) {
                                     ? item.images[0].file
                                     : NoImage
                                 }
-                                alt={""}
+                                alt={item.name}
+                                style={{ height: "90px" }}
                               />
                             </div>
 
                             <div className="item-entry overflow">
                               <h5>
-                                <a href="property-1.html"> {item.name}</a>
+                                <Link to={`/places/${item.id}`}>
+                                  {" "}
+                                  {item.name}
+                                </Link>
                               </h5>
                               <div className="dot-hr"></div>
                               <span className="pull-left">
@@ -163,218 +168,6 @@ function Shaharlar({ query, setQuery }) {
                           </div>
                         </div>
                       ))}
-
-                    <div className="col-sm-6 col-md-4 p0">
-                      <div className="box-two proerty-item">
-                        <div className="item-thumb">
-                          <a href="property-1.html">
-                            <img src="assets/img/demo/property-1.jpg" />
-                          </a>
-                        </div>
-
-                        <div className="item-entry overflow">
-                          <h5>
-                            <a href="property-1.html">Buxoro shahri</a>
-                          </h5>
-                          <div className="dot-hr"></div>
-                          <span className="pull-left">
-                            <b> Area :</b> 120m{" "}
-                          </span>
-                          <span className="proerty-price pull-right">
-                            {" "}
-                            $ 300,000
-                          </span>
-                          <p style={{ display: "none" }}>
-                            <span style={{ color: "orange" }}>Buxoro</span> -
-                            O'zbekistonning sayyohlik durdonalaridan biridir.
-                            Tarixiy shahar markazi YUNESKOning Butunjahon merosi
-                            ro'yxatiga kiritilgan.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="col-sm-6 col-md-4 p0">
-                      <div className="box-two proerty-item">
-                        <div className="item-thumb">
-                          <a href="property-1.html">
-                            <img src="assets/img/demo/property-3.jpg" />
-                          </a>
-                        </div>
-
-                        <div className="item-entry overflow">
-                          <h5>
-                            <a href="property-1.html">Xiva shahri</a>
-                          </h5>
-                          <div className="dot-hr"></div>
-                          <span className="pull-left">
-                            <b> Area :</b> 120m{" "}
-                          </span>
-                          <span className="proerty-price pull-right">
-                            {" "}
-                            $ 300,000
-                          </span>
-                          <p style={{ display: "none" }}>
-                            <span style={{ color: "orange" }}> Xiva</span> -
-                            qadimiy devorlar, minoralar va loydan qurilgan
-                            betakror binolar shahri.Sharqning haqiqiy
-                            go‘zalligini ko‘rishni istasangiz, Xivaga tashrif
-                            buyuring.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="col-sm-6 col-md-4 p0">
-                      <div className="box-two proerty-item">
-                        <div className="item-thumb">
-                          <a href="property-1.html">
-                            <img src="assets/img/demo/property-1.jpg" />
-                          </a>
-                        </div>
-
-                        <div className="item-entry overflow">
-                          <h5>
-                            <a href="property-1.html"> Qoqon shahri </a>
-                          </h5>
-                          <div className="dot-hr"></div>
-                          <span className="pull-left">
-                            <b> Area :</b> 120m{" "}
-                          </span>
-                          <span className="proerty-price pull-right">
-                            {" "}
-                            $ 300,000
-                          </span>
-                          <p style={{ display: "none" }}>
-                            <span style={{ color: "orange" }}>Qo'qon</span> -
-                            Shahar hashamatli yodgorliklarga va ulug‘vor
-                            madrasalarga boy va bu ajablanarli emas, chunki
-                            Qo‘qon ilm-fan rivojlanishining markazi edi.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="col-sm-6 col-md-4 p0">
-                      <div className="box-two proerty-item">
-                        <div className="item-thumb">
-                          <a href="property-1.html">
-                            <img src="assets/img/demo/property-2.jpg" />
-                          </a>
-                        </div>
-
-                        <div className="item-entry overflow">
-                          <h5>
-                            <a href="property-1.html"> Qarshi shahri</a>
-                          </h5>
-                          <div className="dot-hr"></div>
-                          <span className="pull-left">
-                            <b> Area :</b> 120m{" "}
-                          </span>
-                          <span className="proerty-price pull-right">
-                            {" "}
-                            $ 300,000
-                          </span>
-                          <p style={{ display: "none" }}>
-                            <span style={{ color: "orange" }}>Qarshi</span> -
-                            Qadimiy Qarshi shahri 2006 yilda YUNESKO shafeligida
-                            2700 yillik yubileyini nishonladi. Buyuk Aleksandr
-                            Makedonskiy bu yerda bo‘lgan.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="col-sm-6 col-md-4 p0">
-                      <div className="box-two proerty-item">
-                        <div className="item-thumb">
-                          <a href="property-1.html">
-                            <img src="assets/img/demo/property-3.jpg" />
-                          </a>
-                        </div>
-
-                        <div className="item-entry overflow">
-                          <h5>
-                            <a href="property-1.html">Andijon shahri</a>
-                          </h5>
-                          <div className="dot-hr"></div>
-                          <span className="pull-left">
-                            <b> Area :</b> 120m{" "}
-                          </span>
-                          <span className="proerty-price pull-right">
-                            {" "}
-                            $ 300,000
-                          </span>
-                          <p style={{ display: "none" }}>
-                            <span style={{ color: "orange" }}> Andijon </span> -
-                            Bir vaqtlar Buyuk Ipak yo‘li bo‘ylab joylashgan,
-                            arxeologik yodgorliklar va tarixiy obidalarga boy
-                            bo‘lgan shahar.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="col-sm-6 col-md-4 p0">
-                      <div className="box-two proerty-item">
-                        <div className="item-thumb">
-                          <a href="property-1.html">
-                            <img src="assets/img/demo/property-2.jpg" />
-                          </a>
-                        </div>
-
-                        <div className="item-entry overflow">
-                          <h5>
-                            <a href="property-1.html">Mo'ynoq shahri</a>
-                          </h5>
-                          <div className="dot-hr"></div>
-                          <span className="pull-left">
-                            <b> Area :</b> 120m{" "}
-                          </span>
-                          <span className="proerty-price pull-right">
-                            {" "}
-                            $ 300,000
-                          </span>
-                          <p style={{ display: "none" }}>
-                            <span style={{ color: "orange" }}>Mo‘ynoq</span> -
-                            O‘rta Osiyodagi eng yirik baliq ovlash shaharlaridan
-                            biri edi.Bu yerda toza suv bilan daryo baliqlari,
-                            ko‘plab dam olish joylari bo‘lgan ajoyib plyajlar
-                            bor edi.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="col-sm-6 col-md-4 p0">
-                      <div className="box-two proerty-item">
-                        <div className="item-thumb">
-                          <a href="property-1.html">
-                            <img src="assets/img/demo/property-1.jpg" />
-                          </a>
-                        </div>
-
-                        <div className="item-entry overflow">
-                          <h5>
-                            <a href="property-1.html">Zomin shaharchasi</a>
-                          </h5>
-                          <div className="dot-hr"></div>
-                          <span className="pull-left">
-                            <b> Area :</b> 120m{" "}
-                          </span>
-                          <span className="proerty-price pull-right">
-                            {" "}
-                            $ 300,000
-                          </span>
-                          <p style={{ display: "none" }}>
-                            <span style={{ color: "orange" }}>Zomin</span> -
-                            Ajoyib landshaftlar va toza tog‘ havosi, flora va
-                            faunaning xilma-xilligi, qadimiy ziyoratgohlar va
-                            noyob milliy sihatgoh - bularning barchasi Zomin.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 </div>
               ) : (

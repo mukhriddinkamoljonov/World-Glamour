@@ -22,7 +22,7 @@ function smallCard({ item }) {
           <span className="pull-left">
             <Link to={`/places/${item.id}`} className="btn-grad">
               Batafsil
-            </Link>{" "}
+            </Link>
           </span>
           <span className="proerty-price pull-right">{item.price1} so'm</span>
         </div>
