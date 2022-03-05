@@ -7,6 +7,7 @@ import calendar from "../../../img/calendar2.ico";
 import chat from "../../../img/chat.png";
 import heart from "../../../img/heart.png";
 import Tavsiya from "../Tavsiya";
+import Map from "../../Map/Map";
 
 function AboutWe() {
   const [items, setItems] = useState([]);
@@ -296,7 +297,8 @@ function AboutWe() {
               </div>
             </div>
             <hr />
-            <div className="map">
+            {/* <Map/> */}
+            {/* <div className="map">
               <p>
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d537.2651725468306!2d71.78190299388464!3d40.38157763842583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bb834e3d0e41df%3A0xde0b15447812c74f!2s%22Festival%22%20ko&#39;ngilochar%20markazi!5e0!3m2!1sru!2s!4v1645117370976!5m2!1sru!2s"
@@ -307,7 +309,7 @@ function AboutWe() {
                   loading="lazy"
                 ></iframe>
               </p>
-            </div>
+            </div> */}
             <hr />
             <div className="row">
               <div class="col-sm-4">

@@ -2,11 +2,16 @@ import React, { useState, useEffect } from "react";
 import Button from "./button";
 
 const Form = ({ item }) => {
+  const [name, setName] = useState("");
+  const [fullname, setFullName] = useState([]);
+  const [passport, setPassport] = useState([]);
   const [count, setCount] = useState(1);
   const [prices, setPrices] = useState([]);
   const [priceItem, setPriceItem] = useState(0);
 
-  useEffect(() => createPriceList());
+  useEffect(() => {
+    createPriceList();
+  }, []);
 
   const createPriceList = () => {
     let pricesList = [
@@ -35,15 +40,22 @@ const Form = ({ item }) => {
   let incrementCount = () => {
     setCount(count + 1);
   };
-
   let decrementCount = () => {
     setCount(count - 1);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e, item) => {
+    console.log(item);
     e.preventDefault();
+    const data = {
+      id: item.id,
+      name,
+      fullname,
+      passport,
+    };
+    console.log(data);
   };
-  console.log(prices, "salom");
+  console.log(item.id);
 
   const payButton = () => {};
 
@@ -53,13 +65,23 @@ const Form = ({ item }) => {
         <div className="row">
           <h4>Buyurtma qilish</h4>
           <div className="input-group input-group-icon">
-            <input type="text" placeholder="F.I.O" />
+            <input
+              type="text"
+              placeholder="F.I.O"
+              value={fullname}
+              onChange={(e) => setFullName(e.target.value)}
+            />
             <div className="input-icon">
               <i className="fa fa-user"></i>
             </div>
           </div>
           <div className="input-group input-group-icon">
-            <input type="email" placeholder="Pasport seriya raqam" />
+            <input
+              type="email"
+              placeholder="Pasport seriya raqam"
+              value={passport}
+              onChange={(e) => setPassport(e.target.value)}
+            />
             <div className="input-icon">
               <i className="fa-solid fa-passport"></i>{" "}
             </div>
@@ -74,7 +96,7 @@ const Form = ({ item }) => {
         <div className="row">
           <div>
             <div className="count">
-              <h3>Summa: {priceItem.price} so'm</h3>
+              {/* <h3>Summa: {priceItem.price} so'm</h3> */}
             </div>
             <div className="form-flex">
               <h1>{count}</h1>
