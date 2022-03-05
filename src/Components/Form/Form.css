@@ -8,6 +8,8 @@
   display: inline-flex;
   font-family: Inter, sans-serif;
   font-size: 25px;
+  padding: 10px 15px;
+  background-color: #fff;
   font-weight: 700;
   justify-content: center;
   line-height: 10px;
@@ -139,14 +141,10 @@
   justify-content: center;
   align-items: center;
 }
+
 .form-flex .buttons {
   display: flex;
   justify-content: center;
-  align-items: center;
-}
-.form-flex button {
-  background-color: #fff;
-  padding: 8px 20px;
   align-items: center;
 }
 .form-flex h2 {
