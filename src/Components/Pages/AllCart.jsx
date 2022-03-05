@@ -46,7 +46,7 @@ const AllCart = () => {
         style={{ backgroundColor: "#fcfcfc" }}
       >
         &nbsp;
-        <div class="contai ner">
+        <div class="container">
           <div class="clearfix padding-top-40">
             <div class="col-md-8 single-property-content prp-style-1">
               <div class="row">
