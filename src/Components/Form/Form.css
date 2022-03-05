@@ -4,8 +4,6 @@
 /* CSS */
 .btn-form {
   align-items: center;
-  background: rgb(164,164,164);
-  border: 0 solid #e2e8f0;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
   box-sizing: border-box;
@@ -14,14 +12,11 @@
   font-family: Inter, sans-serif;
   font-size: 2rem;
   font-weight: 700;
-  /* height: 36px; */
   justify-content: center;
   line-height: 10px;
   overflow-wrap: break-word;
-  padding: 5px;
   text-decoration: none;
   width: auto;
-  border-radius: 8px;
   cursor: pointer;
   user-select: none;
   -webkit-user-select: none;
@@ -90,7 +85,6 @@
   opacity: 1;
   outline: 0;
   padding: 1em 2.2em;
-  border: 1px solid;
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -104,9 +98,8 @@
   touch-action: manipulation;
   vertical-align: baseline;
   white-space: nowrap;
-  justify-content: center;
-  align-items: center;
-  margin-left: 90px;
+    left: 200px;
+    bottom: 60px;
 }
 
 .button-48:before {
@@ -145,8 +138,15 @@
 }
 .form-flex {
   background-color: #f5c65d;
-  width: 200px;
+  width: 180px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.form-flex .buttons {
+  margin-left: 40px;
+  background-color: #fff;
+  padding: 2px 20px ;
+  
 }

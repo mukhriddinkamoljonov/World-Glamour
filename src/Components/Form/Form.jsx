@@ -113,15 +113,18 @@ const Form = ({ item }) => {
                 <Button title={"+"} action={incrementCount} />
               </div>
             </div>
+          <button class="button-48">
+            <span class="texta">To'lov</span>
+          </button>
           </div>
-          <div className="col-half">
+          {/* <div className="col-half">
             <div className="input-group">
-              <select>
-                <option>01 Jan</option>
-                <option>02 Jan</option>
-              </select>
+            <select>
+            <option>01 Jan</option>
+            <option>02 Jan</option>
+            </select>
             </div>
-          </div>{" "}
+          </div>{" "} */}
         </div>
         <button class="button-48">
           <span class="texta" onClick={payButton}>

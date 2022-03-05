@@ -225,8 +225,7 @@ const AllCart = () => {
                     </div>
                   </div>
                 </div>
-                <Tavsiya title="Tavsiya Etamiz!" count="4" />
-
+                <Form item={item} />
                 <div class="panel panel-default sidebar-menu wow fadeInRight animated">
                   <div class="panel-heading">
                     <h3 class="panel-title">Ads her</h3>
@@ -235,7 +234,7 @@ const AllCart = () => {
                     <img src="assets/img/ads.jpg" alt="title" />
                   </div>
                 </div>
-                <Form item={item} />
+                <Tavsiya title="Tavsiya Etamiz!" count="4" />
               </aside>
             </div>
           </div>
