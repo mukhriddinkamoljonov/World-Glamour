@@ -87,7 +87,6 @@ const AllCart = () => {
                       </span>
                       {/* {item.direction} */}
                     </li>
-
                     <li>
                       <span class="col-xs-6 col-sm-4 col-md-4 add-d-title">
                         Dvomiyligi:
@@ -98,30 +97,64 @@ const AllCart = () => {
                     </li>
                     <h4 className="s-property-title">Takliflar</h4>
                     <li>
-                      <span class="col-xs-6 col-sm-4 col-md-4 add-d-title">
-                        {item.price1_description}
-                      </span>
-                      <span class="col-xs-6 col-sm-8 col-md-8 add-d-entry">
-                        {item.price2} so'm
-                      </span>
+                      {item.price1_description ? (
+                        <span class="col-xs-6 col-sm-4 col-md-4 add-d-title">
+                          {item.price1_description}
+                        </span>
+                      ) : (
+                        ""
+                      )}
+                      {item.price1 ? (
+                        <span class="col-xs-6 col-sm-8 col-md-8 add-d-entry">
+                          {item.price1} so'm
+                        </span>
+                      ) : (
+                        ""
+                      )}
                     </li>
-
+                    <li>
+                      {item.price2_description ? (
+                        <span class="col-xs-6 col-sm-4 col-md-4 add-d-title">
+                          {item.price2_description}
+                        </span>
+                      ) : (
+                        ""
+                      )}
+                      {item.price2 ? (
+                        <span class="col-xs-6 col-sm-8 col-md-8 add-d-entry">
+                          {item.price2} so'm
+                        </span>
+                      ) : (
+                        ""
+                      )}
+                    </li>
+                    <li>
+                      {item.price3_description ? (
+                        <span class="col-xs-6 col-sm-4 col-md-4 add-d-title">
+                          {item.price3_description}
+                        </span>
+                      ) : (
+                        ""
+                      )}
+                      {item.price3 ? (
+                        <span class="col-xs-6 col-sm-8 col-md-8 add-d-entry">
+                          {item.price3}
+                        </span>
+                      ) : (
+                        ""
+                      )}
+                    </li>
                     <li>
                       <span class="col-xs-6 col-sm-4 col-md-4 add-d-title">
-                        {item.price2_description}
+                        Imtiyozlar
                       </span>
-                      <span class="col-xs-6 col-sm-8 col-md-8 add-d-entry">
-                        {item.price3} so'm
-                      </span>
-                    </li>
-
-                    <li>
-                      <span class="col-xs-6 col-sm-4 col-md-4 add-d-title">
-                        {item.price3_description}
-                      </span>
-                      <span class="col-xs-6 col-sm-8 col-md-8 add-d-entry">
-                        {item.benefits}
-                      </span>
+                      {item.benefits ? (
+                        <span class="col-xs-6 col-sm-8 col-md-8 add-d-entry">
+                          {item.benefits}
+                        </span>
+                      ) : (
+                        ""
+                      )}
                     </li>
                   </ul>
                 </div>
