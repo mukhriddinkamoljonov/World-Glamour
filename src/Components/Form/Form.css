@@ -140,7 +140,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-<<<<<<< Updated upstream
   
 }
 .form-flex .buttons {
@@ -159,7 +158,4 @@
 .form-flex h1 {
   padding: 0 20px;
   
-=======
-  margin-left: 10px;
->>>>>>> Stashed changes
 }
