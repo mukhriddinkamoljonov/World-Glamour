@@ -159,7 +159,7 @@ const AllCart = () => {
                 <div class="section">
                   <h4 class="s-property-title">To'liq ma'lumot</h4>
                   <div class="s-property-content">
-                    <div
+                    <div 
                       dangerouslySetInnerHTML={{
                         __html: item.description,
                       }}
@@ -258,11 +258,9 @@ const AllCart = () => {
                 {item.id ? <Form item={item} /> : ""}
                 <div class="panel panel-default sidebar-menu wow fadeInRight animated">
                   <div class="panel-heading">
-                    <h3 class="panel-title">Ads her</h3>
+                    <h3 class="panel-title"></h3>
                   </div>
-                  <div class="panel-body recent-property-widget">
-                    <img src="assets/img/ads.jpg" alt="title" />
-                  </div>
+                  
                 </div>
                 <Tavsiya title="Tavsiya Etamiz!" count="4" />
               </aside>
