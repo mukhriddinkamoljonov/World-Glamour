@@ -1,6 +1,5 @@
 import axios from "axios";
-import React, { useState, useEffect } from "react";
-import { Link, Route } from "react-router-dom";
+import React, { useState, useEffect, useRef } from "react";
 import Button from "./button";
 import payme from "../../img/payme_01.png";
 
@@ -9,36 +8,19 @@ const Form = ({ item }) => {
   const [passport, setPassport] = useState([]);
   const [number, setNumber] = useState([]);
   const [count, setCount] = useState(1);
-  const [prices, setPrices] = useState([]);
   const [price, setPrice] = useState(100);
   const [activePrice, setActivePrice] = useState(100);
+
+  let selectPrice = useRef(item.price1);
 
   useEffect(() => {
     createPriceList();
   }, []);
 
   const createPriceList = () => {
-    let pricesList = [
-      {
-        price: item.price1,
-        about: item.price1_description,
-      },
-    ];
-    if (item.price2) {
-      prices.push({
-        price: item.price2,
-        about: item.price2_description,
-      });
-    }
-    if (item.price3) {
-      prices.push({
-        price: item.price3,
-        about: item.price3_description,
-      });
-    }
-    setPrices(pricesList);
-    setPrice(Number(pricesList[0].price));
-    setActivePrice(Number(pricesList[0].price));
+    let price = Number(item.price1);
+    setPrice(price);
+    setActivePrice(price);
   };
 
   let incrementCount = () => {
@@ -93,6 +75,12 @@ const Form = ({ item }) => {
     );
   };
 
+  const select = () => {
+    const newPrice = Number(selectPrice.current.value);
+    setPrice(newPrice);
+    setActivePrice(newPrice * count);
+  };
+
   return (
     <div className="container2">
       <form onSubmit={(e) => payButton(e)}>
@@ -140,6 +128,33 @@ const Form = ({ item }) => {
           <div>
             <div className="count">
               <h3>Summa: {activePrice} so'm</h3>
+            </div>{" "}
+            <div>
+              <div class="input-group">
+                <select ref={selectPrice} onChange={select}>
+                  {item.price1 ? (
+                    <option value={item.price1}>
+                      {item.price1_description} {item.price1}
+                    </option>
+                  ) : (
+                    ""
+                  )}
+                  {item.price2 ? (
+                    <option value={item.price2}>
+                      {item.price2_description} {item.price2}
+                    </option>
+                  ) : (
+                    ""
+                  )}
+                  {item.price3 ? (
+                    <option value={item.price3}>
+                      {item.price3_description} {item.price3}
+                    </option>
+                  ) : (
+                    ""
+                  )}
+                </select>
+              </div>
             </div>
             <div className="form-flex">
               <div className="buttons">
@@ -149,7 +164,7 @@ const Form = ({ item }) => {
               </div>
             </div>
             <img className="payme" src={payme} alt="" />
-            <button class="button-48" onClick={payButton}>
+            <button class="button-48" type="submit">
               <span class="texta">To'lov</span>
             </button>
           </div>

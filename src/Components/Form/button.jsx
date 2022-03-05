@@ -4,8 +4,8 @@ import "./Form.css";
 export default function Button(props) {
   let { action, title } = props;
   return (
-    <button className="btn-form" onClick={action}>
+    <div className="btn-form" onClick={action}>
       {title}
-    </button>
+    </div>
   );
 }
