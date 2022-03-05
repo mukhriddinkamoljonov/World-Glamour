@@ -10,8 +10,6 @@ const Form = ({ item }) => {
   const [price, setPrice] = useState(100);
   const [activePrice, setActivePrice] = useState(100);
 
-  console.log(item);
-
   useEffect(() => {
     createPriceList();
   }, []);
@@ -40,9 +38,6 @@ const Form = ({ item }) => {
     setActivePrice(Number(pricesList[0].price));
   };
 
-  console.log(prices);
-  console.log(price);
-
   let incrementCount = () => {
     setCount(count + 1);
     setActivePrice(activePrice + price);
@@ -56,7 +51,6 @@ const Form = ({ item }) => {
   };
 
   const payButton = () => {
-    console.log();
     const data = {
       amount: price,
       number_of_people: count,
@@ -103,9 +97,7 @@ const Form = ({ item }) => {
               value={number}
               onChange={(e) => setNumber(e.target.value)}
             />
-            <div className="input-icon">
-              <i className="fa-solid fa-square-phone-flip"></i>{" "}
-            </div>
+            <div className="input-icon">+998</div>
           </div>
         </div>
         <div className="row">
@@ -114,9 +106,8 @@ const Form = ({ item }) => {
               <h3>Summa: {activePrice} so'm</h3>
             </div>
             <div className="form-flex">
-              <h1>{count}</h1>
               <div className="buttons">
-                <Button title={"-"} action={decrementCount} /> 
+                <Button title={"-"} action={decrementCount} /> <h1>{count}</h1>
                 <Button title={"+"} action={incrementCount} />
               </div>
             </div>
