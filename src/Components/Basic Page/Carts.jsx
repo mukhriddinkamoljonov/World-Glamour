@@ -44,116 +44,6 @@ const Carts = ({ query }) => {
                 ))}
 
               <div className="col-sm-6 col-md-3 p0 card-image1">
-                <div className="box-two proerty-item">
-                  <div className="item-thumb">
-                    <a href="property-2.html">
-                      <img src="assets/img/demo/property-2.jpg" alt="title" />
-                    </a>
-                  </div>
-                  <div className="item-entry overflow">
-                    <h5>
-                      <a href="property-2.html">Samarqand</a>
-                    </h5>
-                    <div className="dot-hr"></div>
-                    <span className="pull-left">
-                      <button type="submit" className="btn-grad">
-                        Batafsil
-                      </button>{" "}
-                    </span>
-                    <span className="proerty-price pull-right">1 200,000</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-sm-6 col-md-3 p0 card-image1">
-                <div className="box-two proerty-item">
-                  <div className="item-thumb">
-                    <a href="property-3.html">
-                      <img src="assets/img/demo/property-3.jpg" alt="title" />
-                    </a>
-                  </div>
-                  <div className="item-entry overflow">
-                    <h5>
-                      <a href="property-3.html">Buxoro</a>
-                    </h5>
-                    <div className="dot-hr"></div>
-                    <span className="pull-left">
-                      <button type="submit" className="btn-grad">
-                        Batafsil
-                      </button>{" "}
-                    </span>
-                    <span className="proerty-price pull-right">1 300,000</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-sm-6 col-md-3 p0 card-image1">
-                <div className="box-two proerty-item">
-                  <div className="item-thumb">
-                    <a href="property-1.html">
-                      <img src="assets/img/demo/property-4.jpg" alt="title" />
-                    </a>
-                  </div>
-                  <div className="item-entry overflow">
-                    <h5>
-                      <a href="property-1.html">Xiva</a>
-                    </h5>
-                    <div className="dot-hr"></div>
-                    <span className="pull-left">
-                      <button type="submit" className="btn-grad">
-                        Batafsil
-                      </button>
-                    </span>
-                    <span className="proerty-price pull-right">1 000,000</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-sm-6 col-md-3 p0 card-image1">
-                <div className="box-two proerty-item">
-                  <div className="item-thumb">
-                    <a href="property-3.html">
-                      <img src="assets/img/demo/property-2.jpg" alt="title" />
-                    </a>
-                  </div>
-                  <div className="item-entry overflow">
-                    <h5>
-                      <a href="property-3.html">Qo'qon </a>
-                    </h5>
-                    <div className="dot-hr"></div>
-                    <span className="pull-left">
-                      <button type="submit" className="btn-grad">
-                        Batafsil
-                      </button>{" "}
-                    </span>
-                    <span className="proerty-price pull-right">800,000</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-sm-6 col-md-3 p0 card-image1">
-                <div className="box-two proerty-item">
-                  <div className="item-thumb">
-                    <a href="property-2.html">
-                      <img src="assets/img/demo/property-4.jpg" alt="title" />
-                    </a>
-                  </div>
-                  <div className="item-entry overflow">
-                    <h5>
-                      <a href="property-2.html">Rishton </a>
-                    </h5>
-                    <div className="dot-hr"></div>
-                    <span className="pull-left">
-                      <button type="submit" className="btn-grad">
-                        Batafsil
-                      </button>{" "}
-                    </span>
-                    <span className="proerty-price pull-right"> 300,000</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-sm-6 col-md-3 p0 card-image1">
                 <div className="box-tree more-proerty text-center">
                   <div className="item-tree-icon">
                     <i className="fa fa-th"></i>
@@ -170,7 +60,7 @@ const Carts = ({ query }) => {
                       href="https://www.worldometers.info/coronavirus/"
                     >
                       <button
-                        className="btn border-btn more-black"
+                        className="btn1 border-btn more-black"
                         value="All properties"
                       >
                         Batafsil

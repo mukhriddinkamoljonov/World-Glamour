@@ -11,7 +11,6 @@ const AllCart = () => {
   let { id } = useParams();
   const [item, setItem] = useState([]);
   const [itemData, setItemData] = useState([]);
-  const [items, setItems] = useState([]);
 
   useEffect(() => {
     axios
@@ -85,7 +84,6 @@ const AllCart = () => {
                           }}
                         ></div>
                       </span>
-                      {/* {item.direction} */}
                     </li>
                     <li>
                       <span class="col-xs-6 col-sm-4 col-md-4 add-d-title">
@@ -179,7 +177,6 @@ const AllCart = () => {
                     ></div>
                   </div>
                 </div>
-                {/* 1501507 */}
                 <div class="section property-video">
                   <h4 class="s-property-title"> Video</h4>
                   <div class="video-thumb">
