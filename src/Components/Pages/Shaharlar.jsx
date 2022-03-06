@@ -101,7 +101,7 @@ function Shaharlar({ query, setQuery }) {
                         type="checkbox"
                         id="prime"
                         value={checkboxPrime}
-                        onChange={(e)=> console.log(e.target.value)}
+                        onChange={(e) => console.log(e.target.value)}
                       />
                       <label htmlFor="prime">Ormgohlar</label>
                     </div>
@@ -115,6 +115,7 @@ function Shaharlar({ query, setQuery }) {
                           checkCheckbox();
                         }}
                       />
+
                       <label htmlFor="uzbekistan">O'zbekiston Shaharlari</label>
                     </div>
                     <div className="checkbox-container2">
