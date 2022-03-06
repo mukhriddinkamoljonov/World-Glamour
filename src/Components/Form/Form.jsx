@@ -4,12 +4,14 @@ import Button from "./button";
 import payme from "../../img/payme_01.png";
 
 const Form = ({ item }) => {
+  const hidden = ["hidden"];
   const [fullname, setFullName] = useState([]);
   const [passport, setPassport] = useState([]);
   const [number, setNumber] = useState([]);
   const [count, setCount] = useState(1);
   const [price, setPrice] = useState(100);
   const [activePrice, setActivePrice] = useState(100);
+  const [isActive, setActive] = useState(true);
 
   let selectPrice = useRef(item.price1);
 
@@ -73,6 +75,7 @@ const Form = ({ item }) => {
         console.log(error);
       }
     );
+    setActive(!isActive);
   };
 
   const select = () => {
@@ -127,7 +130,8 @@ const Form = ({ item }) => {
         <div className="row">
           <div>
             <div className="count">
-              <h3>Qiymat: 
+              <h3>
+                Qiymat:
                 {activePrice} so'm
               </h3>
             </div>{" "}
@@ -171,7 +175,7 @@ const Form = ({ item }) => {
             </div>
             <img className="payme" src={payme} alt="" />
             <button class="button-48" type="submit">
-              <span class="texta">To'lov</span>
+              <span className="texta">To'lov</span>
             </button>
           </div>
         </div>

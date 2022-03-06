@@ -168,55 +168,6 @@ function AboutWe() {
               </div>
               <Tavsiya title="SIZGA HAM YOQISHI MUMKIN" count="4" />
             </div>
-            <div className="panel sidebar-menu wow fadeInRight animated">
-              <div className="panel-heading">
-                <h3 className="panel-title">Tags</h3>
-              </div>
-              <div className="panel-body">
-                <ul className="tag-cloud">
-                  <li>
-                    <a href="/">
-                      <i className="fa fa-tags"></i> html5
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/">
-                      <i className="fa fa-tags"></i> css3
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/">
-                      <i className="fa fa-tags"></i> jquery
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/">
-                      <i className="fa fa-tags"></i> ajax
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/">
-                      <i className="fa fa-tags"></i> php
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/">
-                      <i className="fa fa-tags"></i> responsive
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/">
-                      <i className="fa fa-tags"></i> visio
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/">
-                      <i className="fa fa-tags"></i> bootstrap
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>{" "}
             <div className="count-area">
               <div className="container">
                 <div className="row">

@@ -142,26 +142,25 @@
   justify-content: center;
   align-items: center;
   border-radius: 3px;
-  
 }
 .form-flex .buttons {
   display: flex;
   justify-content: center;
   align-items: center;
-  
-
 }
 .form-flex button {
-    background-color:#fff;
-    padding: 8px 20px;
-    align-items: center;
-
+  background-color: #fff;
+  padding: 8px 20px;
+  align-items: center;
 }
 .form-flex h2 {
   padding: 0 30px;
-  
 }
 .payme {
   width: 100px;
   margin-right: 20px;
+}
+
+.hidden {
+  cursor: not-allowed;
 }

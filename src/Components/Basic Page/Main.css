@@ -258,3 +258,9 @@
   width: 100px;
   border-radius: 100%;
 }
+
+@media (min-width: 768px) {
+  .api-area {
+    margin-left: 100px;
+  }
+}

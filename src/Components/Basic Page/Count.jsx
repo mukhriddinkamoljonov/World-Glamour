@@ -4,7 +4,6 @@ import ruble from "../icons/ruble.png";
 import evro from "../icons/evro.png";
 import lira from "../icons/lira.png";
 import "./Main.css";
-import axios from "axios";
 
 const Count = () => {
   const endpoint = "latest";
@@ -28,7 +27,7 @@ const Count = () => {
   // }, []);
 
   return (
-    <div className="count-area">
+    <div className="count-area api-area">
       <div className="container">
         <div className="row">
           <div className="col-md-10 col-md-offset-1 col-sm-12 text-center page-title">

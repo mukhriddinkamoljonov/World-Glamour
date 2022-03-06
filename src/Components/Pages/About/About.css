@@ -98,8 +98,6 @@
 }
 .count-area {
   display: inline-block;
-  /* margin-top: 0; */
-  margin-left: 170px;
 }
 .count-area h5 {
   text-transform: capitalize;
