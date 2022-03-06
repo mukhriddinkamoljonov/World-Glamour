@@ -4,14 +4,17 @@ import Button from "./button";
 import payme from "../../img/payme_01.png";
 
 const Form = ({ item }) => {
-  const hidden = ["hidden"];
+  const [isActive, setActive] = useState(false);
+
+  const toggleClass = () => {
+    setActive(!isActive);
+  };
   const [fullname, setFullName] = useState([]);
   const [passport, setPassport] = useState([]);
   const [number, setNumber] = useState([]);
   const [count, setCount] = useState(1);
   const [price, setPrice] = useState(100);
   const [activePrice, setActivePrice] = useState(100);
-  const [isActive, setActive] = useState(true);
 
   let selectPrice = useRef(item.price1);
 
@@ -53,7 +56,6 @@ const Form = ({ item }) => {
 
     const createOrderUrl = `https://paymewgtour.pythonanywhere.com/api/order/create/`;
     const paymentCheckoutUrl = `https://paymewgtour.pythonanywhere.com/api/payment/checkout/`;
-
     function getCheckoutUrl(data) {
       axios
         .post(paymentCheckoutUrl, data)
@@ -66,6 +68,7 @@ const Form = ({ item }) => {
           const data = {
             id: response.data.id,
             amount: response.data.amount_for_payme,
+            return_url: `https://worldglamour.uz/places/${item.id}`,
           };
           getCheckoutUrl(data);
         }
@@ -74,7 +77,6 @@ const Form = ({ item }) => {
         console.log(error);
       }
     );
-    setActive(!isActive);
   };
 
   const select = () => {
@@ -173,7 +175,12 @@ const Form = ({ item }) => {
               </div>
             </div>
             <img className="payme" src={payme} alt="" />
-            <button class="button-48" type="submit">
+            <button
+              className={isActive ? "hidden" : "button_payme"}
+              // class="button_payme"
+              type="submit"
+              onClick={toggleClass}
+            >
               <span className="texta">To'lov</span>
             </button>
           </div>
