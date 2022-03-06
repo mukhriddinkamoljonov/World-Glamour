@@ -45,10 +45,10 @@ const AllCart = () => {
         style={{ backgroundColor: "#fcfcfc" }}
       >
         &nbsp;
-        <div class="container">
-          <div class="clearfix padding-top-40">
-            <div class="col-md-8 single-property-content prp-style-1">
-              <div class="row">
+        <div class="container_city">
+          <div class="clearfix">
+            <div class="col-md-8 single-property-content prp-style-1" >
+              <div class="row" style={{ marginLeft: "3px" }}>
                 <div class="light-slide-item">
                   <div className="slider-courusel">
                     <Carousel autoPlay={"	boolean"}>
@@ -159,7 +159,7 @@ const AllCart = () => {
                 <div class="section">
                   <h4 class="s-property-title">To'liq ma'lumot</h4>
                   <div class="s-property-content">
-                    <div 
+                    <div
                       dangerouslySetInnerHTML={{
                         __html: item.description,
                       }}
@@ -173,20 +173,6 @@ const AllCart = () => {
                     <div
                       dangerouslySetInnerHTML={{
                         __html: item.about_prices,
-                      }}
-                    ></div>
-                  </div>
-                </div>
-                <div class="section property-video">
-                  <h4 class="s-property-title"> Video</h4>
-                  <div class="video-thumb">
-                    <div
-                      class="video-popup"
-                      href="yout"
-                      title="Virtual Tour"
-                      style={{ width: "300px" }}
-                      dangerouslySetInnerHTML={{
-                        __html: item.video_link,
                       }}
                     ></div>
                   </div>
@@ -260,9 +246,22 @@ const AllCart = () => {
                   <div class="panel-heading">
                     <h3 class="panel-title"></h3>
                   </div>
-                  
                 </div>
-                <Tavsiya title="Tavsiya Etamiz!" count="4" />
+                <Tavsiya title="Tavsiya Etamiz!" count="4" />{" "}
+                <div class="section property-video">
+                  <h4 class="s-property-title"> Video</h4>
+                  <div class="video-thumb">
+                    <div
+                      class="video-popup"
+                      href="yout"
+                      title="Virtual Tour"
+                      style={{ width: "300px" }}
+                      dangerouslySetInnerHTML={{
+                        __html: item.video_link,
+                      }}
+                    ></div>
+                  </div>
+                </div>
               </aside>
             </div>
           </div>

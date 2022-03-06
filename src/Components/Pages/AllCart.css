@@ -200,23 +200,27 @@ select option {
 .col-third:last-of-type {
   padding-right: 0;
 }
-/* @media only screen and (max-width: 540px) {
-  .col-half {
-    width: 100%;
-    padding-right: 0;
+
+@media (min-width: 480px) {
+  .s-property-content {
+    text-align: justify !important;
+    width: 330px;
   }
-} */
+}
+
+@media (min-width: 768px) {
+  .s-property-content {
+    text-align: justify;
+    width: 720px;
+  }
+}
 
 .additional-details {
-  max-width: 720px;
   background-color: rgb(238, 238, 238);
 }
-.s-property-content {
-  text-align: justify;
-  width: 720px;
-}
+
 .property-video {
-  width: 500px;
+  width: 400px;
 }
 
 .icheckbox_square-yellow {
@@ -259,4 +263,22 @@ select option {
   text-align: center;
   justify-content: center;
   align-items: center;
+}
+
+.container_city {
+  margin-right: auto;
+  margin-left: 10px;
+}
+
+.box1 {
+}
+
+.box1 img {
+  height: inherit;
+  width: inherit;
+}
+
+.container_city .box1 {
+  width: 1000px;
+  height: 500px;
 }
