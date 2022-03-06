@@ -8,18 +8,11 @@ import AboutWe from "./Components/Pages/About/AboutWe";
 import AllCart from "./Components/Pages/AllCart";
 import Footer from "./Components/Basic Page/Footer";
 import Shaharlar from "./Components/Pages/Shaharlar";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 function App() {
   const [query, setQuery] = useState("");
-  const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 8000);
-  }, []);
   return (
     <div>
       <Navbar setQuery={setQuery} />

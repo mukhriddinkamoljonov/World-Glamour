@@ -4,15 +4,20 @@ import Tavsiya from "./Tavsiya";
 import NoImage from "../../img/no-image.jpg";
 
 function Shaharlar({ query, setQuery }) {
-  const [type, setType] = useState([]);
   const [isReady, setIsReady] = useState(null);
-  const [item, setItem] = useState([]);
+  const [places, setPlaces] = useState([]);
+  const [filtedData, setFiltedData] = useState([]);
+  const [checkboxPrime, setCheckboxPrime] = useState(false);
+  const [checkboxUzbekistan, setCheckboxUzbekistan] = useState(false);
+  const [checkboxAsia, setCheckboxAsia] = useState(false);
+  const [checkboxEurope, setCheckboxEurope] = useState(false);
 
   useEffect(() => {
     axios
-      .get(`https://wgtour.pythonanywhere.com/api/places/shuffle?count=7`)
+      .get(`https://wgtour.pythonanywhere.com/api/places`)
       .then((res) => {
-        setItem(res.data);
+        setPlaces(res.data);
+        setFiltedData(res.data);
         setIsReady(true);
       })
       .catch((error) => {
@@ -20,21 +25,26 @@ function Shaharlar({ query, setQuery }) {
       });
   }, []);
 
-  // const addType = async (uzbekistan) => {
-  //   axios
-  //     .get(`https://wgtour.pythonanywhere.com/api/places?${uzbekistan}`)
-  //     .then((res) => {
-  //       setItem(res.data);
-  //       setIsReady(true);
-  //       console.log(res);
-  //     })
-  //     .catch((error) => {
-  //       console.log(error);
-  //     });
-  //   setType(false);
-  //   const response = `https://wgtour.pythonanywhere.com/api/places?type=${Uzbekistan}`;
-  // };
-  console.log(item);
+  const checkCheckbox = () => {
+    console.log(checkboxPrime);
+    console.log(checkboxUzbekistan);
+    console.log(checkboxAsia);
+    console.log(checkboxEurope);
+    // if (checkboxPrime || checkboxUzbekistan || checkboxAsia || checkboxEurope) {
+    //   setFiltedData(places);
+    // } else {
+    //   let data = [];
+    //   places.forEach((place) => {
+    //     if (place.type === "prime" && checkboxPrime) data.push(place);
+    //     if (place.type === "uzbekistan" && checkboxUzbekistan) data.push(place);
+    //     if (place.type === "asia" && checkboxAsia) data.push(place);
+    //     if (place.type === "europe" && checkboxEurope) data.push(place);
+    //   });
+    //   console.log(data);
+    //   setFiltedData(data);
+    // }
+  };
+
   return (
     <div>
       <div className="page-head">
@@ -87,20 +97,49 @@ function Shaharlar({ query, setQuery }) {
                       </fieldset>
                     </form>
                     <div className="checkbox-container">
-                      <input type="checkbox" />
-                      <span>Ormgohlar</span>
+                      <input
+                        type="checkbox"
+                        id="prime"
+                        value={checkboxPrime}
+                        onChange={(e)=> console.log(e.target.value)}
+                      />
+                      <label htmlFor="prime">Ormgohlar</label>
                     </div>
                     <div className="checkbox-container1">
-                      <input type="checkbox" />
-                      <span>O'zbekiston Shaharlari</span>
+                      <input
+                        type="checkbox"
+                        id="uzbekistan"
+                        value={checkboxUzbekistan}
+                        onChange={(e) => {
+                          setCheckboxUzbekistan(e.target.value);
+                          checkCheckbox();
+                        }}
+                      />
+                      <label htmlFor="uzbekistan">O'zbekiston Shaharlari</label>
                     </div>
                     <div className="checkbox-container2">
-                      <input type="checkbox" />
-                      <span>Osiyo Shaharlari</span>
+                      <input
+                        type="checkbox"
+                        id="asia"
+                        value={checkboxAsia}
+                        onChange={(e) => {
+                          setCheckboxAsia(e.target.value);
+                          checkCheckbox();
+                        }}
+                      />
+                      <label htmlFor="asia">Osiyo Shaharlari</label>
                     </div>
                     <div className="checkbox-container3">
-                      <input type="checkbox" style={{}} />
-                      <span>Yevropa Shaharlari</span>
+                      <input
+                        type="checkbox"
+                        id="europe"
+                        value={checkboxEurope}
+                        onChange={
+                          ((e) => setCheckboxEurope(e.target.value),
+                          checkCheckbox())
+                        }
+                      />
+                      <label htmlFor="europe">Yevropa Shaharlari</label>
                     </div>{" "}
                   </div>
                 </div>
@@ -122,7 +161,7 @@ function Shaharlar({ query, setQuery }) {
               {isReady ? (
                 <div className="col-md-12 clear">
                   <div className="proerty-th" id="list-type">
-                    {item
+                    {filtedData
                       .filter((item) => item.name.toLowerCase().includes(query))
                       .map((item) => (
                         <div className="col-sm-6 col-md-4 p0">
