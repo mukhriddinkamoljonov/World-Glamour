@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Tavsiya from "./Tavsiya";
 import NoImage from "../../img/no-image.jpg";
+import { Link } from "react-router-dom";
 
 function Shaharlar({ query, setQuery }) {
   const [isReady, setIsReady] = useState(null);
@@ -180,7 +181,10 @@ function Shaharlar({ query, setQuery }) {
 
                             <div className="item-entry overflow">
                               <h5>
-                                <a href="property-1.html"> {item.name}</a>
+                                <Link to={`/places/${item.id}`}>
+                                  {" "}
+                                  {item.name}
+                                </Link>
                               </h5>
                               <div className="dot-hr"></div>
                               <span className="pull-left">

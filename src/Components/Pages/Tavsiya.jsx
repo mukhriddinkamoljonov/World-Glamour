@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import NoImage from "../../img/no-image.jpg";
+import { Link } from "react-router-dom";
 
 const Tavsiya = ({ title, count }) => {
   const [items, setItems] = useState([]);
@@ -29,12 +30,12 @@ const Tavsiya = ({ title, count }) => {
             <ul>
               <li>
                 <div class="col-md-3 col-sm-3 col-xs-3 blg-thumb p0">
-                  <a href="single.html">
+                  <Link to={`/places/${item.id}`}>
                     <img
                       src={item.images.length ? item.images[0].file : NoImage}
                       alt={""}
                     />
-                  </a>
+                  </Link>
                   <span class="property-seeker">
                     <b class="b-1">A</b>
                     <b class="b-2">S</b>
@@ -42,7 +43,7 @@ const Tavsiya = ({ title, count }) => {
                 </div>
                 <div class="col-md-8 col-sm-8 col-xs-8 blg-entry">
                   <h6>
-                    <a href="single.html">{item.name} </a>
+                    <Link to={`/places/${item.id}`}>{item.name} </Link>
                   </h6>
                   <span class="property-price">{item.price1}</span>
                 </div>

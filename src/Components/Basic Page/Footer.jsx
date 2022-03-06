@@ -3,6 +3,7 @@ import NoImage from "../../img/no-image.jpg";
 import React, { useEffect, useState } from "react";
 import logo from "../icons/logo.png";
 import "./Main.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const [items, setItems] = useState([]);
@@ -99,19 +100,19 @@ const Footer = () => {
                   <ul className="footer-blog">
                     <li>
                       <div className="col-md-3 col-sm-4 col-xs-4 blg-thumb p0">
-                        <a href="single.html">
+                        <Link to={`/places/${item.id}`}>
                           <img
                             src={
                               item.images.length ? item.images[0].file : NoImage
                             }
                             alt={""}
                           />
-                        </a>
+                        </Link>
                         <span className="blg-date">5-01-2021</span>
                       </div>
                       <div className="col-md-8 col-sm-8 col-xs-8 blg-entry">
                         <h6>
-                          <a href="single.html">{item.name} </a>
+                          <Link to={`/places/${item.id}`}>{item.name} </Link>
                         </h6>
                         <p
                           style={{ lineHeight: "17px", padding: "8px 2px" }}
