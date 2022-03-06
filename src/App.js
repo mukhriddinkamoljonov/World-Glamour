@@ -22,27 +22,21 @@ function App() {
   }, []);
   return (
     <div>
-      {loading ? (
-        <h1>Loading...</h1>
-      ) : (
-        <div>
-          <Navbar setQuery={setQuery} />
-          <Routes>
-            <Route path="/" element={<Home query={query} />} />
-            <Route path="/sayyohlar" element={<Sayyohlar />} />
-            <Route path="/about" element={<AboutWe />} />
-            <Route path="/places/:id" element={<AllCart />} />
-            <Route path="/amirsoy" element={<AllCart />} />
-            <Route path="/chimyon" element={<AllCart />} />
-            <Route path="/bostonliq" element={<AllCart />} />
-            <Route
-              path="/shaharlar"
-              element={<Shaharlar setQuery={setQuery} query={query} />}
-            />
-          </Routes>
-          <Footer />
-        </div>
-      )}
+      <Navbar setQuery={setQuery} />
+      <Routes>
+        <Route path="/" element={<Home query={query} />} />
+        <Route path="/sayyohlar" element={<Sayyohlar />} />
+        <Route path="/about" element={<AboutWe />} />
+        <Route path="/places/:id" element={<AllCart />} />
+        <Route path="/amirsoy" element={<AllCart />} />
+        <Route path="/chimyon" element={<AllCart />} />
+        <Route path="/bostonliq" element={<AllCart />} />
+        <Route
+          path="/shaharlar"
+          element={<Shaharlar setQuery={setQuery} query={query} />}
+        />
+      </Routes>
+      <Footer />
     </div>
   );
 }
