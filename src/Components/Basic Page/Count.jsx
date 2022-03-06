@@ -28,7 +28,7 @@ const Count = () => {
   // }, []);
 
   return (
-    <div className="count-area">
+    <div className="count-areas">
       <div className="container">
         <div className="row">
           <div className="col-md-10 col-md-offset-1 col-sm-12 text-center page-title">

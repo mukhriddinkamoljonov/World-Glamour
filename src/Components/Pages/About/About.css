@@ -99,7 +99,7 @@
 .count-area {
   display: inline-block;
   /* margin-top: 0; */
-  margin-left: 170px;
+  /* margin-left: 0px; */
 }
 .count-area h5 {
   text-transform: capitalize;
@@ -126,3 +126,29 @@
   border-left: 1px solid #fdc600;
   border-right: 1px solid #fdc600;
 }
+
+.count-areas {
+  display: inline-block;
+  /* margin-top: 0; */
+  margin-left: 150px;
+  
+}
+.count-areas h5 {
+  text-transform: capitalize;
+  color: #f0a500;
+}
+.count-areas p {
+  max-width: 200px;
+  text-align: center;
+  margin: auto;
+  background-color: rgb(255, 165, 0);
+  margin-top: 20px;
+  color: #fff;
+  border-radius: 7px;
+}
+
+@media (max-width: 480px) {
+  
+}
+
+
