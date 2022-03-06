@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.15431a26.css",
+    "main.js": "/static/js/main.31c91a0d.js",
+    "static/media/biz_haqimizda1.jpg": "/static/media/biz_haqimizda1.b23666cec3cb32e6e47f.jpg",
+    "static/media/logo.png": "/static/media/logo.a3e8fbf5b90fe75ab528.png",
+    "static/media/viza.jpg": "/static/media/viza.6640a6837b87344ccedf.jpg",
+    "static/media/bayram.jpg": "/static/media/bayram.91ea8163133c65e961a6.jpg",
+    "static/media/diplomat.jpg": "/static/media/diplomat.91928e74fcae14ea81d5.jpg",
+    "static/media/globus.jpg": "/static/media/globus.934e6d5edbf858b71de5.jpg",
+    "static/media/calendar2.ico": "/static/media/calendar2.e9ea4abf679fad66d5e5.ico",
+    "static/media/fasl.jpg": "/static/media/fasl.9b1b3539785d6db745b6.jpg",
+    "static/media/evro.png": "/static/media/evro.83a54c748eee73db582f.png",
+    "static/media/dollar.png": "/static/media/dollar.84cf06a861a4cfb9ad42.png",
+    "static/media/ruble.png": "/static/media/ruble.3f2dd865be6288c437b1.png",
+    "static/media/globe.png": "/static/media/globe.8406c1c7bb499bfb47b1.png",
+    "static/media/plane.png": "/static/media/plane.c3f70b6300322afbd760.png",
+    "static/media/lira.png": "/static/media/lira.ea1d3bca6b32f0f0be36.png",
+    "static/media/payme_01.png": "/static/media/payme_01.f050a6f86f9d55d4e256.png",
+    "static/media/phone.png": "/static/media/phone.85641426eb758c73eed8.png",
+    "static/media/agreed.png": "/static/media/agreed.e6cb64cab4e70db6fa4f.png",
+    "static/media/heart.png": "/static/media/heart.baf72ad6c2266e01da0d.png",
+    "index.html": "/index.html",
+    "main.15431a26.css.map": "/static/css/main.15431a26.css.map",
+    "main.31c91a0d.js.map": "/static/js/main.31c91a0d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.15431a26.css",
+    "static/js/main.31c91a0d.js"
+  ]
+}
