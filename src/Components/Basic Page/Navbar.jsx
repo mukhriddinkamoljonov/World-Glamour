@@ -21,7 +21,7 @@ function Navbar({ setQuery }) {
             </button>
             <Link to="/" className="navbar-brand">
               <img
-                src="assets/img/icon/logo.png"
+                src="assets/img/logo.png"
                 className="main-logo"
                 alt=""
               />
