@@ -9,6 +9,7 @@ import AllCart from "./Components/Pages/AllCart";
 import Footer from "./Components/Basic Page/Footer";
 import Shaharlar from "./Components/Pages/Shaharlar";
 import React, { useEffect, useState } from "react";
+import { ClapSpinner } from "react-spinners-kit";
 
 function App() {
   const [query, setQuery] = useState("");
@@ -23,7 +24,9 @@ function App() {
   return (
     <div>
       {loading ? (
-        <h1>Loading...</h1>
+        <div className="loading">
+          <ClapSpinner size={30} color="#686769" loading={loading} />
+        </div>
       ) : (
         <div>
           <Navbar setQuery={setQuery} />
