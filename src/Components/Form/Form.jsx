@@ -10,6 +10,7 @@ const Form = ({ item }) => {
   const [count, setCount] = useState(1);
   const [price, setPrice] = useState(100);
   const [activePrice, setActivePrice] = useState(100);
+  const [animation, animationClasses] = useState(false);
 
   let selectPrice = useRef(item.price1);
 
@@ -127,7 +128,8 @@ const Form = ({ item }) => {
         <div className="row">
           <div>
             <div className="count">
-              <h3>Qiymat: 
+              <h3>
+                Qiymat:
                 {activePrice} so'm
               </h3>
             </div>{" "}
@@ -170,7 +172,11 @@ const Form = ({ item }) => {
               </div>
             </div>
             <img className="payme" src={payme} alt="" />
-            <button class="button-48" type="submit">
+            <button
+              className={`vote_card_hover${animationClasses}`}
+              class="button-payment"
+              type="submit"
+            >
               <span class="texta">To'lov</span>
             </button>
           </div>
