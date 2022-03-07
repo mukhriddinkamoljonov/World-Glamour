@@ -9,7 +9,7 @@ const Form = ({ item }) => {
 
   const toggleClass = (event) => {
     setActive(event.target.value);
-    // setActive(isActive ? false : true);
+    setActive(isActive ? true : false);
   };
   const button = () => {
     setActive(false);
@@ -49,6 +49,7 @@ const Form = ({ item }) => {
 
   const payButton = (e) => {
     e.preventDefault();
+    alert(`Hurmatli ${fullname} Sizning soro'vingiz amalga oshirilmoqda...`);
     const data = {
       amount: activePrice,
       number_of_people: count,
