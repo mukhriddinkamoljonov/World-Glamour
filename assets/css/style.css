@@ -192,7 +192,6 @@ input::-moz-focus-inner {
 input {
   line-height: normal;
 }
-input[type="checkbox"],
 input[type="radio"] {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -915,7 +914,7 @@ label small {
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: #929292;
+  color: #FDC600;
   font-size: 16px;
   font-weight: 400;
   text-transform: capitalize;
@@ -1002,7 +1001,8 @@ label small {
 }
 .navbar-default {
   background-image: none;
-  background-color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  /* background-color: #fff; */
   background-repeat: repeat-x;
   border-radius: 0px;
   box-shadow: none;
@@ -1908,6 +1908,7 @@ proerty-th
   margin: 10px;
 }
 .proerty-th .proerty-item .item-thumb {
+  border-radius: 10px;
   position: relative;
 }
 .proerty-th .proerty-item:hover .item-thumb img {
@@ -1922,8 +1923,8 @@ proerty-th
   position: relative;
   width: 100%;
   opacity: 0.7;
-  min-height: 225px;
-  max-height: 265px;
+  max-height: 225px;
+  min-height: 250px;
 }
 .proerty-th .proerty-item .item-entry {
   padding: 8px;
@@ -2027,6 +2028,7 @@ proerty-th-list
   border: none;
 }
 .properties-page .box-two {
+  border-radius: 8px;
   overflow: hidden !important;
 }
 .proerty-th-list .proerty-item .item-entry h5 {
