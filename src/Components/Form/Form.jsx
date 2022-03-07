@@ -2,12 +2,13 @@ import axios from "axios";
 import React, { useState, useEffect, useRef } from "react";
 import Button from "./button";
 import payme from "../../img/payme_01.png";
+import "./Form.css";
 
 const Form = ({ item }) => {
   const [isActive, setActive] = useState(false);
 
   const toggleClass = () => {
-    setActive(!isActive);
+    setActive(isActive ? false : true);
   };
   const [fullname, setFullName] = useState([]);
   const [passport, setPassport] = useState([]);
@@ -170,18 +171,22 @@ const Form = ({ item }) => {
             <div className="form-flex">
               <div className="buttons">
                 <Button title={"-"} action={decrementCount} />
+                <span style={{ marginLeft: "10px", marginRight: "-15px" }}>
+                  Odam soni:
+                </span>
                 <h2>{count}</h2>
                 <Button title={"+"} action={incrementCount} />
               </div>
             </div>
             <img className="payme" src={payme} alt="" />
             <button
-              className={isActive ? "hidden" : "button_payme"}
-              // class="button_payme"
+              className={`button_payme ${
+                isActive ? "button_payme" : "payment"
+              }`}
               type="submit"
               onClick={toggleClass}
             >
-              <span className="texta">To'lov</span>
+              <span className="texta payment">To'lov</span>
             </button>
           </div>
         </div>
