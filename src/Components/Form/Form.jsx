@@ -7,8 +7,12 @@ import "./Form.css";
 const Form = ({ item }) => {
   const [isActive, setActive] = useState(false);
 
-  const toggleClass = () => {
-    setActive(isActive ? false : true);
+  const toggleClass = (event) => {
+    setActive(event.target.value);
+    // setActive(isActive ? false : true);
+  };
+  const button = () => {
+    setActive(false);
   };
   const [fullname, setFullName] = useState([]);
   const [passport, setPassport] = useState([]);
@@ -183,8 +187,9 @@ const Form = ({ item }) => {
               className={`button_payme ${
                 isActive ? "button_payme" : "payment"
               }`}
+              disabled={isActive}
               type="submit"
-              onClick={toggleClass}
+              onClick={(toggleClass, button)}
             >
               <span className="texta payment">To'lov</span>
             </button>
