@@ -25,7 +25,9 @@ const AllCart = () => {
   }, [id]);
 
   return (
-    <div>
+    <div style={{ backgroundColor: "#fff" }}>
+      . <br />
+      <div className="page-ago">.</div>
       <div className="page-head">
         <div className="container">
           <div className="row">
@@ -39,7 +41,6 @@ const AllCart = () => {
           </div>
         </div>
       </div>
-
       <div
         className="content-area single-property"
         style={{ backgroundColor: "#fcfcfc" }}
@@ -47,7 +48,7 @@ const AllCart = () => {
         &nbsp;
         <div className="container_city">
           <div className="clearfix">
-            <div className="col-md-8 single-property-content prp-style-1" >
+            <div className="col-md-8 single-property-content prp-style-1">
               <div className="row" style={{ marginLeft: "3px" }}>
                 <div className="light-slide-item">
                   <div className="slider-courusel">
@@ -168,7 +169,9 @@ const AllCart = () => {
                 </div>
 
                 <div className="section additional-details ">
-                  <h4 className="s-property-title">Narxga quyidagilar kiradi:</h4>
+                  <h4 className="s-property-title">
+                    Narxga quyidagilar kiradi:
+                  </h4>
                   <div>
                     <div
                       dangerouslySetInnerHTML={{
@@ -222,8 +225,8 @@ const AllCart = () => {
                       <div className="clear">
                         <ul className="dealer-contacts">
                           <li>
-                            <i className="pe-7s-map-marker strong"> </i> Toshkent
-                            viloyati Bo'stonliq tumani.
+                            <i className="pe-7s-map-marker strong"> </i>{" "}
+                            Toshkent viloyati Bo'stonliq tumani.
                           </li>
                           <li>
                             <i className="pe-7s-mail strong"> </i>

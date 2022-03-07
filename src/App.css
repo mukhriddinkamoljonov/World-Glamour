@@ -13,4 +13,28 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   min-height: 100vh;
+  background-color: #fff;
 }
+
+@media (max-width: 768px) {
+  body {
+    height: 100vh;
+    background-size: auto;
+  }
+}
+
+/*========== SCROLL BAR ==========*/
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: rgb(218, 114, 83);
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fdc600;
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(223, 155, 9);
+} /*========== SCROLL BAR ==========*/

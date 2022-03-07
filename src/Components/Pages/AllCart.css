@@ -297,3 +297,8 @@ select option {
   -moz-box-shadow: 0px 10px 20px -1px rgba(47, 62, 73, 0.22);
   box-shadow: 0px 10px 20px -1px rgba(47, 62, 73, 0.22);
 }
+
+.page-ago {
+  color: #fff;
+  margin-top: 45px;
+}

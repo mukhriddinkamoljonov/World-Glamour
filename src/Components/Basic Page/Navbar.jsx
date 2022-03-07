@@ -4,15 +4,15 @@ import "./Main.css";
 
 function Navbar({ setQuery }) {
   return (
-    <div>
-      <nav className="navbar navbar-default">
-        <div className="container">
+    <header id="header" class="header-scrolled ">
+      <nav className="navbar navbar-default main-menu">
+        <div className="container ">
           <div className="navbar-header">
             <button
               type="button"
               className="navbar-toggle collapsed"
               data-toggle="collapse"
-              data-target="#navigation" 
+              data-target="#navigation"
             >
               <span className="sr-only">Toggle navigation</span>
               <span className="icon-bar"></span>
@@ -20,11 +20,7 @@ function Navbar({ setQuery }) {
               <span className="icon-bar"></span>
             </button>
             <Link to="/" className="navbar-brand">
-              <img
-                src="assets/img/logo.png"
-                className="main-logo"
-                alt=""
-              />
+              <img src="assets/img/logo.png" className="main-logo" alt="" />
               <div className="world">
                 <span className="header-title-per">Wolrd Glamour Tour</span>
               </div>
@@ -116,7 +112,7 @@ function Navbar({ setQuery }) {
           </div>
         </div>
       </nav>
-    </div>
+    </header>
   );
 }
 

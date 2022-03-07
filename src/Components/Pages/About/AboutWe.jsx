@@ -25,7 +25,10 @@ function AboutWe() {
       });
   }, []);
   return (
-    <div className="">
+    <div style={{ backgroundColor: "#fff" }}>
+      {" "}
+      . <br />
+      <div className="page-ago">.</div>
       <div className="page-head">
         <div className="container">
           <div className="row">
@@ -38,7 +41,6 @@ function AboutWe() {
           </div>
         </div>
       </div>
-
       <div
         className="content-area blog-page padding-top-40"
         style={{ backgroundColor: "#fcfcfc", paddingBottom: "55px" }}

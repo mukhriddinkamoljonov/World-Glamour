@@ -168,10 +168,11 @@
   }
 
   .slider-content {
-    top: 5%;
+    top: 30%;
   }
   .slider-area {
-    height: 440px;
+    height: 100vh;
+    /* margin-top: -58px; */
   }
 
   .home-area-1 {
@@ -186,7 +187,7 @@
     width: 30px;
   }
   .page-title {
-    /* padding-top: 50px; */
+    padding-top: 0px;
   }
   .page-title h2 {
     font-size: 20px;

@@ -7,7 +7,10 @@ const Sayyohlar = () => {
   const [questions, setQuestions] = useState(SayyohData);
 
   return (
-    <div>
+    <div style={{ backgroundColor: "#fff" }}>
+      {" "}
+      . <br />
+      <div className="page-ago">.</div>
       <div className="page-head">
         <div className="container">
           <div className="row">

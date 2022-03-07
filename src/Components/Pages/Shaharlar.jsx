@@ -48,8 +48,10 @@ function Shaharlar({ query, setQuery }) {
   };
 
   return (
-    <div>
-      <div className="page-head">
+    <div style={{ backgroundColor: "#fff" }}>
+      . <br />
+      <div className="page-ago">.</div>
+      <div className="page-head ">
         <div className="container">
           <div className="row">
             <div className="page-head-content">

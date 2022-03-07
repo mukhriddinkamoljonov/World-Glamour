@@ -98,5 +98,16 @@
     <script src="%PUBLIC_URL%/assets/js/wow.js"></script>
     <script src="%PUBLIC_URL%/assets/js/icheck.min.js"></script>
     <script src="%PUBLIC_URL%/assets/js/main.js"></script>
+    <script>
+      //------- Header Scroll Class  js --------//
+
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+          $("#header").addClass("header-scrolled");
+        } else {
+          $("#header").removeClass("header-scrolled");
+        }
+      });
+    </script>
   </body>
 </html>

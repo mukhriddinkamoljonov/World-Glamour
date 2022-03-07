@@ -21,7 +21,11 @@ const Carts = ({ query }) => {
   return (
     <div
       className="content-area home-area-1 recent-property"
-      style={{ backgroundColor: "#fcfcfc", paddingBottom: " 55px" }}
+      style={{
+        backgroundColor: "#fcfcfc",
+        paddingBottom: " 55px",
+        marginTop: "-30px",
+      }}
     >
       <div className="container">
         <div className="row">

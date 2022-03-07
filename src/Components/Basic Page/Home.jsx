@@ -12,7 +12,7 @@ const Home = ({ query }) => {
   useEffect(() => {
     setTimeout(setLoading(false), 10000);
   }, []);
-  
+
   return (
     <div>
       <Slider />
@@ -21,7 +21,7 @@ const Home = ({ query }) => {
           <span className="sr-only">Loading...</span>
         </div>
       ) : (
-        <div>
+        <div style={{ backgroundColor: "#fff" }}>
           {" "}
           (
           <Carts query={query} />

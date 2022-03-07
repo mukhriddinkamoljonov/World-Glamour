@@ -914,7 +914,7 @@ label small {
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: #fff;
+  color: #FDC600;
   font-size: 16px;
   font-weight: 400;
   text-transform: capitalize;
@@ -991,7 +991,7 @@ label small {
 }
 .navbar-default {
   background-image: none;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #fff;
   background-repeat: repeat-x;
   border-radius: 4px;
   box-shadow: none;
@@ -1001,7 +1001,8 @@ label small {
 }
 .navbar-default {
   background-image: none;
-  background-color: rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  /* background-color: #fff; */
   background-repeat: repeat-x;
   border-radius: 0px;
   box-shadow: none;
@@ -1250,7 +1251,7 @@ label small {
   font-size: 40px;
   margin-bottom: 20px;
   text-transform: uppercase;
-  color: #e6b506;
+  color: rgba(255, 165, 0, 0.71);
   font-weight: 500;
 }
 .slider-content p {
@@ -1584,7 +1585,7 @@ Asside widgets CSS
 }
 
 .page-title {
-  /* padding-top: 55px; */
+  padding-top: 55px;
 }
 .page-title h5 {
   font-weight: 300;

@@ -255,12 +255,44 @@
 .main-logo {
   margin-right: 10px;
   margin-left: 30px;
-  width: 100px;
+  width: 90px;
   border-radius: 100%;
 }
 
 @media (min-width: 768px) {
   .api-area {
     margin-left: 100px;
+  }
+}
+
+#header.header-scrolled {
+  transition: all 0.5s;
+  background-color: rgba(34, 34, 34, 0.9);
+}
+
+#header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+  z-index: 997;
+  margin: 0;
+}
+
+.main-menu {
+  padding-bottom: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (max-width: 480px) {
+  .main-menu {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    background: rgba(255, 255, 255, 0.15);
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
