@@ -4,17 +4,17 @@ const test = () => {
   return (
     <div>
       <div
-        class="content-area recent-property padding-top-40"
+        className="content-area recent-property padding-top-40"
         style={{ backgroundColor: "#fff" }}
       >
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-              <div class="" id="contact1">
-                <div class="row">
-                  <div class="col-sm-4">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-8 col-md-offset-2">
+              <div className="" id="contact1">
+                <div className="row">
+                  <div className="col-sm-4">
                     <h3>
-                      <i class="fa fa-map-marker"></i> Address
+                      <i className="fa fa-map-marker"></i> Address
                     </h3>
                     <p>
                       13/25 shibuia <br />
@@ -24,11 +24,11 @@ const test = () => {
                       <strong>Japan</strong>
                     </p>
                   </div>
-                  <div class="col-sm-4">
+                  <div className="col-sm-4">
                     <h3>
-                      <i class="fa fa-phone"></i> Call center
+                      <i className="fa fa-phone"></i> Call center
                     </h3>
-                    <p class="text-muted">
+                    <p className="text-muted">
                       This number is toll free if calling from Great Britain
                       otherwise we advise you to use the electronic form of
                       communication.
@@ -37,11 +37,11 @@ const test = () => {
                       <strong>+33 555 444 333</strong>
                     </p>
                   </div>
-                  <div class="col-sm-4">
+                  <div className="col-sm-4">
                     <h3>
-                      <i class="fa fa-envelope"></i> Electronic support
+                      <i className="fa fa-envelope"></i> Electronic support
                     </h3>
-                    <p class="text-muted">
+                    <p className="text-muted">
                       Please feel free to write an email to us or to use our
                       electronic ticketing system.
                     </p>
@@ -65,44 +65,44 @@ const test = () => {
                 <hr />
                 <h2>Contact form</h2>
                 <form>
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <div class="form-group">
+                  <div className="row">
+                    <div className="col-sm-6">
+                      <div className="form-group">
                         <label for="firstname">Firstname</label>
                         <input
                           type="text"
-                          class="form-control"
+                          className="form-control"
                           id="firstname"
                         />
                       </div>
                     </div>
-                    <div class="col-sm-6">
-                      <div class="form-group">
+                    <div className="col-sm-6">
+                      <div className="form-group">
                         <label for="lastname">Lastname</label>
-                        <input type="text" class="form-control" id="lastname" />
+                        <input type="text" className="form-control" id="lastname" />
                       </div>
                     </div>
-                    <div class="col-sm-6">
-                      <div class="form-group">
+                    <div className="col-sm-6">
+                      <div className="form-group">
                         <label for="email">Email</label>
-                        <input type="text" class="form-control" id="email" />
+                        <input type="text" className="form-control" id="email" />
                       </div>
                     </div>
-                    <div class="col-sm-6">
-                      <div class="form-group">
+                    <div className="col-sm-6">
+                      <div className="form-group">
                         <label for="subject">Subject</label>
-                        <input type="text" class="form-control" id="subject" />
+                        <input type="text" className="form-control" id="subject" />
                       </div>
                     </div>
-                    <div class="col-sm-12">
-                      <div class="form-group">
+                    <div className="col-sm-12">
+                      <div className="form-group">
                         <label for="message">Message</label>
-                        <textarea id="message" class="form-control" />
+                        <textarea id="message" className="form-control" />
                       </div>
                     </div>
-                    <div class="col-sm-12 text-center">
-                      <button type="submit" class="btn btn-primary">
-                        <i class="fa fa-envelope-o" /> Send message
+                    <div className="col-sm-12 text-center">
+                      <button type="submit" className="btn btn-primary">
+                        <i className="fa fa-envelope-o" /> Send message
                       </button>
                     </div>
                   </div>

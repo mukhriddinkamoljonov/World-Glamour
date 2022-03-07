@@ -282,3 +282,8 @@ select option {
   width: 1000px;
   height: 500px;
 }
+
+.thumb .selected {
+  width: 70px;
+  height: 50px;
+}

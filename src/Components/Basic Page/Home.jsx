@@ -17,8 +17,8 @@ const Home = ({ query }) => {
     <div>
       <Slider />
       {loading ? (
-        <div class="spinner-border m-5" role="status">
-          <span class="sr-only">Loading...</span>
+        <div className="spinner-border m-5" role="status">
+          <span className="sr-only">Loading...</span>
         </div>
       ) : (
         <div>

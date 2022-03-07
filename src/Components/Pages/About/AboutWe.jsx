@@ -263,9 +263,9 @@ function AboutWe() {
             </div> */}
             <hr />
             <div className="row">
-              <div class="col-sm-4">
+              <div className="col-sm-4">
                 <h3>
-                  <i class="fa fa-map-marker"></i> Address
+                  <i className="fa fa-map-marker"></i> Address
                 </h3>
                 <p>
                   13/25 shibuia <br />
@@ -275,11 +275,11 @@ function AboutWe() {
                   <strong>Uzbekistan</strong>
                 </p>
               </div>
-              <div class="col-sm-4">
+              <div className="col-sm-4">
                 <h3>
-                  <i class="fa fa-phone"></i> Qo'ng'iroqlar markazi
+                  <i className="fa fa-phone"></i> Qo'ng'iroqlar markazi
                 </h3>
-                <p class="text-muted">
+                <p className="text-muted">
                   Agar Uzbekistandan qo'ng'iroq qilsangiz, bu raqam bepul, aks
                   holda elektron aloqa shaklidan foydalanishni maslahat beramiz.
                 </p>
@@ -287,11 +287,11 @@ function AboutWe() {
                   <strong>+998(91) 658 78 41</strong>
                 </p>
               </div>
-              <div class="col-sm-4">
+              <div className="col-sm-4">
                 <h3>
-                  <i class="fa fa-envelope"></i> Elektron pochta
+                  <i className="fa fa-envelope"></i> Elektron pochta
                 </h3>
-                <p class="text-muted">
+                <p className="text-muted">
                   Iltimos, bizga elektron pochta xabarini yozing yoki elektron
                   chiptalar tizimimizdan foydalaning.
                 </p>

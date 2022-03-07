@@ -26,10 +26,10 @@ const AllCart = () => {
 
   return (
     <div>
-      <div class="page-head">
-        <div class="container">
-          <div class="row">
-            <div class="page-head-content">
+      <div className="page-head">
+        <div className="container">
+          <div className="row">
+            <div className="page-head-content">
               <h2
                 dangerouslySetInnerHTML={{
                   __html: item.hashtags,
@@ -41,15 +41,15 @@ const AllCart = () => {
       </div>
 
       <div
-        class="content-area single-property"
+        className="content-area single-property"
         style={{ backgroundColor: "#fcfcfc" }}
       >
         &nbsp;
-        <div class="container_city">
-          <div class="clearfix">
-            <div class="col-md-8 single-property-content prp-style-1" >
-              <div class="row" style={{ marginLeft: "3px" }}>
-                <div class="light-slide-item">
+        <div className="container_city">
+          <div className="clearfix">
+            <div className="col-md-8 single-property-content prp-style-1" >
+              <div className="row" style={{ marginLeft: "3px" }}>
+                <div className="light-slide-item">
                   <div className="slider-courusel">
                     <Carousel autoPlay={"	boolean"}>
                       {itemData.map((img) => (
@@ -62,22 +62,22 @@ const AllCart = () => {
                   </div>
                 </div>
               </div>
-              <div class="single-property-wrapper">
-                <div class="single-property-header">
-                  <h1 class="property-title pull-left">{item.address}</h1>
-                  <span class="property-price pull-right">
+              <div className="single-property-wrapper">
+                <div className="single-property-header">
+                  <h1 className="property-title pull-left">{item.address}</h1>
+                  <span className="property-price pull-right">
                     {item.price1} so'm
                   </span>
                 </div>
-                <div class="section additional-details">
-                  <h4 class="s-property-title">Eng yaxshi shartnoma</h4>
+                <div className="section additional-details">
+                  <h4 className="s-property-title">Eng yaxshi shartnoma</h4>
 
-                  <ul class="additional-details-list clearfix">
+                  <ul className="additional-details-list clearfix">
                     <li>
-                      <span class="col-xs-6 col-sm-4 col-md-4 add-d-title">
+                      <span className="col-xs-6 col-sm-4 col-md-4 add-d-title">
                         Sayohat yo'nalishi:
                       </span>
-                      <span class="col-xs-6 col-sm-8 col-md-8 add-d-entry">
+                      <span className="col-xs-6 col-sm-8 col-md-8 add-d-entry">
                         <div
                           dangerouslySetInnerHTML={{
                             __html: item.direction,
@@ -86,24 +86,24 @@ const AllCart = () => {
                       </span>
                     </li>
                     <li>
-                      <span class="col-xs-6 col-sm-4 col-md-4 add-d-title">
+                      <span className="col-xs-6 col-sm-4 col-md-4 add-d-title">
                         Dvomiyligi:
                       </span>
-                      <span class="col-xs-6 col-sm-8 col-md-8 add-d-entry">
+                      <span className="col-xs-6 col-sm-8 col-md-8 add-d-entry">
                         {item.duration}
                       </span>
                     </li>
                     <h4 className="s-property-title">Takliflar</h4>
                     <li>
                       {item.price1_description ? (
-                        <span class="col-xs-6 col-sm-4 col-md-4 add-d-title">
+                        <span className="col-xs-6 col-sm-4 col-md-4 add-d-title">
                           {item.price1_description}
                         </span>
                       ) : (
                         ""
                       )}
                       {item.price1 ? (
-                        <span class="col-xs-6 col-sm-8 col-md-8 add-d-entry">
+                        <span className="col-xs-6 col-sm-8 col-md-8 add-d-entry">
                           {item.price1} so'm
                         </span>
                       ) : (
@@ -112,14 +112,14 @@ const AllCart = () => {
                     </li>
                     <li>
                       {item.price2_description ? (
-                        <span class="col-xs-6 col-sm-4 col-md-4 add-d-title">
+                        <span className="col-xs-6 col-sm-4 col-md-4 add-d-title">
                           {item.price2_description}
                         </span>
                       ) : (
                         ""
                       )}
                       {item.price2 ? (
-                        <span class="col-xs-6 col-sm-8 col-md-8 add-d-entry">
+                        <span className="col-xs-6 col-sm-8 col-md-8 add-d-entry">
                           {item.price2} so'm
                         </span>
                       ) : (
@@ -128,14 +128,14 @@ const AllCart = () => {
                     </li>
                     <li>
                       {item.price3_description ? (
-                        <span class="col-xs-6 col-sm-4 col-md-4 add-d-title">
+                        <span className="col-xs-6 col-sm-4 col-md-4 add-d-title">
                           {item.price3_description}
                         </span>
                       ) : (
                         ""
                       )}
                       {item.price3 ? (
-                        <span class="col-xs-6 col-sm-8 col-md-8 add-d-entry">
+                        <span className="col-xs-6 col-sm-8 col-md-8 add-d-entry">
                           {item.price3}
                         </span>
                       ) : (
@@ -143,11 +143,11 @@ const AllCart = () => {
                       )}
                     </li>
                     <li>
-                      <span class="col-xs-6 col-sm-4 col-md-4 add-d-title">
+                      <span className="col-xs-6 col-sm-4 col-md-4 add-d-title">
                         Imtiyozlar
                       </span>
                       {item.benefits ? (
-                        <span class="col-xs-6 col-sm-8 col-md-8 add-d-entry">
+                        <span className="col-xs-6 col-sm-8 col-md-8 add-d-entry">
                           {item.benefits}
                         </span>
                       ) : (
@@ -156,9 +156,9 @@ const AllCart = () => {
                     </li>
                   </ul>
                 </div>
-                <div class="section">
-                  <h4 class="s-property-title">To'liq ma'lumot</h4>
-                  <div class="s-property-content">
+                <div className="section">
+                  <h4 className="s-property-title">To'liq ma'lumot</h4>
+                  <div className="s-property-content">
                     <div
                       dangerouslySetInnerHTML={{
                         __html: item.description,
@@ -167,8 +167,8 @@ const AllCart = () => {
                   </div>
                 </div>
 
-                <div class="section additional-details ">
-                  <h4 class="s-property-title">Narxga quyidagilar kiradi:</h4>
+                <div className="section additional-details ">
+                  <h4 className="s-property-title">Narxga quyidagilar kiradi:</h4>
                   <div>
                     <div
                       dangerouslySetInnerHTML={{
@@ -179,58 +179,58 @@ const AllCart = () => {
                 </div>
               </div>
             </div>
-            <div class="col-md-4 p0">
-              <aside class="sidebar sidebar-property blog-asside-right">
-                <div class="dealer-widget">
-                  <div class="dealer-content">
-                    <div class="inner-wrapper">
-                      <div class="clear">
-                        <div class="col-xs-4 col-sm-4 dealer-face">
+            <div className="col-md-4 p0">
+              <aside className="sidebar sidebar-property blog-asside-right">
+                <div className="dealer-widget">
+                  <div className="dealer-content">
+                    <div className="inner-wrapper">
+                      <div className="clear">
+                        <div className="col-xs-4 col-sm-4 dealer-face">
                           <a href="/">
                             <img
                               src="assets/img/client-face1.png"
-                              class="img-circle"
+                              className="img-circle"
                               alt="title"
                             />
                           </a>
                         </div>
-                        <div class="col-xs-8 col-sm-8">
-                          <h3 class="dealer-name">
+                        <div className="col-xs-8 col-sm-8">
+                          <h3 className="dealer-name">
                             <a href="/">Nathan James</a>
                             <span>Real Estate Agent</span>
                           </h3>
-                          <div class="dealer-social-media">
-                            <a class="twitter" target="_blank" href="/">
-                              <i class="fa fa-twitter"></i>
+                          <div className="dealer-social-media">
+                            <a className="twitter" target="_blank" href="/">
+                              <i className="fa fa-twitter"></i>
                             </a>
-                            <a class="facebook" target="_blank" href="/">
-                              <i class="fa fa-facebook"></i>
+                            <a className="facebook" target="_blank" href="/">
+                              <i className="fa fa-facebook"></i>
                             </a>
-                            <a class="gplus" target="_blank" href="/">
-                              <i class="fa fa-google-plus"></i>
+                            <a className="gplus" target="_blank" href="/">
+                              <i className="fa fa-google-plus"></i>
                             </a>
-                            <a class="linkedin" target="_blank" href="/">
-                              <i class="fa fa-linkedin"></i>
+                            <a className="linkedin" target="_blank" href="/">
+                              <i className="fa fa-linkedin"></i>
                             </a>
-                            <a class="instagram" target="_blank" href="/">
-                              <i class="fa fa-instagram"></i>
+                            <a className="instagram" target="_blank" href="/">
+                              <i className="fa fa-instagram"></i>
                             </a>
                           </div>
                         </div>
                       </div>
 
-                      <div class="clear">
-                        <ul class="dealer-contacts">
+                      <div className="clear">
+                        <ul className="dealer-contacts">
                           <li>
-                            <i class="pe-7s-map-marker strong"> </i> Toshkent
+                            <i className="pe-7s-map-marker strong"> </i> Toshkent
                             viloyati Bo'stonliq tumani.
                           </li>
                           <li>
-                            <i class="pe-7s-mail strong"> </i>
+                            <i className="pe-7s-mail strong"> </i>
                             exemple@gmail.com
                           </li>
                           <li>
-                            <i class="pe-7s-call strong"> </i> +998916587841
+                            <i className="pe-7s-call strong"> </i> +998916587841
                           </li>
                         </ul>
                         <p>
@@ -242,17 +242,17 @@ const AllCart = () => {
                   </div>
                 </div>
                 {item.id ? <Form item={item} /> : ""}
-                <div class="panel panel-default sidebar-menu wow fadeInRight animated">
-                  <div class="panel-heading">
-                    <h3 class="panel-title"></h3>
+                <div className="panel panel-default sidebar-menu wow fadeInRight animated">
+                  <div className="panel-heading">
+                    <h3 className="panel-title"></h3>
                   </div>
                 </div>
                 <Tavsiya title="Tavsiya Etamiz!" count="4" />{" "}
-                <div class="section property-video">
-                  <h4 class="s-property-title"> Video</h4>
-                  <div class="video-thumb">
+                <div className="section property-video">
+                  <h4 className="s-property-title"> Video</h4>
+                  <div className="video-thumb">
                     <div
-                      class="video-popup"
+                      className="video-popup"
                       href="yout"
                       title="Virtual Tour"
                       style={{ width: "300px" }}

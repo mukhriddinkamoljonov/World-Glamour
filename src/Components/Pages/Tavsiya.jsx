@@ -20,32 +20,32 @@ const Tavsiya = ({ title, count }) => {
       });
   }, []);
   return (
-    <div class="panel panel-default sidebar-menu similar-property-wdg wow fadeInRight animated">
-      <div class="panel-heading">
-        <h3 class="panel-title">{title}</h3>
+    <div className="panel panel-default sidebar-menu similar-property-wdg wow fadeInRight animated">
+      <div className="panel-heading">
+        <h3 className="panel-title">{title}</h3>
       </div>
       {isReady ? (
-        <div class="panel-body recent-property-widget">
+        <div className="panel-body recent-property-widget">
           {items.map((item) => (
             <ul>
               <li>
-                <div class="col-md-3 col-sm-3 col-xs-3 blg-thumb p0">
+                <div className="col-md-3 col-sm-3 col-xs-3 blg-thumb p0">
                   <Link to={`/places/${item.id}`}>
                     <img
                       src={item.images.length ? item.images[0].file : NoImage}
                       alt={""}
                     />
                   </Link>
-                  <span class="property-seeker">
-                    <b class="b-1">A</b>
-                    <b class="b-2">S</b>
+                  <span className="property-seeker">
+                    <b className="b-1">A</b>
+                    <b className="b-2">S</b>
                   </span>
                 </div>
-                <div class="col-md-8 col-sm-8 col-xs-8 blg-entry">
+                <div className="col-md-8 col-sm-8 col-xs-8 blg-entry">
                   <h6>
                     <Link to={`/places/${item.id}`}>{item.name} </Link>
                   </h6>
-                  <span class="property-price">{item.price1}</span>
+                  <span className="property-price">{item.price1}</span>
                 </div>
               </li>
             </ul>

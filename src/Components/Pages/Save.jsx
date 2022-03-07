@@ -3,35 +3,35 @@ import React from "react";
 function Shaharlar() {
   return (
     <div>
-      <div class="page-head">
-        <div class="container">
-          <div class="row">
-            <div class="page-head-content">
-              <h1 class="page-title">List Layout With Sidebar</h1>
+      <div className="page-head">
+        <div className="container">
+          <div className="row">
+            <div className="page-head-content">
+              <h1 className="page-title">List Layout With Sidebar</h1>
             </div>
           </div>
         </div>
       </div>
 
       <div
-        class="properties-area recent-property"
+        className="properties-area recent-property"
         style={{ backgroundColor: "#fff" }}
       >
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3 p0 padding-top-40">
-              <div class="blog-asside-right pr0">
-                <div class="panel panel-default sidebar-menu wow fadeInRight animated">
-                  <div class="panel-heading">
-                    <h3 class="panel-title">Smart search</h3>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-3 p0 padding-top-40">
+              <div className="blog-asside-right pr0">
+                <div className="panel panel-default sidebar-menu wow fadeInRight animated">
+                  <div className="panel-heading">
+                    <h3 className="panel-title">Smart search</h3>
                   </div>
-                  <div class="panel-body search-widget">
-                    <form action="" class="form-inline">
+                  <div className="panel-body search-widget">
+                    <form action="" className="form-inline">
                       <fieldset>
-                        <div class="row">
-                          <div class="col-xs-12">
+                        <div className="row">
+                          <div className="col-xs-12">
                             <input
-                              class="form-control"
+                              className="form-control"
                               placeholder="Key word"
                               type="text"
                             />
@@ -40,10 +40,10 @@ function Shaharlar() {
                       </fieldset>
 
                       <fieldset>
-                        <div class="row">
-                          <div class="col-xs-6">
+                        <div className="row">
+                          <div className="col-xs-6">
                             <select
-                              class="selectpicker"
+                              className="selectpicker"
                               data-live-search="true"
                               data-live-search-style="begins"
                               id="lunchBegins"
@@ -57,9 +57,9 @@ function Shaharlar() {
                               <option>kyoto , shibua</option>
                             </select>
                           </div>
-                          <div class="col-xs-6">
+                          <div className="col-xs-6">
                             <select
-                              class="selectpicker show-tick form-control"
+                              className="selectpicker show-tick form-control"
                               id="basic"
                             >
                               <option>-Status-</option>
@@ -71,12 +71,12 @@ function Shaharlar() {
                         </div>
                       </fieldset>
 
-                      <fieldset class="padding-5">
-                        <div class="row">
-                          <div class="col-xs-6">
+                      <fieldset className="padding-5">
+                        <div className="row">
+                          <div className="col-xs-6">
                             <label for="price-range">Price range ($):</label>
                             <input
-                              class="span2"
+                              className="span2"
                               data-slider-max="600"
                               data-slider-min="0"
                               data-slider-step="5"
@@ -86,15 +86,15 @@ function Shaharlar() {
                               value=""
                             />
                             <br />
-                            <b class="pull-left color">2000$</b>
-                            <b class="pull-right color">100000$</b>
+                            <b className="pull-left color">2000$</b>
+                            <b className="pull-right color">100000$</b>
                           </div>
-                          <div class="col-xs-6">
+                          <div className="col-xs-6">
                             <label htmlFor="property-geo">
                               Property geo (m2) :
                             </label>
                             <input
-                              class="span2"
+                              className="span2"
                               data-slider-max="600"
                               data-slider-min="0"
                               data-slider-step="5"
@@ -104,18 +104,18 @@ function Shaharlar() {
                               value=""
                             />
                             <br />
-                            <b class="pull-left color">40m</b>
-                            <b class="pull-right color">12000m</b>
+                            <b className="pull-left color">40m</b>
+                            <b className="pull-right color">12000m</b>
                           </div>
                         </div>
                       </fieldset>
 
-                      <fieldset class="padding-5">
-                        <div class="row">
-                          <div class="col-xs-6">
+                      <fieldset className="padding-5">
+                        <div className="row">
+                          <div className="col-xs-6">
                             <label for="price-range">Min baths :</label>
                             <input
-                              class="span2"
+                              className="span2"
                               data-slider-max="600"
                               data-slider-min="0"
                               data-slider-step="5"
@@ -125,14 +125,14 @@ function Shaharlar() {
                               value=""
                             />
                             <br />
-                            <b class="pull-left color">1</b>
-                            <b class="pull-right color">120</b>
+                            <b className="pull-left color">1</b>
+                            <b className="pull-right color">120</b>
                           </div>
 
-                          <div class="col-xs-6">
+                          <div className="col-xs-6">
                             <label for="property-geo">Min bed :</label>
                             <input
-                              class="span2"
+                              className="span2"
                               data-slider-max="600"
                               data-slider-min="0"
                               data-slider-step="5"
@@ -142,24 +142,24 @@ function Shaharlar() {
                               value=""
                             />
                             <br />
-                            <b class="pull-left color">1</b>
-                            <b class="pull-right color">120</b>
+                            <b className="pull-left color">1</b>
+                            <b className="pull-right color">120</b>
                           </div>
                         </div>
                       </fieldset>
 
-                      <fieldset class="padding-5">
-                        <div class="row">
-                          <div class="col-xs-6">
-                            <div class="checkbox">
+                      <fieldset className="padding-5">
+                        <div className="row">
+                          <div className="col-xs-6">
+                            <div className="checkbox">
                               <label>
                                 <input checked type="checkbox" /> Fire Place
                               </label>
                             </div>
                           </div>
 
-                          <div class="col-xs-6">
-                            <div class="checkbox">
+                          <div className="col-xs-6">
+                            <div className="checkbox">
                               <label>
                                 {" "}
                                 <input type="checkbox" /> Dual Sinks
@@ -169,17 +169,17 @@ function Shaharlar() {
                         </div>
                       </fieldset>
 
-                      <fieldset class="padding-5">
-                        <div class="row">
-                          <div class="col-xs-6">
-                            <div class="checkbox">
+                      <fieldset className="padding-5">
+                        <div className="row">
+                          <div className="col-xs-6">
+                            <div className="checkbox">
                               <label>
                                 <input checked type="checkbox" /> Swimming Pool
                               </label>
                             </div>
                           </div>
-                          <div class="col-xs-6">
-                            <div class="checkbox">
+                          <div className="col-xs-6">
+                            <div className="checkbox">
                               <label>
                                 <input checked type="checkbox" /> 2 Stories
                               </label>
@@ -188,17 +188,17 @@ function Shaharlar() {
                         </div>
                       </fieldset>
 
-                      <fieldset class="padding-5">
-                        <div class="row">
-                          <div class="col-xs-6">
-                            <div class="checkbox">
+                      <fieldset className="padding-5">
+                        <div className="row">
+                          <div className="col-xs-6">
+                            <div className="checkbox">
                               <label>
                                 <input type="checkbox" /> Laundry Room
                               </label>
                             </div>
                           </div>
-                          <div class="col-xs-6">
-                            <div class="checkbox">
+                          <div className="col-xs-6">
+                            <div className="checkbox">
                               <label>
                                 <input type="checkbox" /> Emergency Exit
                               </label>
@@ -207,17 +207,17 @@ function Shaharlar() {
                         </div>
                       </fieldset>
 
-                      <fieldset class="padding-5">
-                        <div class="row">
-                          <div class="col-xs-6">
-                            <div class="checkbox">
+                      <fieldset className="padding-5">
+                        <div className="row">
+                          <div className="col-xs-6">
+                            <div className="checkbox">
                               <label>
                                 <input checked type="checkbox" /> Jog Path
                               </label>
                             </div>
                           </div>
-                          <div class="col-xs-6">
-                            <div class="checkbox">
+                          <div className="col-xs-6">
+                            <div className="checkbox">
                               <label>
                                 <input type="checkbox" /> 26' Ceilings
                               </label>
@@ -226,10 +226,10 @@ function Shaharlar() {
                         </div>
                       </fieldset>
 
-                      <fieldset class="padding-5">
-                        <div class="row">
-                          <div class="col-xs-12">
-                            <div class="checkbox">
+                      <fieldset className="padding-5">
+                        <div className="row">
+                          <div className="col-xs-12">
+                            <div className="checkbox">
                               <label>
                                 <input type="checkbox" /> Hurricane Shutters
                               </label>
@@ -239,10 +239,10 @@ function Shaharlar() {
                       </fieldset>
 
                       <fieldset>
-                        <div class="row">
-                          <div class="col-xs-12">
+                        <div className="row">
+                          <div className="col-xs-12">
                             <input
-                              class="button btn largesearch-btn"
+                              className="button btn largesearch-btn"
                               type="submit"
                               value="Search"
                             />
@@ -253,91 +253,91 @@ function Shaharlar() {
                   </div>
                 </div>
 
-                <div class="panel panel-default sidebar-menu wow fadeInRight animated">
-                  <div class="panel-heading">
-                    <h3 class="panel-title">Recommended</h3>
+                <div className="panel panel-default sidebar-menu wow fadeInRight animated">
+                  <div className="panel-heading">
+                    <h3 className="panel-title">Recommended</h3>
                   </div>
-                  <div class="panel-body recent-property-widget">
+                  <div className="panel-body recent-property-widget">
                     <ul>
                       <li>
-                        <div class="col-md-3 col-sm-3 col-xs-3 blg-thumb p0">
+                        <div className="col-md-3 col-sm-3 col-xs-3 blg-thumb p0">
                           <a href="single.html">
                             <img
                               src="assets/img/demo/small-property-2.jpg"
                               alt="title"
                             />
                           </a>
-                          <span class="property-seeker">
-                            <b class="b-1">A</b>
-                            <b class="b-2">S</b>
+                          <span className="property-seeker">
+                            <b className="b-1">A</b>
+                            <b className="b-2">S</b>
                           </span>
                         </div>
-                        <div class="col-md-8 col-sm-8 col-xs-8 blg-entry">
+                        <div className="col-md-8 col-sm-8 col-xs-8 blg-entry">
                           <h6>
                             <a href="single.html">Super nice villa </a>
                           </h6>
-                          <span class="property-price">3000000$</span>
+                          <span className="property-price">3000000$</span>
                         </div>
                       </li>
                       <li>
-                        <div class="col-md-3 col-sm-3 col-xs-3 blg-thumb p0">
+                        <div className="col-md-3 col-sm-3 col-xs-3 blg-thumb p0">
                           <a href="single.html">
                             <img
                               src="assets/img/demo/small-property-1.jpg"
                               alt="title"
                             />
                           </a>
-                          <span class="property-seeker">
-                            <b class="b-1">A</b>
-                            <b class="b-2">S</b>
+                          <span className="property-seeker">
+                            <b className="b-1">A</b>
+                            <b className="b-2">S</b>
                           </span>
                         </div>
-                        <div class="col-md-8 col-sm-8 col-xs-8 blg-entry">
+                        <div className="col-md-8 col-sm-8 col-xs-8 blg-entry">
                           <h6>
                             <a href="single.html">Super nice villa </a>
                           </h6>
-                          <span class="property-price">3000000$</span>
+                          <span className="property-price">3000000$</span>
                         </div>
                       </li>
                       <li>
-                        <div class="col-md-3 col-sm-3 col-xs-3 blg-thumb p0">
+                        <div className="col-md-3 col-sm-3 col-xs-3 blg-thumb p0">
                           <a href="single.html">
                             <img
                               src="assets/img/demo/small-property-3.jpg"
                               alt="title"
                             />
                           </a>
-                          <span class="property-seeker">
-                            <b class="b-1">A</b>
-                            <b class="b-2">S</b>
+                          <span className="property-seeker">
+                            <b className="b-1">A</b>
+                            <b className="b-2">S</b>
                           </span>
                         </div>
-                        <div class="col-md-8 col-sm-8 col-xs-8 blg-entry">
+                        <div className="col-md-8 col-sm-8 col-xs-8 blg-entry">
                           <h6>
                             <a href="single.html">Super nice villa </a>
                           </h6>
-                          <span class="property-price">3000000$</span>
+                          <span className="property-price">3000000$</span>
                         </div>
                       </li>
 
                       <li>
-                        <div class="col-md-3 col-sm-3 col-xs-3 blg-thumb p0">
+                        <div className="col-md-3 col-sm-3 col-xs-3 blg-thumb p0">
                           <a href="single.html">
                             <img
                               src="assets/img/demo/small-property-2.jpg"
                               alt="title"
                             />
                           </a>
-                          <span class="property-seeker">
-                            <b class="b-1">A</b>
-                            <b class="b-2">S</b>
+                          <span className="property-seeker">
+                            <b className="b-1">A</b>
+                            <b className="b-2">S</b>
                           </span>
                         </div>
-                        <div class="col-md-8 col-sm-8 col-xs-8 blg-entry">
+                        <div className="col-md-8 col-sm-8 col-xs-8 blg-entry">
                           <h6>
                             <a href="single.html">Super nice villa </a>
                           </h6>
-                          <span class="property-price">3000000$</span>
+                          <span className="property-price">3000000$</span>
                         </div>
                       </li>
                     </ul>
@@ -346,37 +346,37 @@ function Shaharlar() {
               </div>
             </div>
 
-            <div class="col-md-9 pr0 padding-top-40 properties-page">
-              <div class="col-md-12 clear">
-                <div class="col-xs-10 page-subheader sorting pl0">
-                  <ul class="sort-by-list">
-                    <li class="active">
+            <div className="col-md-9 pr0 padding-top-40 properties-page">
+              <div className="col-md-12 clear">
+                <div className="col-xs-10 page-subheader sorting pl0">
+                  <ul className="sort-by-list">
+                    <li className="active">
                       <a
-                        class="order_by_date"
+                        className="order_by_date"
                         data-order="ASC"
                         data-orderby="property_date"
                         href="/"
                       >
-                        Property Date <i class="fa fa-sort-amount-asc"></i>
+                        Property Date <i className="fa fa-sort-amount-asc"></i>
                       </a>
                     </li>
-                    <li class="">
+                    <li className="">
                       <a
-                        class="order_by_price"
+                        className="order_by_price"
                         data-order="DESC"
                         data-orderby="property_price"
                         href="/"
                       >
-                        Property Price <i class="fa fa-sort-numeric-desc"></i>
+                        Property Price <i className="fa fa-sort-numeric-desc"></i>
                       </a>
                     </li>
                   </ul>
 
-                  <div class="items-per-page">
+                  <div className="items-per-page">
                     <label for="items_per_page">
                       <b>Property per page :</b>
                     </label>
-                    <div class="sel">
+                    <div className="sel">
                       <select id="items_per_page" name="per_page">
                         <option value="3">3</option>
                         <option value="6">6</option>
@@ -393,21 +393,21 @@ function Shaharlar() {
                   </div>
                 </div>
 
-                <div class="col-xs-2 layout-switcher">
-                  <a class="layout-list" href="/">
-                    <i class="fa fa-th-list"></i>
+                <div className="col-xs-2 layout-switcher">
+                  <a className="layout-list" href="/">
+                    <i className="fa fa-th-list"></i>
                   </a>
-                  <a class="layout-grid active" href="/">
-                    <i class="fa fa-th"></i>
+                  <a className="layout-grid active" href="/">
+                    <i className="fa fa-th"></i>
                   </a>
                 </div>
               </div>
 
-              <div class="col-md-12 clear">
-                <div class="proerty-th" id="list-type">
-                  <div class="col-sm-6 col-md-4 p0">
-                    <div class="box-two proerty-item">
-                      <div class="item-thumb">
+              <div className="col-md-12 clear">
+                <div className="proerty-th" id="list-type">
+                  <div className="col-sm-6 col-md-4 p0">
+                    <div className="box-two proerty-item">
+                      <div className="item-thumb">
                         <a href="property-1.html">
                           <img
                             src="assets/img/demo/property-3.jpg"
@@ -416,21 +416,21 @@ function Shaharlar() {
                         </a>
                       </div>
 
-                      <div class="item-entry overflow">
+                      <div className="item-entry overflow">
                         <h5>
                           <a href="property-1.html"> Super nice villa </a>
                         </h5>
-                        <div class="dot-hr"></div>
-                        <span class="pull-left">
+                        <div className="dot-hr"></div>
+                        <span className="pull-left">
                           <b> Area :</b> 120m{" "}
                         </span>
-                        <span class="proerty-price pull-right"> $ 300,000</span>
+                        <span className="proerty-price pull-right"> $ 300,000</span>
                         <p style={{ display: "none" }}>
                           Suspendisse ultricies Suspendisse ultricies Nulla quis
                           dapibus nisl. Suspendisse ultricies commodo arcu nec
                           pretium ...
                         </p>
-                        <div class="property-icon">
+                        <div className="property-icon">
                           <img src="assets/img/icon/bed.png" alt="title" />
                           (5)|
                           <img src="assets/img/icon/shawer.png" alt="title" />
@@ -442,9 +442,9 @@ function Shaharlar() {
                     </div>
                   </div>
 
-                  <div class="col-sm-6 col-md-4 p0">
-                    <div class="box-two proerty-item">
-                      <div class="item-thumb">
+                  <div className="col-sm-6 col-md-4 p0">
+                    <div className="box-two proerty-item">
+                      <div className="item-thumb">
                         <a href="property-1.html">
                           <img
                             src="assets/img/demo/property-2.jpg"
@@ -453,21 +453,21 @@ function Shaharlar() {
                         </a>
                       </div>
 
-                      <div class="item-entry overflow">
+                      <div className="item-entry overflow">
                         <h5>
                           <a href="property-1.html"> Super nice villa </a>
                         </h5>
-                        <div class="dot-hr"></div>
-                        <span class="pull-left">
+                        <div className="dot-hr"></div>
+                        <span className="pull-left">
                           <b> Area :</b> 120m{" "}
                         </span>
-                        <span class="proerty-price pull-right"> $ 300,000</span>
+                        <span className="proerty-price pull-right"> $ 300,000</span>
                         <p style={{ display: "none" }}>
                           Suspendisse ultricies Suspendisse ultricies Nulla quis
                           dapibus nisl. Suspendisse ultricies commodo arcu nec
                           pretium ...
                         </p>
-                        <div class="property-icon">
+                        <div className="property-icon">
                           <img src="assets/img/icon/bed.png" alt="title" />
                           (5)|
                           <img src="assets/img/icon/shawer.png" alt="title" />
@@ -479,9 +479,9 @@ function Shaharlar() {
                     </div>
                   </div>
 
-                  <div class="col-sm-6 col-md-4 p0">
-                    <div class="box-two proerty-item">
-                      <div class="item-thumb">
+                  <div className="col-sm-6 col-md-4 p0">
+                    <div className="box-two proerty-item">
+                      <div className="item-thumb">
                         <a href="property-1.html">
                           <img
                             src="assets/img/demo/property-1.jpg"
@@ -490,21 +490,21 @@ function Shaharlar() {
                         </a>
                       </div>
 
-                      <div class="item-entry overflow">
+                      <div className="item-entry overflow">
                         <h5>
                           <a href="property-1.html"> Super nice villa </a>
                         </h5>
-                        <div class="dot-hr"></div>
-                        <span class="pull-left">
+                        <div className="dot-hr"></div>
+                        <span className="pull-left">
                           <b> Area :</b> 120m{" "}
                         </span>
-                        <span class="proerty-price pull-right"> $ 300,000</span>
+                        <span className="proerty-price pull-right"> $ 300,000</span>
                         <p style={{ display: "none" }}>
                           Suspendisse ultricies Suspendisse ultricies Nulla quis
                           dapibus nisl. Suspendisse ultricies commodo arcu nec
                           pretium ...
                         </p>
-                        <div class="property-icon">
+                        <div className="property-icon">
                           <img src="assets/img/icon/bed.png" alt="title" />
                           (5)|
                           <img src="assets/img/icon/shawer.png" alt="title" />
@@ -516,29 +516,29 @@ function Shaharlar() {
                     </div>
                   </div>
 
-                  <div class="col-sm-6 col-md-4 p0">
-                    <div class="box-two proerty-item">
-                      <div class="item-thumb">
+                  <div className="col-sm-6 col-md-4 p0">
+                    <div className="box-two proerty-item">
+                      <div className="item-thumb">
                         <a href="property-1.html">
                           <img src="assets/img/demo/property-3.jpg" />
                         </a>
                       </div>
 
-                      <div class="item-entry overflow">
+                      <div className="item-entry overflow">
                         <h5>
                           <a href="property-1.html"> Super nice villa </a>
                         </h5>
-                        <div class="dot-hr"></div>
-                        <span class="pull-left">
+                        <div className="dot-hr"></div>
+                        <span className="pull-left">
                           <b> Area :</b> 120m{" "}
                         </span>
-                        <span class="proerty-price pull-right"> $ 300,000</span>
+                        <span className="proerty-price pull-right"> $ 300,000</span>
                         <p style={{ display: "none" }}>
                           Suspendisse ultricies Suspendisse ultricies Nulla quis
                           dapibus nisl. Suspendisse ultricies commodo arcu nec
                           pretium ...
                         </p>
-                        <div class="property-icon">
+                        <div className="property-icon">
                           <img src="assets/img/icon/bed.png" />
                           (5)|
                           <img src="assets/img/icon/shawer.png" />
@@ -550,29 +550,29 @@ function Shaharlar() {
                     </div>
                   </div>
 
-                  <div class="col-sm-6 col-md-4 p0">
-                    <div class="box-two proerty-item">
-                      <div class="item-thumb">
+                  <div className="col-sm-6 col-md-4 p0">
+                    <div className="box-two proerty-item">
+                      <div className="item-thumb">
                         <a href="property-1.html">
                           <img src="assets/img/demo/property-1.jpg" />
                         </a>
                       </div>
 
-                      <div class="item-entry overflow">
+                      <div className="item-entry overflow">
                         <h5>
                           <a href="property-1.html"> Super nice villa </a>
                         </h5>
-                        <div class="dot-hr"></div>
-                        <span class="pull-left">
+                        <div className="dot-hr"></div>
+                        <span className="pull-left">
                           <b> Area :</b> 120m{" "}
                         </span>
-                        <span class="proerty-price pull-right"> $ 300,000</span>
+                        <span className="proerty-price pull-right"> $ 300,000</span>
                         <p style={{ display: "none" }}>
                           Suspendisse ultricies Suspendisse ultricies Nulla quis
                           dapibus nisl. Suspendisse ultricies commodo arcu nec
                           pretium ...
                         </p>
-                        <div class="property-icon">
+                        <div className="property-icon">
                           <img src="assets/img/icon/bed.png" alt="title" />
                           (5)|
                           <img src="assets/img/icon/shawer.png" alt="title" />
@@ -584,9 +584,9 @@ function Shaharlar() {
                     </div>
                   </div>
 
-                  <div class="col-sm-6 col-md-4 p0">
-                    <div class="box-two proerty-item">
-                      <div class="item-thumb">
+                  <div className="col-sm-6 col-md-4 p0">
+                    <div className="box-two proerty-item">
+                      <div className="item-thumb">
                         <a href="property-1.html">
                           <img
                             src="assets/img/demo/property-2.jpg"
@@ -595,21 +595,21 @@ function Shaharlar() {
                         </a>
                       </div>
 
-                      <div class="item-entry overflow">
+                      <div className="item-entry overflow">
                         <h5>
                           <a href="property-1.html"> Super nice villa </a>
                         </h5>
-                        <div class="dot-hr"></div>
-                        <span class="pull-left">
+                        <div className="dot-hr"></div>
+                        <span className="pull-left">
                           <b> Area :</b> 120m{" "}
                         </span>
-                        <span class="proerty-price pull-right"> $ 300,000</span>
+                        <span className="proerty-price pull-right"> $ 300,000</span>
                         <p style={{ display: "none" }}>
                           Suspendisse ultricies Suspendisse ultricies Nulla quis
                           dapibus nisl. Suspendisse ultricies commodo arcu nec
                           pretium ...
                         </p>
-                        <div class="property-icon">
+                        <div className="property-icon">
                           <img src="assets/img/icon/bed.png" alt="title" />
                           (5)|
                           <img src="assets/img/icon/shawer.png" alt="title" />
@@ -621,9 +621,9 @@ function Shaharlar() {
                     </div>
                   </div>
 
-                  <div class="col-sm-6 col-md-4 p0">
-                    <div class="box-two proerty-item">
-                      <div class="item-thumb">
+                  <div className="col-sm-6 col-md-4 p0">
+                    <div className="box-two proerty-item">
+                      <div className="item-thumb">
                         <a href="property-1.html">
                           <img
                             src="assets/img/demo/property-3.jpg"
@@ -632,21 +632,21 @@ function Shaharlar() {
                         </a>
                       </div>
 
-                      <div class="item-entry overflow">
+                      <div className="item-entry overflow">
                         <h5>
                           <a href="property-1.html"> Super nice villa </a>
                         </h5>
-                        <div class="dot-hr"></div>
-                        <span class="pull-left">
+                        <div className="dot-hr"></div>
+                        <span className="pull-left">
                           <b> Area :</b> 120m{" "}
                         </span>
-                        <span class="proerty-price pull-right"> $ 300,000</span>
+                        <span className="proerty-price pull-right"> $ 300,000</span>
                         <p style={{ display: "none" }}>
                           Suspendisse ultricies Suspendisse ultricies Nulla quis
                           dapibus nisl. Suspendisse ultricies commodo arcu nec
                           pretium ...
                         </p>
-                        <div class="property-icon">
+                        <div className="property-icon">
                           <img src="assets/img/icon/bed.png" alt="title" />
                           (5)|
                           <img src="assets/img/icon/shawer.png" alt="title" />
@@ -658,9 +658,9 @@ function Shaharlar() {
                     </div>
                   </div>
 
-                  <div class="col-sm-6 col-md-4 p0">
-                    <div class="box-two proerty-item">
-                      <div class="item-thumb">
+                  <div className="col-sm-6 col-md-4 p0">
+                    <div className="box-two proerty-item">
+                      <div className="item-thumb">
                         <a href="property-1.html">
                           <img
                             src="assets/img/demo/property-2.jpg"
@@ -669,21 +669,21 @@ function Shaharlar() {
                         </a>
                       </div>
 
-                      <div class="item-entry overflow">
+                      <div className="item-entry overflow">
                         <h5>
                           <a href="property-1.html"> Super nice villa </a>
                         </h5>
-                        <div class="dot-hr"></div>
-                        <span class="pull-left">
+                        <div className="dot-hr"></div>
+                        <span className="pull-left">
                           <b> Area :</b> 120m{" "}
                         </span>
-                        <span class="proerty-price pull-right"> $ 300,000</span>
+                        <span className="proerty-price pull-right"> $ 300,000</span>
                         <p style={{ display: "none" }}>
                           Suspendisse ultricies Suspendisse ultricies Nulla quis
                           dapibus nisl. Suspendisse ultricies commodo arcu nec
                           pretium ...
                         </p>
-                        <div class="property-icon">
+                        <div className="property-icon">
                           <img src="assets/img/icon/bed.png" alt="title" />
                           (5)|
                           <img src="assets/img/icon/shawer.png" alt="title" />
@@ -695,29 +695,29 @@ function Shaharlar() {
                     </div>
                   </div>
 
-                  <div class="col-sm-6 col-md-4 p0">
-                    <div class="box-two proerty-item">
-                      <div class="item-thumb">
+                  <div className="col-sm-6 col-md-4 p0">
+                    <div className="box-two proerty-item">
+                      <div className="item-thumb">
                         <a href="property-1.html">
                           <img src="assets/img/demo/property-1.jpg" />
                         </a>
                       </div>
 
-                      <div class="item-entry overflow">
+                      <div className="item-entry overflow">
                         <h5>
                           <a href="property-1.html"> Super nice villa </a>
                         </h5>
-                        <div class="dot-hr"></div>
-                        <span class="pull-left">
+                        <div className="dot-hr"></div>
+                        <span className="pull-left">
                           <b> Area :</b> 120m{" "}
                         </span>
-                        <span class="proerty-price pull-right"> $ 300,000</span>
+                        <span className="proerty-price pull-right"> $ 300,000</span>
                         <p style={{ display: "none" }}>
                           Suspendisse ultricies Suspendisse ultricies Nulla quis
                           dapibus nisl. Suspendisse ultricies commodo arcu nec
                           pretium ...
                         </p>
-                        <div class="property-icon">
+                        <div className="property-icon">
                           <img src="assets/img/icon/bed.png" />
                           (5)|
                           <img src="assets/img/icon/shawer.png" />
@@ -731,9 +731,9 @@ function Shaharlar() {
                 </div>
               </div>
 
-              <div class="col-md-12">
-                <div class="pull-right">
-                  <div class="pagination">
+              <div className="col-md-12">
+                <div className="pull-right">
+                  <div className="pagination">
                     <ul>
                       <li>
                         <a href="#">Prev</a>

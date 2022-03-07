@@ -1908,6 +1908,7 @@ proerty-th
   margin: 10px;
 }
 .proerty-th .proerty-item .item-thumb {
+  border-radius: 10px;
   position: relative;
 }
 .proerty-th .proerty-item:hover .item-thumb img {
@@ -1922,8 +1923,8 @@ proerty-th
   position: relative;
   width: 100%;
   opacity: 0.7;
-  min-height: 225px;
-  max-height: 265px;
+  max-height: 225px;
+  min-height: 250px;
 }
 .proerty-th .proerty-item .item-entry {
   padding: 8px;
@@ -2027,6 +2028,7 @@ proerty-th-list
   border: none;
 }
 .properties-page .box-two {
+  border-radius: 8px;
   overflow: hidden !important;
 }
 .proerty-th-list .proerty-item .item-entry h5 {

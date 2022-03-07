@@ -143,7 +143,7 @@ const Form = ({ item }) => {
               </h3>
             </div>{" "}
             <div>
-              <div class="input-group">
+              <div className="input-group">
                 <select
                   style={{ width: "273px", height: "35px", padding: "0" }}
                   ref={selectPrice}

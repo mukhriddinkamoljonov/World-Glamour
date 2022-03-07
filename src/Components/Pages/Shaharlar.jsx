@@ -106,7 +106,7 @@ function Shaharlar({ query, setQuery }) {
                       />
                       <label htmlFor="prime">Ormgohlar</label>
                     </div>
-                    <div className="checkbox-container1">
+                    <div className="checkbox-container">
                       <input
                         type="checkbox"
                         id="uzbekistan"
@@ -152,7 +152,7 @@ function Shaharlar({ query, setQuery }) {
             <div className="col-md-9 pr0 padding-top-40 properties-page">
               <div className="col-md-12 clear">
                 <div className="col-xs-2 layout-switcher">
-                  <a className="layout-list" href="javascript:void(0);">
+                  <a className="layout-list" href="javascript:void(0)">
                     <i className="fa fa-th-list"></i>
                   </a>
                   <a className="layout-grid active" href="javascript:void(0);">
