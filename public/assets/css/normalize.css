@@ -452,7 +452,6 @@ html input[disabled] {
  *    Known issue: excess padding remains in IE 6.
  */
 
-input[type="checkbox"],
 input[type="radio"] {
     box-sizing: border-box; /* 1 */
     padding: 0; /* 2 */

@@ -8,7 +8,7 @@ const Question = ({ title, info, icon, img }) => {
   return (
     <article className="question">
       <header>
-        <div style={{ display: "flex", marginLeft: "auto" }}>
+        <div style={{ display: "flex" }}>
           <h4 onClick={() => setExpanded(!expanded)} className="question-title">
             <span style={{ color: "#DD2C00", fontSize: "30px" }}> {icon}</span>{" "}
             {title}
@@ -20,10 +20,7 @@ const Question = ({ title, info, icon, img }) => {
         <hr />
       </header>
       {expanded && (
-        <div
-          className="question-container"
-          style={{ display: "flex", marginBottom: 53 }}
-        >
+        <div className="question-container" style={{ marginBottom: 53 }}>
           <p style={{ alignItems: "justify" }}>{info}</p>
           <img
             src={img}

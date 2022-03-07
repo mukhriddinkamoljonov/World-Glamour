@@ -287,3 +287,13 @@ select option {
   width: 70px;
   height: 50px;
 }
+
+.search-widget input {
+  opacity: 1 !important;
+}
+
+.properties-page .box-two {
+  -webkit-box-shadow: 0px 10px 20px -1px rgba(47, 62, 73, 0.22);
+  -moz-box-shadow: 0px 10px 20px -1px rgba(47, 62, 73, 0.22);
+  box-shadow: 0px 10px 20px -1px rgba(47, 62, 73, 0.22);
+}

@@ -1,5 +1,4 @@
 .accartion {
-  padding: 2.5rem 2rem;
   display: grid;
   gap: 1rem 2rem;
 }
@@ -21,5 +20,9 @@
   background-color: #fdc600;
 }
 
-.question-container {
+@media (max-width: 480px) {
+  .question-container {
+    width: 350px;
+    flex-direction: column;
+  }
 }

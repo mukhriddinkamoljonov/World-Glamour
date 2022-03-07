@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Tavsiya from "./Tavsiya";
 import NoImage from "../../img/no-image.jpg";
+import "./AllCart.css";
 import { Link } from "react-router-dom";
 
 function Shaharlar({ query, setQuery }) {
@@ -57,7 +58,6 @@ function Shaharlar({ query, setQuery }) {
           </div>
         </div>
       </div>
-
       <div
         className="properties-area recent-property"
         style={{ backgroundColor: "#fff" }}
@@ -119,7 +119,7 @@ function Shaharlar({ query, setQuery }) {
 
                       <label htmlFor="uzbekistan">O'zbekiston Shaharlari</label>
                     </div>
-                    <div className="checkbox-container2">
+                    <div className="checkbox-container">
                       <input
                         type="checkbox"
                         id="asia"
@@ -131,7 +131,7 @@ function Shaharlar({ query, setQuery }) {
                       />
                       <label htmlFor="asia">Osiyo Shaharlari</label>
                     </div>
-                    <div className="checkbox-container3">
+                    <div className="checkbox-container">
                       <input
                         type="checkbox"
                         id="europe"
