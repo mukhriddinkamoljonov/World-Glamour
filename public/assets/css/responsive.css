@@ -99,9 +99,7 @@
     width: 70px;
     margin-bottom: 10px;
   }
-  .navbar-default .navbar-nav > li > a {
-    font-size: 13px;
-  }
+
   .nav-button {
     font-size: 13px;
     padding: 6px 13px;
@@ -241,9 +239,6 @@
   }
   .single-footer {
     margin-top: 35px;
-  }
-  .single-footer img {
-    width: 150px;
   }
   .single-footer p {
     font-size: 13px;

@@ -184,17 +184,19 @@ const Form = ({ item }) => {
                 <Button title={"+"} action={incrementCount} />
               </div>
             </div>
-            <img className="payme" src={payme} alt="" />
-            <button
-              className={`button_payme ${
-                isActive ? "button_payme" : "payment"
-              }`}
-              disabled={isActive}
-              type="submit"
-              onClick={(toggleClass, button)}
-            >
-              <span className="texta payment">To'lov</span>
-            </button>
+            <div className="form_flex">
+              <img className="payme" src={payme} alt="" />
+              <button
+                className={`button_payme ${
+                  isActive ? "button_payme" : "payment"
+                }`}
+                disabled={isActive}
+                type="submit"
+                onClick={(toggleClass, button)}
+              >
+                <span className="texta payment">To'lov</span>
+              </button>
+            </div>
           </div>
         </div>
       </form>

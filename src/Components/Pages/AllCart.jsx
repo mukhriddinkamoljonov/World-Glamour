@@ -137,7 +137,7 @@ const AllCart = () => {
                       )}
                       {item.price3 ? (
                         <span className="col-xs-6 col-sm-8 col-md-8 add-d-entry">
-                          {item.price3}
+                          {item.price3} so'm
                         </span>
                       ) : (
                         ""

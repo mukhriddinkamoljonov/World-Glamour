@@ -305,4 +305,13 @@
     justify-content: center;
     margin-left: -15px;
   }
+  .form_flex {
+    display: flex;
+    justify-content: center;
+  }
+  .payme {
+    margin-top: 10px;
+    width: 90px !important;
+    margin-right: 20px;
+  }
 }

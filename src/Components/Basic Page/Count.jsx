@@ -7,26 +7,20 @@ import "./Main.css";
 import axios from "axios";
 
 const Count = () => {
-  const [ratesList, setRatesList] = useState([]);
-  const [base, setBase] = useState("USD");
+  const [items, setItems] = useState([]);
 
   useEffect(() => {
-    getRates("USD");
+    axios({
+      url: `https://api.exchangeratesapi.io/v1/latest?access_key=b24fc9c36b4906425df7a5868d118ef7`,
+    })
+      .then((res) => {
+        console.log(res.data.results);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   }, []);
-
-  const getRates = async (base) => {
-    const res = await axios.get(
-      `https://api.exchangeratesapi.io/latest?base=${base}`
-    );
-    const { rates } = res.data;
-
-    const ratesTemp = [];
-    for (const [symbol, rate] of Object.entries(rates)) {
-      ratesTemp.push({ symbol, rate });
-    }
-    setRatesList(ratesTemp);
-  };
-  console.log(ratesList);
+  console.log(items);
 
   return (
     <div className="count-area api-area">
@@ -49,7 +43,7 @@ const Count = () => {
                   </div>
                   <div className="chart" data-percent="5000">
                     <h2 className="percent" id="">
-                      {/* {items.UZS} */}
+                      {items.UZS}
                     </h2>
                     <h5>1 AQSh dollari , USD</h5>
                   </div>
@@ -62,7 +56,7 @@ const Count = () => {
                   </div>
                   <div className="chart" data-percent="12000">
                     <h2 className="percent" id="">
-                      {/* {items.RUB} */}
+                      {items.RUB}
                     </h2>
                     <h5>1 Rossiya rubli, RUB</h5>
                   </div>
@@ -75,7 +69,7 @@ const Count = () => {
                   </div>
                   <div className="chart" data-percent="120">
                     <h2 className="percent" id="">
-                      {/* {items.EUR} */}
+                      {items.EUR}
                     </h2>
                     <h5>1 Yevro, EUR</h5>
                   </div>
@@ -88,7 +82,7 @@ const Count = () => {
                   </div>
                   <div className="chart" data-percent="5000">
                     <h2 className="percent" id="">
-                      {/* {items.TRY} */}
+                      {items.TRY}
                     </h2>
                     <h5>1 Turkiya lirasi , TRY</h5>
                   </div>
