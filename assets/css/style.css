@@ -2027,7 +2027,6 @@ proerty-th-list
   border: none;
 }
 .properties-page .box-two {
-  border-radius: 8px;
   overflow: hidden !important;
 }
 .proerty-th-list .proerty-item .item-entry h5 {
@@ -2140,7 +2139,8 @@ single property page
 ===========================================*/
 .single-property-content {
   background-color: #fff;
-  padding: 0px 15px 20px;
+  padding: 0px 5px 20px;
+  text-align: center;
 }
 
 .lSGallery {
