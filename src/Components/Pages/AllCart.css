@@ -279,8 +279,8 @@ select option {
 }
 
 .container_city .box1 {
-  width: 1000px;
-  height: 500px;
+  /* width: 1000px; */
+  /* height: 500px; */
 }
 
 .thumb .selected {
