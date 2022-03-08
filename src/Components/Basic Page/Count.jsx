@@ -1,27 +1,34 @@
 import React, { useEffect, useState } from "react";
 import dollar from "../icons/dollar.png";
-import ruble from "../icons/ruble.png";
+import rubl from "../icons/ruble.png";
 import evro from "../icons/evro.png";
-import lira from "../icons/lira.png";
+import lir from "../icons/lira.png";
 import "./Main.css";
 import axios from "axios";
 
 const Count = () => {
   const [items, setItems] = useState([]);
+  const [ruble, setRuble] = useState([]);
+  const [yevro, setYevro] = useState([]);
+  const [lira, setLira] = useState([]);
 
-  // useEffect(() => {
-  axios
-    .get(
-      "https://api.exchangeratesapi.io/v1/latest?b24fc9c36b4906425df7a5868d118ef7=access_key"
-    )
-    .then((res) => {
-      console.log(res.data.results);
-    })
-    .catch((error) => {
-      console.log(error);
-    });
-  // }, []);
-  console.log(items);
+  useEffect(() => {
+    axios
+      .get(
+        "https://api.currencyapi.com/v3/latest?apikey=B5SGCSrgrT46RYe0gwI8HDp3qwnTSjYx7Pr5fCpt"
+      )
+      .then((res) => {
+        setItems(res.data.data.USD);
+        setRuble(res.data.data.RUB);
+        setYevro(res.data.data.EUR);
+        setLira(res.data.data.TRY);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
+
+  console.log(items.value);
 
   return (
     <div className="count-area api-area">
@@ -44,7 +51,7 @@ const Count = () => {
                   </div>
                   <div className="chart" data-percent="5000">
                     <h2 className="percent" id="">
-                      {items.UZS}
+                      {items.value}
                     </h2>
                     <h5>1 AQSh dollari , USD</h5>
                   </div>
@@ -53,11 +60,11 @@ const Count = () => {
               <div className="col-sm-3 col-xs-6">
                 <div className="count-item">
                   <div className="count-item-circle">
-                    <img src={ruble} alt="ruble" className="count-img" />
+                    <img src={rubl} alt="ruble" className="count-img" />
                   </div>
                   <div className="chart" data-percent="12000">
                     <h2 className="percent" id="">
-                      {items.RUB}
+                      {ruble.value}
                     </h2>
                     <h5>1 Rossiya rubli, RUB</h5>
                   </div>
@@ -70,7 +77,7 @@ const Count = () => {
                   </div>
                   <div className="chart" data-percent="120">
                     <h2 className="percent" id="">
-                      {items.EUR}
+                      {yevro.value}
                     </h2>
                     <h5>1 Yevro, EUR</h5>
                   </div>
@@ -79,11 +86,11 @@ const Count = () => {
               <div className="col-sm-3 col-xs-6">
                 <div className="count-item">
                   <div className="count-item-circle">
-                    <img src={lira} alt="lira" className="count-img" />
+                    <img src={lir} alt="lira" className="count-img" />
                   </div>
                   <div className="chart" data-percent="5000">
                     <h2 className="percent" id="">
-                      {items.TRY}
+                      {lira.value}
                     </h2>
                     <h5>1 Turkiya lirasi , TRY</h5>
                   </div>

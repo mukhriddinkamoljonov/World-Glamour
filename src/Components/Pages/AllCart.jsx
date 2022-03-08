@@ -189,7 +189,10 @@ const AllCart = () => {
                   <div className="dealer-content">
                     <div className="inner-wrapper">
                       <div className="clear">
-                        <div className="col-xs-4 col-sm-4 dealer-face">
+                        <div
+                          className="col-xs-4 col-sm-4 dealer-face"
+                          style={{ marginTop: "17px " }}
+                        >
                           <a href="/">
                             <img
                               src={user}
