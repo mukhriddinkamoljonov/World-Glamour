@@ -22,7 +22,7 @@ function Navbar({ setQuery }) {
             <Link to="/" className="navbar-brand">
               <img src="assets/img/logo.png" className="main-logo" alt="" />
               <div className="world">
-                <span className="header-title-per">Wolrd Glamour Tour</span>
+                <span className="header-title-per">World Glamour Tour</span>
               </div>
             </Link>
           </div>
@@ -88,10 +88,10 @@ function Navbar({ setQuery }) {
                 </Link>
                 <ul className="dropdown-menu navbar-nav">
                   <li>
-                    <Link to="/chorvoq">Ormgohlar</Link>
+                    <Link to="/chorvoq">Oromgohlar</Link>
                   </li>
                   <li>
-                    <Link to="/chorvoq">O'bekiston shaharlari</Link>
+                    <Link to="/chorvoq">O'zbekiston shaharlari</Link>
                   </li>
                   <li>
                     <Link to="/chimyon">Osiyo shaharlari</Link>
