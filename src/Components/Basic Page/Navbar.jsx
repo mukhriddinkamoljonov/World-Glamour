@@ -91,13 +91,10 @@ const Navbar = ({ setQuery }) => {
                 </Link>
                 <ul className="dropdown-menu navbar-nav">
                   <li>
-
                     <Link to="/chorvoq">Oromgohlar</Link>
                   </li>
                   <li>
                     <Link to="/chorvoq">O'zbekiston shaharlari</Link>
-
-            
                   </li>
                   <li>
                     <Link to="/chimyon">Osiyo shaharlari</Link>
