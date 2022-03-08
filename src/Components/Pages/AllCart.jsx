@@ -105,7 +105,7 @@ const AllCart = () => {
                       )}
                       {item.price1 ? (
                         <span className="col-xs-6 col-sm-8 col-md-8 add-d-entry">
-                          {item.price1} 
+                          {item.price1}
                         </span>
                       ) : (
                         ""
@@ -121,7 +121,7 @@ const AllCart = () => {
                       )}
                       {item.price2 ? (
                         <span className="col-xs-6 col-sm-8 col-md-8 add-d-entry">
-                          {item.price2} 
+                          {item.price2}
                         </span>
                       ) : (
                         ""
@@ -204,19 +204,16 @@ const AllCart = () => {
                           </h3>
                           <div className="dealer-social-media">
                             <a className="twitter" target="_blank" href="/">
-                              <i className="fa fa-twitter"></i>
+                              <i className="fa-brands fa-twitter"></i>
                             </a>
                             <a className="facebook" target="_blank" href="/">
-                              <i className="fa fa-facebook"></i>
-                            </a>
-                            <a className="gplus" target="_blank" href="/">
-                              <i className="fa fa-google-plus"></i>
+                              <i className="fa-brands fa-facebook"></i>
                             </a>
                             <a className="linkedin" target="_blank" href="/">
-                              <i className="fa fa-linkedin"></i>
+                              <i className="fa-brands fa-linkedin"></i>
                             </a>
                             <a className="instagram" target="_blank" href="/">
-                              <i className="fa fa-instagram"></i>
+                              <i className="fa-brands fa-instagram"></i>
                             </a>
                           </div>
                         </div>
