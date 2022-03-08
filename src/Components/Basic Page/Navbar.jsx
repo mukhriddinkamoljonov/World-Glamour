@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Main.css";
 
-function Navbar({ setQuery }) {
+const Navbar = ({ setQuery }) => {
+  const [clas, setClass] = useState([]);
+
+  const addClass = () => {};
   return (
     <header id="header" class="header-scrolled ">
       <nav className="navbar navbar-default main-menu">
@@ -22,7 +25,7 @@ function Navbar({ setQuery }) {
             <Link to="/" className="navbar-brand">
               <img src="assets/img/logo.png" className="main-logo" alt="" />
               <div className="world">
-                <span className="header-title-per">Wolrd Glamour Tour</span>
+                <span className="header-title-per">World Glamour Tour</span>
               </div>
             </Link>
           </div>
@@ -84,26 +87,32 @@ function Navbar({ setQuery }) {
                   data-hover="dropdown"
                   data-delay="200"
                 >
-                  Dam Olish Maskanlari <b className="caret"></b>
+                  Dam olish maskanlari <b className="caret"></b>
                 </Link>
                 <ul className="dropdown-menu navbar-nav">
                   <li>
-                    <Link to="/chorvoq">Ormgohlar</Link>
+                    <Link to="/chorvoq">ormgohlar</Link>
                   </li>
                   <li>
-                    <Link to="/chorvoq">O'bekiston shaharlari</Link>
+                    <Link to="/chorvoq">o'zbekiston shaharlari</Link>
                   </li>
                   <li>
                     <Link to="/chimyon">Osiyo shaharlari</Link>
                   </li>
                   <li>
-                    <Link to="/bostonliq">Yevropa shaharlari</Link>
+                    <Link to="/bostonliq">Evropa shaharlari</Link>
                   </li>
                 </ul>
               </li>
 
-              <li className="wow fadeInDown" data-wow-delay="0.2s">
-                <Link to="/Sayyohlar">Sayyohlar uchun</Link>
+              <li
+                className="wow fadeInDown"
+                onClick={addClass}
+                data-wow-delay="0.2s"
+              >
+                <Link to="/Sayyohlar" aria-expanded="false">
+                  Sayohlar uchun
+                </Link>
               </li>
               <li className="wow fadeInDown" data-wow-delay="0.3s">
                 <Link to="/about">Biz haqimizda</Link>
@@ -114,6 +123,6 @@ function Navbar({ setQuery }) {
       </nav>
     </header>
   );
-}
+};
 
 export default Navbar;
