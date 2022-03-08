@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.4cf24bd9.css",
-    "main.js": "/static/js/main.6ddc4a85.js",
+    "main.js": "/static/js/main.c5f8d01d.js",
     "static/media/biz_haqimizda1.jpg": "/static/media/biz_haqimizda1.b23666cec3cb32e6e47f.jpg",
     "static/media/logo.png": "/static/media/logo.a3e8fbf5b90fe75ab528.png",
     "static/media/viza.jpg": "/static/media/viza.6640a6837b87344ccedf.jpg",
@@ -20,13 +20,14 @@
     "static/media/payme_01.png": "/static/media/payme_01.f050a6f86f9d55d4e256.png",
     "static/media/phone.png": "/static/media/phone.85641426eb758c73eed8.png",
     "static/media/agreed.png": "/static/media/agreed.e6cb64cab4e70db6fa4f.png",
+    "static/media/user.png": "/static/media/user.b847900ce466c338fcfe.png",
     "static/media/heart.png": "/static/media/heart.baf72ad6c2266e01da0d.png",
     "index.html": "/index.html",
     "main.4cf24bd9.css.map": "/static/css/main.4cf24bd9.css.map",
-    "main.6ddc4a85.js.map": "/static/js/main.6ddc4a85.js.map"
+    "main.c5f8d01d.js.map": "/static/js/main.c5f8d01d.js.map"
   },
   "entrypoints": [
     "static/css/main.4cf24bd9.css",
-    "static/js/main.6ddc4a85.js"
+    "static/js/main.c5f8d01d.js"
   ]
 }
