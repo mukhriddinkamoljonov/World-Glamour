@@ -106,7 +106,7 @@ const Navbar = ({ setQuery }) => {
               </li>
 
               <li
-                className="wow fadeInDown"
+                className="wow fadeInDown collapse"
                 onClick={addClass}
                 data-wow-delay="0.2s"
               >
