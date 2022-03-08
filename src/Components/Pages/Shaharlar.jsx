@@ -8,11 +8,14 @@ import { Link } from "react-router-dom";
 function Shaharlar({ query, setQuery }) {
   const [isReady, setIsReady] = useState(null);
   const [places, setPlaces] = useState([]);
+
+  const [data, setData] = useState([]);
   const [filtedData, setFiltedData] = useState([]);
-  const [checkboxPrime, setCheckboxPrime] = useState(false);
-  const [checkboxUzbekistan, setCheckboxUzbekistan] = useState(false);
-  const [checkboxAsia, setCheckboxAsia] = useState(false);
-  const [checkboxEurope, setCheckboxEurope] = useState(false);
+
+  const [checkboxPrime, setCheckboxPrime] = useState("prime");
+  const [checkboxUzbekistan, setCheckboxUzbekistan] = useState("uzbekistan");
+  const [checkboxAsia, setCheckboxAsia] = useState("asia");
+  const [checkboxEurope, setCheckboxEurope] = useState("europe");
 
   useEffect(() => {
     axios
@@ -28,10 +31,6 @@ function Shaharlar({ query, setQuery }) {
   }, []);
 
   const checkCheckbox = () => {
-    console.log(checkboxPrime);
-    console.log(checkboxUzbekistan);
-    console.log(checkboxAsia);
-    console.log(checkboxEurope);
     // if (checkboxPrime || checkboxUzbekistan || checkboxAsia || checkboxEurope) {
     //   setFiltedData(places);
     // } else {
@@ -42,9 +41,16 @@ function Shaharlar({ query, setQuery }) {
     //     if (place.type === "asia" && checkboxAsia) data.push(place);
     //     if (place.type === "europe" && checkboxEurope) data.push(place);
     //   });
-    //   console.log(data);
     //   setFiltedData(data);
     // }
+  };
+
+  const Prime = (value, e) => {
+    console.log(value);
+    if (e.target.checked) {
+      let selectedData = data.filter((item) => item.type === value);
+      setFiltedData([...filtedData, ...selectedData]);
+    }
   };
 
   return (
@@ -103,8 +109,9 @@ function Shaharlar({ query, setQuery }) {
                       <input
                         type="checkbox"
                         id="prime"
+                        name={checkboxPrime}
                         value={checkboxPrime}
-                        onChange={(e) => console.log(e.target.value)}
+                        onChange={Prime}
                       />
                       <label htmlFor="prime">Ormgohlar</label>
                     </div>
@@ -112,11 +119,9 @@ function Shaharlar({ query, setQuery }) {
                       <input
                         type="checkbox"
                         id="uzbekistan"
+                        name={checkboxUzbekistan}
                         value={checkboxUzbekistan}
-                        onChange={(e) => {
-                          setCheckboxUzbekistan(e.target.value);
-                          checkCheckbox();
-                        }}
+                        onChange={(e) => console.log(e.target.name)}
                       />
 
                       <label htmlFor="uzbekistan">O'zbekiston Shaharlari</label>
@@ -125,11 +130,9 @@ function Shaharlar({ query, setQuery }) {
                       <input
                         type="checkbox"
                         id="asia"
+                        name="asia"
                         value={checkboxAsia}
-                        onChange={(e) => {
-                          setCheckboxAsia(e.target.value);
-                          checkCheckbox();
-                        }}
+                        onChange={(e) => console.log(e.target.name)}
                       />
                       <label htmlFor="asia">Osiyo Shaharlari</label>
                     </div>
@@ -137,11 +140,9 @@ function Shaharlar({ query, setQuery }) {
                       <input
                         type="checkbox"
                         id="europe"
+                        name={checkboxEurope}
                         value={checkboxEurope}
-                        onChange={
-                          ((e) => setCheckboxEurope(e.target.value),
-                          checkCheckbox())
-                        }
+                        onChange={(e) => console.log(e.target.name)}
                       />
                       <label htmlFor="europe">Yevropa Shaharlari</label>
                     </div>{" "}

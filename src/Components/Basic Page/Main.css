@@ -285,6 +285,7 @@
   background: rgba(255, 255, 255, 0.15);
   padding-left: 15px;
   padding-right: 15px;
+  background: none;
 }
 
 @media (max-width: 480px) {
