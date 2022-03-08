@@ -194,7 +194,7 @@ function Shaharlar({ query, setQuery }) {
                                 <b> Umumiy summa :</b>
                               </span>
                               <span className="proerty-price pull-right">
-                                {item.price1} so'm
+                                {item.price1}
                               </span>
                             </div>
                           </div>

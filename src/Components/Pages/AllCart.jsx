@@ -105,7 +105,7 @@ const AllCart = () => {
                       )}
                       {item.price1 ? (
                         <span className="col-xs-6 col-sm-8 col-md-8 add-d-entry">
-                          {item.price1} so'm
+                          {item.price1} 
                         </span>
                       ) : (
                         ""
@@ -121,7 +121,7 @@ const AllCart = () => {
                       )}
                       {item.price2 ? (
                         <span className="col-xs-6 col-sm-8 col-md-8 add-d-entry">
-                          {item.price2} so'm
+                          {item.price2} 
                         </span>
                       ) : (
                         ""
