@@ -66,7 +66,7 @@ function AboutWe() {
                   <div className="row wow fadeInRight animated">
                     <div className="col-sm-6">
                       <p className="author-category">
-                        Bi <a href="/">Siz Bilan</a> doim
+                        Biz <a href="/">Siz Bilan</a> doim
                         <a href="#">Birgamiz</a>
                       </p>
                     </div>
