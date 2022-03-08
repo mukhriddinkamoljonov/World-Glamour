@@ -66,17 +66,17 @@ function AboutWe() {
                   <div className="row wow fadeInRight animated">
                     <div className="col-sm-6">
                       <p className="author-category">
-                        By <a href="/">John Snow</a> in
-                        <a href="blog.html">Webdesign</a>
+                        Biz <a href="/">Siz Bilan</a> doim
+                        <a href="#">Birgamiz</a>
                       </p>
                     </div>
                     <div className="col-sm-6 right">
                       <p className="date-comments">
                         <a href="single.html">
-                          <i className="fa fa-calendar-o"></i> June 20, 2013
+                          <i className="fa fa-calendar-o"></i> Mart 8, 2022
                         </a>
                         <a href="single.html">
-                          <i className="fa fa-comment-o"></i> 8 Comments
+                          <i className="fa fa-comment-o"></i> 107 Comments
                         </a>
                       </p>
                     </div>
@@ -124,14 +124,6 @@ function AboutWe() {
                     <span className="date2">Xizmatingizda</span>
                   </div>
 
-                  <ol>
-                    <li>
-                      Xizmatlarimiz sifatli bo'lishiga qaramasdan, narxlar ham
-                      albatta hamyonbop.
-                    </li>
-                    <li>Aliquam tincidunt mauris eu risus.</li>
-                  </ol>
-
                   <h3>
                     Qiziqarli sayohatlar olamida bizning mehmonimiz bo'ling!
                   </h3>
@@ -157,7 +149,7 @@ function AboutWe() {
             <div className="blog-asside-right col-md-3">
               <div className="panel panel-default sidebar-menu wow fadeInRight animated">
                 <div className="panel-heading">
-                  <h3 className="panel-title">Turizm Agentligi</h3>
+                  <h3 className="panel-title">Turizm Kompanyasi</h3>
                 </div>
                 <div className="panel-body text-widget">
                   <p>
@@ -220,9 +212,7 @@ function AboutWe() {
                             <img src={chat} className="about-img" alt="" />
                           </div>
                           <div className="chart" data-percent="120">
-                            <h5 className="about-h5">
-                              Vizali qo‘llab-quvvatlash
-                            </h5>
+                            <h4 className="about-h4">Qo‘llab-quvvatlash</h4>
                             <p>
                               Viza bilan bog‘liq eng murakkab muammolarni hal
                               qilishga yordam .
@@ -263,57 +253,7 @@ function AboutWe() {
                 ></iframe>
               </p>
             </div> */}
-            <hr />
-            <div className="row">
-              <div className="col-sm-4">
-                <h3>
-                  <i className="fa fa-map-marker"></i> Address
-                </h3>
-                <p>
-                  13/25 shibuia <br />
-                  Fergana <br />
-                  Festival kochasi
-                  <br />
-                  <strong>Uzbekistan</strong>
-                </p>
-              </div>
-              <div className="col-sm-4">
-                <h3>
-                  <i className="fa fa-phone"></i> Qo'ng'iroqlar markazi
-                </h3>
-                <p className="text-muted">
-                  Agar Uzbekistandan qo'ng'iroq qilsangiz, bu raqam bepul, aks
-                  holda elektron aloqa shaklidan foydalanishni maslahat beramiz.
-                </p>
-                <p>
-                  <strong>+998(91) 658 78 41</strong>
-                </p>
-              </div>
-              <div className="col-sm-4">
-                <h3>
-                  <i className="fa fa-envelope"></i> Elektron pochta
-                </h3>
-                <p className="text-muted">
-                  Iltimos, bizga elektron pochta xabarini yozing yoki elektron
-                  chiptalar tizimimizdan foydalaning.
-                </p>
-                <ul>
-                  <li>
-                    <strong>
-                      <a href="mailto:">raymjonovbobur@gmail.com</a>
-                    </strong>
-                  </li>
-                  <li>
-                    <strong>
-                      <a href="https://e-visa.gov.uz/application">
-                        Uzbekistan Viza
-                      </a>
-                    </strong>
-                    - bizning chiptalarni qo'llab-quvvatlash platformamiz
-                  </li>
-                </ul>
-              </div>
-            </div>
+       
           </div>
         </div>
       </div>
