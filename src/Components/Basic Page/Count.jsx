@@ -9,17 +9,18 @@ import axios from "axios";
 const Count = () => {
   const [items, setItems] = useState([]);
 
-  useEffect(() => {
-    axios({
-      url: `https://api.exchangeratesapi.io/v1/latest?access_key=b24fc9c36b4906425df7a5868d118ef7`,
+  // useEffect(() => {
+  axios
+    .get(
+      "https://api.exchangeratesapi.io/v1/latest?b24fc9c36b4906425df7a5868d118ef7=access_key"
+    )
+    .then((res) => {
+      console.log(res.data.results);
     })
-      .then((res) => {
-        console.log(res.data.results);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, []);
+    .catch((error) => {
+      console.log(error);
+    });
+  // }, []);
   console.log(items);
 
   return (

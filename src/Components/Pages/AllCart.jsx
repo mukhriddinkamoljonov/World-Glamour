@@ -6,6 +6,7 @@ import axios from "axios";
 import { useParams } from "react-router-dom";
 import Tavsiya from "./Tavsiya";
 import Form from "../Form/Form";
+import user from "../../img/user.png";
 
 const AllCart = () => {
   let { id } = useParams();
@@ -191,7 +192,7 @@ const AllCart = () => {
                         <div className="col-xs-4 col-sm-4 dealer-face">
                           <a href="/">
                             <img
-                              src="assets/img/client-face1.png"
+                              src={user}
                               className="img-circle"
                               alt="title"
                             />

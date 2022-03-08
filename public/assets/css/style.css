@@ -2303,6 +2303,7 @@ single property page
   color: #fff;
   padding-bottom: 20px;
   margin: -15px -15px 25px;
+  margin: 0px;
 }
 .dealer-name {
   margin-top: 6px;
@@ -2331,7 +2332,7 @@ single property page
 }
 .dealer-contacts {
   list-style: outside none none;
-  padding: 30px 0px 0px 10px;
+  padding: 5px 0px 0px 10px;
 }
 .dealer-contacts li i {
   color: black;
