@@ -192,49 +192,22 @@ const AllCart = () => {
                         <div
                           className="col-xs-4 col-sm-4 dealer-face"
                           style={{ marginTop: "17px " }}
-                        >
-                          <a href="/">
-                            <img
-                              src={user}
-                              className="img-circle"
-                              alt="title"
-                            />
-                          </a>
-                        </div>
-                        <div className="col-xs-8 col-sm-8">
-                          <h3 className="dealer-name">
-                            <a href="/">Nathan James</a>
-                            <span>Real Estate Agent</span>
-                          </h3>
-                          <div className="dealer-social-media">
-                            <a className="twitter" target="_blank" href="/">
-                              <i className="fa-brands fa-twitter"></i>
-                            </a>
-                            <a className="facebook" target="_blank" href="/">
-                              <i className="fa-brands fa-facebook"></i>
-                            </a>
-                            <a className="linkedin" target="_blank" href="/">
-                              <i className="fa-brands fa-linkedin"></i>
-                            </a>
-                            <a className="instagram" target="_blank" href="/">
-                              <i className="fa-brands fa-instagram"></i>
-                            </a>
-                          </div>
-                        </div>
+                        ></div>
                       </div>
 
                       <div className="clear">
                         <ul className="dealer-contacts">
                           <li>
                             <i className="pe-7s-map-marker strong"> </i>{" "}
-                            Toshkent viloyati Bo'stonliq tumani.
+                            Farg'ona shahar, Al-Marg'iloniy 12 uy.
                           </li>
                           <li>
                             <i className="pe-7s-mail strong"> </i>
-                            exemple@gmail.com
+                            rnj-787@mail.ru
                           </li>
                           <li>
-                            <i className="pe-7s-call strong"> </i> +998916587841
+                            <i className="pe-7s-call strong"> </i> +99897 214 44
+                            01
                           </li>
                         </ul>
                         <p>
