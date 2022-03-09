@@ -2492,7 +2492,7 @@ Welcom
   margin: -18px 0px;
   border: 10px solid #f3f3f3;
   position: relative;
-  z-index: 1000;
+  z-index: 100;
 }
 .welcome_text .page-title h2 {
   color: #fdc600;

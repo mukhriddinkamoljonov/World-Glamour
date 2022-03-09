@@ -34,7 +34,7 @@
     margin: -18px 0px;
     border: 10px solid #fff;
     position: relative;
-    z-index: 1000;
+    z-index: 100;
   }
   .welcome-estate {
     background-color: #fff;
@@ -325,7 +325,7 @@
     margin: -18px 0px;
     border: 10px solid #fff;
     position: relative;
-    z-index: 1000;
+    z-index: 100;
   }
   .welcome-estate {
     background-color: #fff;
