@@ -1435,8 +1435,8 @@ ul ul {
 }
 .list-inline > li {
   display: inline-block;
-  padding-right: 5px;
-  padding-left: 5px;
+  padding-right: 15px;
+  padding-left: 20px;
 }
 dl {
   margin-top: 0;
