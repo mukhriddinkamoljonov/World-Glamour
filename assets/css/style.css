@@ -2552,9 +2552,10 @@ count-area
   padding-bottom: 70px;
 }
 .count-item h2 {
-  font: 700 30px "Open Sans", sans-serif;
+  font: 700 20px "Open Sans", sans-serif;
   text-align: center;
   margin: 30px 0px 5px;
+
 }
 .chart canvas {
   position: absolute;
@@ -2580,6 +2581,8 @@ count-area
   padding: 35px 0px 35px 30px;
   position: relative;
   cursor: pointer;
+      height: 165px;
+    margin-left: 10px;
 }
 .asks-first:hover {
   background-color: #8c8c8c;
@@ -2614,7 +2617,11 @@ count-area
 .asks-first-info p {
   font: 400 13px "Open Sans", sans-serif;
   margin: 0px;
+  width: 300px;
+  margin-top: 20px;
+  text-align: justify;
 }
+
 .asks-first-arrow {
   top: 0px;
   position: absolute;
