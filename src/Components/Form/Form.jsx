@@ -4,7 +4,6 @@ import Button from "./button";
 import payme from "../../img/payme_01.png";
 import "./Form.css";
 
-
 const Form = ({ item }) => {
   const [isActive, setActive] = useState(false);
 
@@ -139,7 +138,7 @@ const Form = ({ item }) => {
           <div>
             <div className="count">
               <h3>
-                Qiymat:
+                <span>Qiymat: </span>
                 {activePrice} so'm
               </h3>
             </div>{" "}
