@@ -151,21 +151,21 @@ const Form = ({ item }) => {
                 >
                   {item.price1 ? (
                     <option value={item.price1}>
-                      {item.price1_description} {item.price1}
+                      {item.price1_description} {item.price1} so'm
                     </option>
                   ) : (
                     ""
                   )}
                   {item.price2 ? (
                     <option value={item.price2}>
-                      {item.price2_description} {item.price2}
+                      {item.price2_description} {item.price2}so'm
                     </option>
                   ) : (
                     ""
                   )}
                   {item.price3 ? (
                     <option value={item.price3}>
-                      {item.price3_description} {item.price3}
+                      {item.price3_description} {item.price3}so'm
                     </option>
                   ) : (
                     ""
