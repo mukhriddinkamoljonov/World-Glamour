@@ -89,20 +89,6 @@ const Navbar = ({ setQuery }) => {
                 >
                   Dam olish maskanlari <b className="caret"></b>
                 </Link>
-                <ul className="dropdown-menu navbar-nav">
-                  <li style={{color:"red"}}>
-                    <Link to="/chorvoq">Oromgohlar</Link>
-                  </li>
-                  <li>
-                    <Link to="/chorvoq">O'zbekiston shaharlari</Link>
-                  </li>
-                  <li>
-                    <Link to="/chimyon">Osiyo shaharlari</Link>
-                  </li>
-                  <li>
-                    <Link to="/bostonliq">Evropa shaharlari</Link>
-                  </li>
-                </ul>
               </li>
 
               <li
