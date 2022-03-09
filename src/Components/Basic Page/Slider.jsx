@@ -28,8 +28,8 @@ const Slider = () => {
               </h2>
               <h5 className="header-title-simple">
                 Eʼtiborga molik joylarni, insonlar hayoti va hodisalar
-                to‘g‘risida eng qiziqarli maʼlumotlarni biz orqali
-                topishingiz mumkin!
+                to‘g‘risida eng qiziqarli maʼlumotlarni biz orqali topishingiz
+                mumkin!
               </h5>
             </div>
           </div>
