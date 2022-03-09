@@ -96,56 +96,28 @@ function Shaharlar({ query, setQuery }) {
                         <div className="row">
                           <div className="col-xs-12">
                             <button
-                              className="button btn largesearch-btn"
+                              className="button btn largesearch-btn text-center"
                               type="submit"
                             >
-                              Izlash...
+                              IZLASH
                             </button>
                           </div>
                         </div>
                       </fieldset>
                     </form>
-                    <div className="checkbox-container">
-                      <input
-                        type="checkbox"
-                        id="prime"
-                        name={checkboxPrime}
-                        value={checkboxPrime}
-                        onChange={Prime}
-                      />
-                      <label htmlFor="prime">Ormgohlar</label>
+                    <div className="col-md-12 clear">
+                      <div className="col-xs-2 layout-switcher d-flex">
+                        <a className="layout-list" href="javascript:void(0)">
+                          <i className="fa fa-th-list"></i>
+                        </a>
+                        <a
+                          className="layout-grid active"
+                          href="javascript:void(0);"
+                        >
+                          <i className="fa fa-th"></i>
+                        </a>
+                      </div>
                     </div>
-                    <div className="checkbox-container">
-                      <input
-                        type="checkbox"
-                        id="uzbekistan"
-                        name={checkboxUzbekistan}
-                        value={checkboxUzbekistan}
-                        onChange={(e) => console.log(e.target.name)}
-                      />
-
-                      <label htmlFor="uzbekistan">O'zbekiston Shaharlari</label>
-                    </div>
-                    <div className="checkbox-container">
-                      <input
-                        type="checkbox"
-                        id="asia"
-                        name="asia"
-                        value={checkboxAsia}
-                        onChange={(e) => console.log(e.target.name)}
-                      />
-                      <label htmlFor="asia">Osiyo Shaharlari</label>
-                    </div>
-                    <div className="checkbox-container">
-                      <input
-                        type="checkbox"
-                        id="europe"
-                        name={checkboxEurope}
-                        value={checkboxEurope}
-                        onChange={(e) => console.log(e.target.name)}
-                      />
-                      <label htmlFor="europe">Yevropa Shaharlari</label>
-                    </div>{" "}
                   </div>
                 </div>
                 <Tavsiya />
@@ -153,16 +125,6 @@ function Shaharlar({ query, setQuery }) {
             </div>
 
             <div className="col-md-9 pr0 padding-top-40 properties-page">
-              <div className="col-md-12 clear">
-                <div className="col-xs-2 layout-switcher">
-                  <a className="layout-list" href="javascript:void(0)">
-                    <i className="fa fa-th-list"></i>
-                  </a>
-                  <a className="layout-grid active" href="javascript:void(0);">
-                    <i className="fa fa-th"></i>
-                  </a>
-                </div>
-              </div>
               {isReady ? (
                 <div className="col-md-12 clear">
                   <div className="proerty-th" id="list-type">
