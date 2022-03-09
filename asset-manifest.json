@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.4cf24bd9.css",
-    "main.js": "/static/js/main.137dae52.js",
+    "main.js": "/static/js/main.28b48bad.js",
     "static/media/biz_haqimizda1.jpg": "/static/media/biz_haqimizda1.b23666cec3cb32e6e47f.jpg",
     "static/media/logo.png": "/static/media/logo.a3e8fbf5b90fe75ab528.png",
     "static/media/viza.jpg": "/static/media/viza.6640a6837b87344ccedf.jpg",
@@ -24,10 +24,10 @@
     "static/media/heart.png": "/static/media/heart.baf72ad6c2266e01da0d.png",
     "index.html": "/index.html",
     "main.4cf24bd9.css.map": "/static/css/main.4cf24bd9.css.map",
-    "main.137dae52.js.map": "/static/js/main.137dae52.js.map"
+    "main.28b48bad.js.map": "/static/js/main.28b48bad.js.map"
   },
   "entrypoints": [
     "static/css/main.4cf24bd9.css",
-    "static/js/main.137dae52.js"
+    "static/js/main.28b48bad.js"
   ]
 }
