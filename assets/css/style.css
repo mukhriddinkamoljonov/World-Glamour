@@ -2552,9 +2552,10 @@ count-area
   padding-bottom: 70px;
 }
 .count-item h2 {
-  font: 700 30px "Open Sans", sans-serif;
+  font: 700 20px "Open Sans", sans-serif;
   text-align: center;
   margin: 30px 0px 5px;
+
 }
 .chart canvas {
   position: absolute;
