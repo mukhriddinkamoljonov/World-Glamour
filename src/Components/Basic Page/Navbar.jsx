@@ -90,7 +90,7 @@ const Navbar = ({ setQuery }) => {
                   Dam olish maskanlari <b className="caret"></b>
                 </Link>
                 <ul className="dropdown-menu navbar-nav">
-                  <li>
+                  <li style={{color:"red"}}>
                     <Link to="/chorvoq">Oromgohlar</Link>
                   </li>
                   <li>
