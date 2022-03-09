@@ -266,6 +266,9 @@
   .container_city .box1 {
     height: 500px;
   }
+  .question-container {
+    display: flex;
+  }
 }
 
 #header.header-scrolled {

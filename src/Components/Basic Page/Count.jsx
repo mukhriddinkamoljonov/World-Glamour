@@ -20,7 +20,7 @@ const Count = () => {
       .then((res) => {
         setItems(res.data.data.USD);
         setRuble(res.data.data.RUB);
-        setYevro(res.data.data.EUR);
+        setYevro(res.data.data.EUR);  
         setLira(res.data.data.TRY);
       })
       .catch((error) => {
