@@ -24,7 +24,7 @@ function smallCard({ item }) {
               Batafsil
             </Link>{" "}
           </span>
-          <span className="proerty-price pull-right">{item.price1}</span>
+          <span className="proerty-price pull-right">{item.price1} so'm</span>
         </div>
       </div>
     </div>

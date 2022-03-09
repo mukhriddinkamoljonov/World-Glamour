@@ -16,7 +16,8 @@ const Home = ({ query }) => {
   return (
     <div>
       <Slider />
-      {loading ? (
+      {
+        loading ? (
         <div className="spinner-border m-5" role="status">
           <span className="sr-only">Loading...</span>
         </div>
@@ -29,7 +30,8 @@ const Home = ({ query }) => {
           <Count />
           <Sale />
         </div>
-      )}
+        )
+      }
     </div>
   );
 };

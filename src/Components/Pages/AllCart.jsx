@@ -68,7 +68,7 @@ const AllCart = () => {
                 <div className="single-property-header">
                   <h1 className="property-title pull-left">{item.address}</h1>
                   <span className="property-price pull-right">
-                    {item.price1}
+                    {item.price1} so'm
                   </span>
                 </div>
                 <div className="section additional-details">
@@ -106,7 +106,7 @@ const AllCart = () => {
                       )}
                       {item.price1 ? (
                         <span className="col-xs-6 col-sm-8 col-md-8 add-d-entry">
-                          {item.price1}
+                          {item.price1} so'm
                         </span>
                       ) : (
                         ""
@@ -122,7 +122,7 @@ const AllCart = () => {
                       )}
                       {item.price2 ? (
                         <span className="col-xs-6 col-sm-8 col-md-8 add-d-entry">
-                          {item.price2}
+                          {item.price2} so'm
                         </span>
                       ) : (
                         ""
@@ -138,7 +138,7 @@ const AllCart = () => {
                       )}
                       {item.price3 ? (
                         <span className="col-xs-6 col-sm-8 col-md-8 add-d-entry">
-                          {item.price3}
+                          {item.price3} so'm
                         </span>
                       ) : (
                         ""

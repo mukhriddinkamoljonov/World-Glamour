@@ -36,16 +36,13 @@ const Tavsiya = ({ title, count }) => {
                       alt={""}
                     />
                   </Link>
-                  <span className="property-seeker">
-                    <b className="b-1">A</b>
-                    <b className="b-2">S</b>
-                  </span>
+                  
                 </div>
                 <div className="col-md-8 col-sm-8 col-xs-8 blg-entry">
                   <h6>
                     <Link to={`/places/${item.id}`}>{item.name} </Link>
                   </h6>
-                  <span className="property-price">{item.price1}</span>
+                  <span className="property-price">{item.price1}</span> so'm
                 </div>
               </li>
             </ul>
