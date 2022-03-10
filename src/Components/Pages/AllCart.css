@@ -130,6 +130,7 @@ select option {
 }
 .input-group-icon {
   position: relative;
+  width: 100%;
 }
 .input-group-icon input {
   padding-left: 4.4em;
@@ -218,7 +219,6 @@ select option {
 .additional-details {
   background-color: rgb(238, 238, 238);
 }
-
 
 .icheckbox_square-yellow {
   left: -8px;

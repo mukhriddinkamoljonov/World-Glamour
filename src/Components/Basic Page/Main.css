@@ -260,9 +260,9 @@
 }
 
 @media (min-width: 768px) {
-  .api-area {
-    margin-left: 100px;
-  }
+  /* .api-area {
+    margin-left: 320px;
+  } */
   .container_city .box1 {
     height: 500px;
   }
@@ -311,10 +311,19 @@
   .form_flex {
     display: flex;
     justify-content: center;
+    width: 100%;
   }
   .payme {
     margin-top: 10px;
     width: 90px !important;
     margin-right: 20px;
   }
+}
+
+.count {
+  text-align: center;
+}
+
+.form_flex {
+  width: auto
 }

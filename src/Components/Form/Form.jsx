@@ -145,7 +145,7 @@ const Form = ({ item }) => {
             <div>
               <div className="input-group">
                 <select
-                  style={{ width: "273px", height: "35px", padding: "0" }}
+                  style={{ width: "auto", }}
                   ref={selectPrice}
                   onChange={select}
                 >

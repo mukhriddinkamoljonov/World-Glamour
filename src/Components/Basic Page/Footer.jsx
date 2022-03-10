@@ -20,6 +20,11 @@ const Footer = () => {
         console.log(error);
       });
   }, []);
+
+  var today = new Date();
+  var date =
+    today.getFullYear() + "-" + (today.getMonth() + 1) + "-" + today.getDate();
+  console.log(date);
   return (
     <div className="footer-area">
       <div className="footer">
@@ -108,7 +113,7 @@ const Footer = () => {
                             alt={""}
                           />
                         </Link>
-                        <span className="blg-date">5-01-2021</span>
+                        <span className="blg-date">{date}</span>
                       </div>
                       <div className="col-md-8 col-sm-8 col-xs-8 blg-entry">
                         <h6>

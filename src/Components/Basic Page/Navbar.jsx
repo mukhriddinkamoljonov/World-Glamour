@@ -87,7 +87,7 @@ const Navbar = ({ setQuery }) => {
                   data-hover="dropdown"
                   data-delay="200"
                 >
-                  Dam olish maskanlari <b className="caret"></b>
+                  Dam olish maskanlari
                 </Link>
               </li>
 

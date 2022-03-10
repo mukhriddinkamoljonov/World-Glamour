@@ -6,7 +6,7 @@ body {
 body {
   height: 100%;
   font-family: "Open Sans", sans-serif;
-  font-weight: 300;
+  /* font-weight: 300; */
   padding: 0;
   margin: 0;
   font-size: 14px;
@@ -1596,8 +1596,8 @@ Asside widgets CSS
 }
 .page-title h2 {
   margin: 10px 0px;
-  font-size: 30px;
-  font-weight: 300;
+  /* font-size: 30px; */
+  /* font-weight: 300; */
   text-transform: uppercase;
   letter-spacing: 4px;
 }
@@ -1605,9 +1605,10 @@ Asside widgets CSS
   color: #00adef;
 }
 .page-title p {
-  font-size: 18px;
+  font-size: 20px;
   padding: 10px 20% 25px;
-  line-height: 27px;
+  line-height: 35px;
+  font-weight: 500;
 }
 
 .pagination {
@@ -2239,7 +2240,7 @@ single property page
 .s-property-title {
   margin-bottom: 15px;
   color: #ffa500;
-  font-size: 18px;
+  font-size: 35px;
 }
 
 .s-property-title::after {
@@ -2301,12 +2302,13 @@ single property page
   padding: 15px 25px 25px;
 }
 .dealer-widget {
-  background-color: #838383;
+  background-color: #08988d;
   padding: 15px;
   color: #fff;
   padding-bottom: 20px;
   margin: -15px -15px 25px;
   margin: 0px;
+  font-weight: 600;
 }
 .dealer-name {
   margin-top: 6px;
@@ -2340,6 +2342,7 @@ single property page
 .dealer-contacts li i {
   color: black;
   padding-right: 8px;
+  font-size: 23px;
 }
 .clear {
   clear: both;
@@ -2579,15 +2582,16 @@ count-area
 }
 
 .asks-first {
-  background-color: rgb(225, 225, 225);
+  background-color: #02968a;
   padding: 35px 0px 35px 30px;
   position: relative;
   cursor: pointer;
-  height: 165px;
+  height: 200px;
   margin-left: 10px;
 }
 .asks-first:hover {
   background-color: #8c8c8c;
+  transition: all 0.2s;
 }
 .asks-first:hover .asks-first-circle {
   background-color: #8c8c8c;
@@ -2600,6 +2604,7 @@ count-area
   border-radius: 100%;
   text-align: center;
   margin-right: 15px;
+  margin-top: -20px;
 }
 .asks-first-circle span {
   vertical-align: middle;
@@ -2610,18 +2615,19 @@ count-area
 .asks-first-info {
   color: #fff;
   margin: 0px 65px 0px 85px;
+  margin-top: -20px;
 }
 .asks-first-info h2 {
-  font: 500 20px "Open Sans", sans-serif;
+  font: 500 30px "Open Sans", sans-serif;
   margin: 0px 0px 4px;
   text-transform: uppercase;
 }
 .asks-first-info p {
-  font: 400 13px "Open Sans", sans-serif;
+  font: 400 15px "Open Sans", sans-serif;
   margin: 0px;
-  width: 300px;
+  width: 320px;
   margin-top: 20px;
-  text-align: justify;
+  /* text-align: justify; */
 }
 
 .asks-first-arrow {
@@ -3074,12 +3080,12 @@ blog
 }
 .footer p {
   line-height: 25px;
-  font-size: 13px;
   padding-bottom: 20px;
+  font-weight: 600;
 }
 .footer h4 {
   color: #717171;
-  font-weight: 400;
+  font-weight: 600;
   margin-top: 0px;
   font-size: 20px;
   text-transform: uppercase;
@@ -3120,6 +3126,7 @@ blog
   margin-bottom: 5px;
 }
 ul.footer-adress li {
+  font-weight: 600;
   margin-bottom: -4px;
 }
 .footer ul li a {
@@ -3187,7 +3194,6 @@ ul.footer-blog li {
 
 .footer-blog p {
   line-height: 17px;
-  padding: 8px 2px;
 }
 .news-letter .form-control {
   display: block;

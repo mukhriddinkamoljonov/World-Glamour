@@ -91,9 +91,7 @@
 .textinfo {
   text-align: justify;
 }
-.count-area {
-  display: inline-block;
-}
+
 .count-area h5 {
   text-transform: capitalize;
   color: #f0a500;

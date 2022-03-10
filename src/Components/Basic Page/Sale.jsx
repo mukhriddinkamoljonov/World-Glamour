@@ -42,7 +42,7 @@ const Sale = () => {
                 <img src={visa} alt="visa" className="sale-img" />
               </div>
               <div className="asks-first-info">
-                <h2>E-Visa uchun murojaat etish</h2>
+                <h2>E-Visa uchun murojat etish</h2>
                 <p>
                   O‘zbekistonga viza olishni xohlaysizmi? Bu endi ancha
                   osonlashdi.Sizga kerak bo‘lgan yagona narsa – internet va
