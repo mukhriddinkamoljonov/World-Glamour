@@ -9,7 +9,7 @@ const Navbar = ({ setQuery }) => {
   return (
     <header id="header" class="header-scrolled ">
       <nav className="navbar navbar-default main-menu">
-        <div className="container ">
+        <div className="container">
           <div className="navbar-header">
             <button
               type="button"

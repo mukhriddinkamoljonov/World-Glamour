@@ -36,9 +36,11 @@ const Tavsiya = ({ title, count }) => {
                       alt={""}
                     />
                   </Link>
-                  
                 </div>
-                <div className="col-md-8 col-sm-8 col-xs-8 blg-entry">
+                <div
+                  className="col-md-8 col-sm-8 col-xs-8 blg-entry"
+                  style={{ marginLeft: "10px" }}
+                >
                   <h6>
                     <Link to={`/places/${item.id}`}>{item.name} </Link>
                   </h6>
