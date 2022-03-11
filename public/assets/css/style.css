@@ -2527,7 +2527,7 @@ count-area
 ===================================================*/
 .count-area {
   position: relative;
-  /* background-color: #fcfcfc; */
+  background-color: #fcfcfc;
 }
 .count-area .count-item {
   text-align: center;

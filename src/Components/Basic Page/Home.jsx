@@ -5,6 +5,7 @@ import WelcomeArea from "./WelcomeArea";
 import Sale from "./Sale";
 import "./Main.css";
 import React, { useState, useEffect } from "react";
+import Main from "./Main";
 
 const Home = ({ query }) => {
   const [loading, setLoading] = useState(true);
@@ -15,23 +16,7 @@ const Home = ({ query }) => {
 
   return (
     <div>
-      <Slider />
-      {
-        loading ? (
-        <div className="spinner-border m-5" role="status">
-          <span className="sr-only">Loading...</span>
-        </div>
-      ) : (
-        <div style={{ backgroundColor: "#fff" }}>
-          {" "}
-          (
-          <Carts query={query} />
-          <WelcomeArea />
-          <Count />
-          <Sale />
-        </div>
-        )
-      }
+      <Main query={query} />
     </div>
   );
 };

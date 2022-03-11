@@ -64,10 +64,10 @@ const Sale = () => {
             </div>
           </div>
           <div className="col-xs-12">
-            {/*<p className="asks-call">*/}
-            {/*  SAVOLLAR? MUROJAT UCHUN:*/}
-            {/*  <span className="strong"> +998 97 214 44 01</span>*/}
-            {/*</p>*/}
+            <p className="asks-call">
+             SAVOLLAR? MUROJAT UCHUN:
+             <span className="strong"> +998 97 214 44 01</span>
+            </p>
           </div>
         </div>
       </div>

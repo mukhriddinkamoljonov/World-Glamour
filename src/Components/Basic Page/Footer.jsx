@@ -216,7 +216,7 @@ const Footer = () => {
           <div className="row">
             <div className="pull-left">
               <span>
-                (C) <a href="http://www.KimaroTec.com">Bosh sahifa</a>
+                (C) <Link to="/">Bosh sahifa</Link>
               </span>
             </div>
             {/*<div className="bottom-menu pull-right">*/}
