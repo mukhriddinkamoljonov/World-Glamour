@@ -9,6 +9,7 @@ import AllCart from "./Components/Pages/AllCart";
 import Footer from "./Components/Basic Page/Footer";
 import Shaharlar from "./Components/Pages/Shaharlar";
 import React, { useState } from "react";
+import Cart from "./Components/Basic Page/Cart/Cart";
 
 function App() {
   const [query, setQuery] = useState("");
@@ -25,6 +26,8 @@ function App() {
         <Route path="/amirsoy" element={<AllCart />} />
         <Route path="/chimyon" element={<AllCart />} />
         <Route path="/bostonliq" element={<AllCart />} />
+        <Route path="/bostonliq" element={<AllCart />} />
+        <Route path="/payment" element={<Cart />} />
         <Route
           path="/shaharlar"
           element={<Shaharlar setQuery={setQuery} query={query} />}

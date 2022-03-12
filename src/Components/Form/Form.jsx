@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Button from "./button";
 import payme from "../../img/payme_01.png";
 import "./Form.css";
+import { Link } from "react-router-dom";
 
 const Form = ({ item }) => {
   const [isActive, setActive] = useState(false);
@@ -145,7 +146,7 @@ const Form = ({ item }) => {
             <div>
               <div className="input-group">
                 <select
-                  style={{ width: "auto", }}
+                  style={{ width: "auto" }}
                   ref={selectPrice}
                   onChange={select}
                 >
@@ -200,6 +201,9 @@ const Form = ({ item }) => {
           </div>
         </div>
       </form>
+      <button>
+        <Link to="/payment">Xalqaro Tolovlar uchun</Link>
+      </button>
     </div>
   );
 };

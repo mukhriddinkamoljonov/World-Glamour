@@ -159,16 +159,7 @@ input {
   padding: 5px 15px;
   border-radius: 3px;
 }
-button {
-  border-radius: 3px;
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-  outline: 0;
-  outline-offset: 0;
-  border: none;
-  overflow: visible;
-}
+
 button,
 select {
   text-transform: none;

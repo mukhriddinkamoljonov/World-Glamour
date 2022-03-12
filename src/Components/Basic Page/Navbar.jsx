@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Main.css";
+import i18n from "i18next";
 
 const languages = [
   {
@@ -16,21 +17,18 @@ const languages = [
   {
     code: "ar",
     name: "عربي",
-    country_code: "ar",
+    country_code: "sa",
   },
 ];
 
 const GlobeIcon = ({ width = 33, height = 35, marginTop = 3, left = 20 }) => (
   <div style={{ marginTop: marginTop, marginLeft: left }}>
-    {" "}
-    <select id="" style={{ height: 45, textAlign: "center" }}>
+    <select style={{ height: 45, textAlign: "center" }}>
       {languages.map(({ code, name, country_code }) => (
-        <option key={country_code} value="engilish">
-          <span className={`flag-icon flag-icon-${country_code}`}></span>
+        <option key={country_code} onClick={() => i18n.changeLanguage(code)}>
           {name}
         </option>
       ))}
-      <option value="russian">Russa</option>
     </select>
     <svg
       xmlns="http://www.w3.org/2000/svg"
