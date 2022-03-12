@@ -180,11 +180,11 @@ input {
 }
 
 .creditcard .grey {
-  fill: #bdbdbd;
+  fill: #d4e157;
 }
 
 .creditcard .greydark {
-  fill: #616161;
+  fill: #afb42b;
 }
 
 /* FRONT OF CARD */
@@ -333,3 +333,5 @@ input {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
+
+

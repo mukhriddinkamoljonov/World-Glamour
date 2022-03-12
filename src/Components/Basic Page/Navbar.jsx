@@ -25,7 +25,7 @@ const GlobeIcon = ({ width = 33, height = 35, marginTop = 3, left = 20 }) => (
   <div style={{ marginTop: marginTop, marginLeft: left }}>
     <select style={{ height: 45, textAlign: "center" }}>
       {languages.map(({ code, name, country_code }) => (
-        <option key={country_code} onClick={() => i18n.changeLanguage(code)}>
+        <option key={country_code} onChange={() => i18n.changeLanguage(code)}>
           {name}
         </option>
       ))}

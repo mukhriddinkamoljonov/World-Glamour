@@ -196,7 +196,6 @@ const Form = ({ item }) => {
               >
                 <span className="texta payment">To'lov</span>
               </button>
-              <button>Xalqaro to'lovlar uchun</button>
             </div>
           </div>
         </div>

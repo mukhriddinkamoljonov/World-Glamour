@@ -269,6 +269,13 @@
   .question-container {
     display: flex;
   }
+  .cart_container {
+    display: flex;
+  }
+
+  .cart2 {
+    margin-left: 400px;
+  }
 }
 
 #header.header-scrolled {
@@ -327,4 +334,3 @@
 .form_flex {
   width: auto;
 }
-
