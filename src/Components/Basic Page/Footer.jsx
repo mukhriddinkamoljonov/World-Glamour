@@ -3,9 +3,11 @@ import NoImage from "../../img/no-image.jpg";
 import React, { useEffect, useState } from "react";
 import logo from "../icons/logo.png";
 import "./Main.css";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const { t } = useTranslation();
   const [items, setItems] = useState([]);
   const [isReady, setIsReady] = useState(null);
 
@@ -24,7 +26,7 @@ const Footer = () => {
   var today = new Date();
   var date =
     today.getFullYear() + "-" + (today.getMonth() + 1) + "-" + today.getDate();
-  console.log(date);
+
   return (
     <div className="footer-area">
       <div className="footer">
@@ -32,7 +34,7 @@ const Footer = () => {
           <div className="row">
             <div className="col-md-3 col-sm-6 wow fadeInRight animated">
               <div className="single-footer">
-                <h4>Biz haqimizda</h4>
+                <h4>{t("about_footer")}</h4>
                 <div className="footer-title-line"></div>
                 <img
                   src={logo}
@@ -59,7 +61,7 @@ const Footer = () => {
             </div>
             <div className="col-md-3 col-sm-6 wow fadeInRight animated">
               <div className="single-footer">
-                <h4>Bo'limlar</h4>
+                <h4>{t("sections")}</h4>
                 <div className="footer-title-line"></div>
                 <ul className="footer-menu">
                   <li>
@@ -67,7 +69,7 @@ const Footer = () => {
                       target="_blank"
                       href="https://data.gov.uz/uz/sphere/authority/45"
                     >
-                      Turizm va sport vazirligi
+                      {t("section1")}
                     </a>
                   </li>
                   <li>
@@ -75,31 +77,31 @@ const Footer = () => {
                       target="_blank"
                       href="https://uzbekistan.travel/uz/turizm-qonunlari/"
                     >
-                      Turizm-qonunlari
+                      {t("section2")}
                     </a>
                   </li>
                   <li>
                     <a href="https://uzbektourism.uz/committee/spisokgostin">
-                      Mehmonxonalar ro'yxati
+                      {t("section3")}
                     </a>
                   </li>
                   <li>
                     <a target="_blank" href="https://kun.uz/">
-                      Yangiliklar
+                      {t("section4")}
                     </a>
                   </li>
                   <li>
-                    <a href="faq.html">Biz bilan bog'lanish</a>
+                    <a href="faq.html">{t("section5")}</a>
                   </li>
                   <li>
-                    <a href="faq.html">Bosh sahifa</a>
+                    <a href="faq.html">{t("section6")}</a>
                   </li>
                 </ul>
               </div>
             </div>
             <div className="col-md-3 col-sm-6 wow fadeInRight animated">
               <div className="single-footer">
-                <h4>Hududlar</h4>
+                <h4>{t("region")}</h4>
                 <div className="footer-title-line"></div>
                 {items.map((item) => (
                   <ul className="footer-blog">
@@ -133,12 +135,10 @@ const Footer = () => {
             </div>
             <div className="col-md-3 col-sm-6 wow fadeInRight animated">
               <div className="single-footer news-letter">
-                <h4>Biz bilan aloqa</h4>
+                <h4>{t("contacts")}</h4>
                 <div className="footer-title-line"></div>
-                <p>Barcha xuquqlar himoyalangan. Batafsil ma'lumot uchun:</p>
-
+                <p>{t("contact1")}</p>
                 <p>(998) 93 643-93-11</p>
-
                 <form>
                   <div className="input-group">
                     <input
@@ -216,7 +216,7 @@ const Footer = () => {
           <div className="row">
             <div className="pull-left">
               <span>
-                (C) <Link to="/">Bosh sahifa</Link>
+                (C) <Link to="/">{t("section6")}</Link>
               </span>
             </div>
             {/*<div className="bottom-menu pull-right">*/}

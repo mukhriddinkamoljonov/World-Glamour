@@ -8,6 +8,8 @@ import chat from "../../../img/chat.png";
 import heart from "../../../img/heart.png";
 import Tavsiya from "../Tavsiya";
 import Map from "../../Map/Map";
+import { Link } from "react-router-dom";
+import NoImage from "../../../img/no-image.jpg";
 
 function AboutWe() {
   const [items, setItems] = useState([]);
@@ -146,7 +148,7 @@ function AboutWe() {
                 </div>
               </section>
             </div>
-            <div className="blog-asside-right col-md-3">
+            <div className="blog-asside-right col">
               <div className="panel panel-default sidebar-menu wow fadeInRight animated">
                 <div className="panel-heading">
                   <h3 className="panel-title">Turizm Kompanyasi</h3>
@@ -160,7 +162,50 @@ function AboutWe() {
                   </p>
                 </div>
               </div>
-              <Tavsiya title="SIZGA HAM YOQISHI MUMKIN" count="4" />
+              <div className="panel panel-default sidebar-menu similar-property-wdg wow fadeInRight animated">
+                <div className="panel-heading">
+                  <h3 className="panel-title">Sizga yoqishi mumkun</h3>
+                </div>
+                {isReady ? (
+                  <div className="panel-body recent-property-widget">
+                    {items.map((item) => (
+                      <ul>
+                        <li>
+                          <div className="col-md-3 col-sm-3 col-xs-3 blg-thumb p0">
+                            <Link to={`/places/${item.id}`}>
+                              <img
+                                src={
+                                  item.images.length
+                                    ? item.images[0].file
+                                    : NoImage
+                                }
+                                alt={""}
+                              />
+                            </Link>
+                          </div>
+                          <div
+                            className="col-md-8 col-sm-8 col-xs-8 blg-entry"
+                            style={{ marginLeft: "10px" }}
+                          >
+                            <h6>
+                              <Link to={`/places/${item.id}`}>
+                                {item.name}{" "}
+                              </Link>
+                            </h6>
+                            <span className="property-price">
+                              {item.price1}
+                            </span>{" "}
+                            so'm
+                          </div>
+                        </li>
+                      </ul>
+                    ))}
+                  </div>
+                ) : (
+                  ""
+                )}
+              </div>
+              {/* <Tavsiya title="SIZGA HAM YOQISHI MUMKIN" count="4" /> */}
             </div>
             <div className="count-area">
               <div className="container">
@@ -253,7 +298,6 @@ function AboutWe() {
                 ></iframe>
               </p>
             </div> */}
-       
           </div>
         </div>
       </div>

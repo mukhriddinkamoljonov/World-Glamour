@@ -21,8 +21,8 @@ i18n
   .use(LanguageDetector)
   .use(HttpApi)
   .init({
-    supportedLngs: ["en", "ru", "ar"],
-    fallbackLng: "en",
+    supportedLngs: ["en", "uz", "ru", "ar"],
+    fallbackLng: "",
     detection: {
       order: ["path", "cookie", "localStorage", "htmlTag"],
       caches: ["cookie"],
@@ -61,11 +61,11 @@ const Main = ({ query }) => {
           <div className="row">
             <div className="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12">
               <h2 className="header-title-per">
-                {t("Sayohatni biz bilan mazmunli o'tkazing!")}
+                {t("main1")}
               </h2>
               <h4 className="header-title-simple">
                 {t(
-                  "Eʼtiborga molik joylarni, insonlar hayoti va hodisalar to‘g‘risida eng qiziqarli maʼlumotlarni biz orqali topishingiz mumkin!"
+                  "main2"
                 )}
               </h4>
             </div>
@@ -85,11 +85,11 @@ const Main = ({ query }) => {
         <div className="container">
           <div className="row">
             <div className="col-md-10 col-md-offset-1 col-sm-12 text-center page-title">
-              <h2>Mashhur manzillarga maxsus takliflar!</h2>
+              <h2>{t("card_title")}</h2>
               <p>
-                Eʼtiborga molik joylarni,{" "}
-                <span style={{ color: "orange" }}>World Glamour Tour</span> da
-                topishingiz mumkin!
+                {t("card_title2")}
+                <span style={{ color: "orange" }}> {t("card_main")}</span>
+                {t('card_title3')}
               </p>
             </div>
           </div>
@@ -112,7 +112,7 @@ const Main = ({ query }) => {
                         <a href="/">Covid-2019 </a>
                       </h5>
                       <h5 className="tree-sub-ttl">
-                        Muhim ma'lumotlar va jadval
+                        {t('covid')}
                       </h5>
                       <a
                         target="_blank"
@@ -122,7 +122,7 @@ const Main = ({ query }) => {
                           className="btn1 border-btn more-black"
                           value="All properties"
                         >
-                          Batafsil
+                          {t("more")}
                         </button>
                       </a>
                     </div>
@@ -136,6 +136,7 @@ const Main = ({ query }) => {
         </div>
       </div>{" "}
       {/* CARTS AREA END */}
+
       {/* WELCOME AREA START */}
       <div className="Welcome-area">
         <div className="container">
@@ -171,7 +172,7 @@ const Main = ({ query }) => {
                             <img src={plane} alt="plane img" />
                           </a>
                         </div>
-                        <h3>Avia parvoz</h3>
+                        <h3>{t('avia')}</h3>
                       </div>
                     </div>
                     <div className="col-xs-6 m-padding">
@@ -181,7 +182,7 @@ const Main = ({ query }) => {
                             <img src={car} alt="car img" />
                           </a>
                         </div>
-                        <h3>Mashina xizmati</h3>
+                        <h3>{t("car")}</h3>
                       </div>
                     </div>
 
@@ -199,7 +200,7 @@ const Main = ({ query }) => {
                             <img src={hotel} alt="" />
                           </a>
                         </div>
-                        <h3>Mehmonxona xizmati</h3>
+                        <h3>{t('hotel')}</h3>
                       </div>
                     </div>
                     <div className="col-xs-6 m-padding">
@@ -210,7 +211,7 @@ const Main = ({ query }) => {
                             <img src={globe} alt="" />
                           </a>
                         </div>
-                        <h3>Aloqa xizmati</h3>
+                        <h3>{t('phone')}</h3>
                       </div>
                     </div>
                   </div>
@@ -226,7 +227,7 @@ const Main = ({ query }) => {
         <div className="container">
           <div className="row">
             <div className="col-md-10 col-md-offset-1 col-sm-12 text-center page-title">
-              <h2>Bizga ishonishingiz mumkin !</h2>
+              <h2>{t('believe')}</h2>
             </div>
           </div>
           <div className="row">
@@ -303,14 +304,13 @@ const Main = ({ query }) => {
                   <img src={agreed} alt="agreed" className="sale-img" />
                 </div>
                 <div className="asks-first-info">
-                  <h2>Diplomatik vakolatxonalar</h2>
+                  <h2>{t('diplomatic')}</h2>
                   <p>
-                    Bugungi kunda O‘zbekistonning 50 dan ortiq mamlakatlarda
-                    diplomatik vakolatxonalari bor{" "}
+                    {t('diplomatic1')}
                     <span style={{ color: "red", fontWeight: 600 }}>
                       uzairways.uz.
                     </span>
-                    xorijdagi-vakolatxonalar.
+                    {t('diplomatic2')}
                   </p>
                 </div>
                 <div className="asks-first-arrow">
@@ -331,16 +331,14 @@ const Main = ({ query }) => {
                   <img src={visa} alt="visa" className="sale-img" />
                 </div>
                 <div className="asks-first-info">
-                  <h2>E-Visa uchun murojat etish</h2>
+                  <h2>{t("visa")}</h2>
                   <p>
-                    O‘zbekistonga viza olishni xohlaysizmi? Bu endi ancha
-                    osonlashdi.Sizga kerak bo‘lgan yagona narsa – internet va
-                    pasport xolos,{" "}
+                    {t("visa1")}
                     <span style={{ color: "red", fontWeight: 600 }}>
                       {" "}
                       e-visa.gov.uz{" "}
                     </span>{" "}
-                    murojaat eting.
+                    {t('visa2')}
                   </p>
                 </div>
                 <div className="asks-first-arrow">
@@ -354,7 +352,7 @@ const Main = ({ query }) => {
             </div>
             <div className="col-xs-12">
               <p className="asks-call">
-                SAVOLLAR? MUROJAT UCHUN:
+                {t("question")}
                 <span className="strong"> +998 97 214 44 01</span>
               </p>
             </div>

@@ -4,18 +4,15 @@ import Tavsiya from "./Tavsiya";
 import NoImage from "../../img/no-image.jpg";
 import "./AllCart.css";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function Shaharlar({ query, setQuery }) {
   const [isReady, setIsReady] = useState(null);
   const [places, setPlaces] = useState([]);
+  const { t } = useTranslation();
 
   const [data, setData] = useState([]);
   const [filtedData, setFiltedData] = useState([]);
-
-  const [checkboxPrime, setCheckboxPrime] = useState("prime");
-  const [checkboxUzbekistan, setCheckboxUzbekistan] = useState("uzbekistan");
-  const [checkboxAsia, setCheckboxAsia] = useState("asia");
-  const [checkboxEurope, setCheckboxEurope] = useState("europe");
 
   useEffect(() => {
     axios
@@ -29,21 +26,6 @@ function Shaharlar({ query, setQuery }) {
         console.log(error);
       });
   }, []);
-
-  const checkCheckbox = () => {
-    // if (checkboxPrime || checkboxUzbekistan || checkboxAsia || checkboxEurope) {
-    //   setFiltedData(places);
-    // } else {
-    //   let data = [];
-    //   places.forEach((place) => {
-    //     if (place.type === "prime" && checkboxPrime) data.push(place);
-    //     if (place.type === "uzbekistan" && checkboxUzbekistan) data.push(place);
-    //     if (place.type === "asia" && checkboxAsia) data.push(place);
-    //     if (place.type === "europe" && checkboxEurope) data.push(place);
-    //   });
-    //   setFiltedData(data);
-    // }
-  };
 
   const Prime = (value, e) => {
     console.log(value);
@@ -61,7 +43,7 @@ function Shaharlar({ query, setQuery }) {
         <div className="container">
           <div className="row">
             <div className="page-head-content">
-              <h1 className="page-title">Dunyo bo'ylab sayohat qiling!</h1>
+              <h1 className="page-title">{t("turist")}</h1>
             </div>
           </div>
         </div>
@@ -76,7 +58,7 @@ function Shaharlar({ query, setQuery }) {
               <div className="blog-asside-right pr0">
                 <div className="panel panel-default sidebar-menu wow fadeInRight animated">
                   <div className="panel-heading">
-                    <h3 className="panel-title">Shahar nomi</h3>
+                    <h3 className="panel-title">{t("turist1")}</h3>
                   </div>
                   <div className="panel-body search-widget">
                     <form action="" className="form-inline">
@@ -99,7 +81,7 @@ function Shaharlar({ query, setQuery }) {
                               className="button btn largesearch-btn text-center"
                               type="submit"
                             >
-                              IZLASH
+                              {t("turist2")}
                             </button>
                           </div>
                         </div>

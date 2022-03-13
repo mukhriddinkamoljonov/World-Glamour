@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import Question from "./Question";
 import "./Sayyoh.css";
 import SayyohData from "./SayyohData";
+import { useTranslation } from "react-i18next";
 
 const Sayyohlar = () => {
+  const { t } = useTranslation();
   const [questions, setQuestions] = useState(SayyohData);
 
   return (
@@ -15,17 +17,14 @@ const Sayyohlar = () => {
         <div className="container">
           <div className="row">
             <div className="page-head-content">
-              <h1 className="page-title">Sayyohlar uchun!</h1>
-              <h4>
-                O‘zbekistonga sayohat haqida bilishingiz <br /> kerak bo‘lgan
-                barcha narsalar bitta sahifada
-              </h4>
+              <h1 className="page-title">{t("turist_title")}</h1>
+              <h4>{t("turist_title1")} <br /> { t("turist_title3")}</h4>
             </div>
           </div>
         </div>
       </div>
       <div className="container">
-        <h2>Foydali ma'lumotlar</h2>
+        <h2>{t("turist_title2")}</h2>
       </div>
       <div className="container accartion">
         <section className="info">

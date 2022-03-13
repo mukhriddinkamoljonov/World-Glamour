@@ -16,6 +16,7 @@ const Home = ({ query }) => {
 
   return (
     <div>
+
       <Main query={query} />
     </div>
   );

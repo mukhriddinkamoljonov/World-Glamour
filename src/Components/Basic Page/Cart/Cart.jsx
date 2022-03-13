@@ -1,5 +1,4 @@
 import React from "react";
-import "./Cart.css";
 import visa from "./img/visa.jpg";
 import paypal from "./img/payplay.jpg";
 
