@@ -8,8 +8,6 @@ import chat from "../../../img/chat.png";
 import heart from "../../../img/heart.png";
 import Tavsiya from "../Tavsiya";
 import Map from "../../Map/Map";
-import { Link } from "react-router-dom";
-import NoImage from "../../../img/no-image.jpg";
 
 function AboutWe() {
   const [items, setItems] = useState([]);
@@ -27,10 +25,7 @@ function AboutWe() {
       });
   }, []);
   return (
-    <div style={{ backgroundColor: "#fff" }}>
-      {" "}
-      . <br />
-      <div className="page-ago">.</div>
+    <div className="">
       <div className="page-head">
         <div className="container">
           <div className="row">
@@ -43,6 +38,7 @@ function AboutWe() {
           </div>
         </div>
       </div>
+
       <div
         className="content-area blog-page padding-top-40"
         style={{ backgroundColor: "#fcfcfc", paddingBottom: "55px" }}
@@ -68,17 +64,17 @@ function AboutWe() {
                   <div className="row wow fadeInRight animated">
                     <div className="col-sm-6">
                       <p className="author-category">
-                        Biz <a href="/">Siz Bilan</a> doim
-                        <a href="#">Birgamiz</a>
+                        By <a href="/">John Snow</a> in
+                        <a href="blog.html">Webdesign</a>
                       </p>
                     </div>
                     <div className="col-sm-6 right">
                       <p className="date-comments">
                         <a href="single.html">
-                          <i className="fa fa-calendar-o"></i> Mart 8, 2022
+                          <i className="fa fa-calendar-o"></i> June 20, 2013
                         </a>
                         <a href="single.html">
-                          <i className="fa fa-comment-o"></i> 107 Comments
+                          <i className="fa fa-comment-o"></i> 8 Comments
                         </a>
                       </p>
                     </div>
@@ -126,6 +122,14 @@ function AboutWe() {
                     <span className="date2">Xizmatingizda</span>
                   </div>
 
+                  <ol>
+                    <li>
+                      Xizmatlarimiz sifatli bo'lishiga qaramasdan, narxlar ham
+                      albatta hamyonbop.
+                    </li>
+                    <li>Aliquam tincidunt mauris eu risus.</li>
+                  </ol>
+
                   <h3>
                     Qiziqarli sayohatlar olamida bizning mehmonimiz bo'ling!
                   </h3>
@@ -148,10 +152,10 @@ function AboutWe() {
                 </div>
               </section>
             </div>
-            <div className="blog-asside-right col">
+            <div className="blog-asside-right col-md-3">
               <div className="panel panel-default sidebar-menu wow fadeInRight animated">
                 <div className="panel-heading">
-                  <h3 className="panel-title">Turizm Kompanyasi</h3>
+                  <h3 className="panel-title">Turizm Agentligi</h3>
                 </div>
                 <div className="panel-body text-widget">
                   <p>
@@ -162,51 +166,57 @@ function AboutWe() {
                   </p>
                 </div>
               </div>
-              <div className="panel panel-default sidebar-menu similar-property-wdg wow fadeInRight animated">
-                <div className="panel-heading">
-                  <h3 className="panel-title">Sizga yoqishi mumkun</h3>
-                </div>
-                {isReady ? (
-                  <div className="panel-body recent-property-widget">
-                    {items.map((item) => (
-                      <ul>
-                        <li>
-                          <div className="col-md-3 col-sm-3 col-xs-3 blg-thumb p0">
-                            <Link to={`/places/${item.id}`}>
-                              <img
-                                src={
-                                  item.images.length
-                                    ? item.images[0].file
-                                    : NoImage
-                                }
-                                alt={""}
-                              />
-                            </Link>
-                          </div>
-                          <div
-                            className="col-md-8 col-sm-8 col-xs-8 blg-entry"
-                            style={{ marginLeft: "10px" }}
-                          >
-                            <h6>
-                              <Link to={`/places/${item.id}`}>
-                                {item.name}{" "}
-                              </Link>
-                            </h6>
-                            <span className="property-price">
-                              {item.price1}
-                            </span>{" "}
-                            so'm
-                          </div>
-                        </li>
-                      </ul>
-                    ))}
-                  </div>
-                ) : (
-                  ""
-                )}
-              </div>
-              {/* <Tavsiya title="SIZGA HAM YOQISHI MUMKIN" count="4" /> */}
+              <Tavsiya title="SIZGA HAM YOQISHI MUMKIN" count="4" />
             </div>
+            <div className="panel sidebar-menu wow fadeInRight animated">
+              <div className="panel-heading">
+                <h3 className="panel-title">Tags</h3>
+              </div>
+              <div className="panel-body">
+                <ul className="tag-cloud">
+                  <li>
+                    <a href="/">
+                      <i className="fa fa-tags"></i> html5
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/">
+                      <i className="fa fa-tags"></i> css3
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/">
+                      <i className="fa fa-tags"></i> jquery
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/">
+                      <i className="fa fa-tags"></i> ajax
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/">
+                      <i className="fa fa-tags"></i> php
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/">
+                      <i className="fa fa-tags"></i> responsive
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/">
+                      <i className="fa fa-tags"></i> visio
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/">
+                      <i className="fa fa-tags"></i> bootstrap
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>{" "}
             <div className="count-area">
               <div className="container">
                 <div className="row">
@@ -257,7 +267,9 @@ function AboutWe() {
                             <img src={chat} className="about-img" alt="" />
                           </div>
                           <div className="chart" data-percent="120">
-                            <h4 className="about-h4">Qo‘llab-quvvatlash</h4>
+                            <h5 className="about-h5">
+                              Vizali qo‘llab-quvvatlash
+                            </h5>
                             <p>
                               Viza bilan bog‘liq eng murakkab muammolarni hal
                               qilishga yordam .
@@ -298,6 +310,57 @@ function AboutWe() {
                 ></iframe>
               </p>
             </div> */}
+            <hr />
+            <div className="row">
+              <div class="col-sm-4">
+                <h3>
+                  <i class="fa fa-map-marker"></i> Address
+                </h3>
+                <p>
+                  13/25 shibuia <br />
+                  Fergana <br />
+                  Festival kochasi
+                  <br />
+                  <strong>Uzbekistan</strong>
+                </p>
+              </div>
+              <div class="col-sm-4">
+                <h3>
+                  <i class="fa fa-phone"></i> Qo'ng'iroqlar markazi
+                </h3>
+                <p class="text-muted">
+                  Agar Uzbekistandan qo'ng'iroq qilsangiz, bu raqam bepul, aks
+                  holda elektron aloqa shaklidan foydalanishni maslahat beramiz.
+                </p>
+                <p>
+                  <strong>+998(91) 658 78 41</strong>
+                </p>
+              </div>
+              <div class="col-sm-4">
+                <h3>
+                  <i class="fa fa-envelope"></i> Elektron pochta
+                </h3>
+                <p class="text-muted">
+                  Iltimos, bizga elektron pochta xabarini yozing yoki elektron
+                  chiptalar tizimimizdan foydalaning.
+                </p>
+                <ul>
+                  <li>
+                    <strong>
+                      <a href="mailto:">raymjonovbobur@gmail.com</a>
+                    </strong>
+                  </li>
+                  <li>
+                    <strong>
+                      <a href="https://e-visa.gov.uz/application">
+                        Uzbekistan Viza
+                      </a>
+                    </strong>
+                    - bizning chiptalarni qo'llab-quvvatlash platformamiz
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>

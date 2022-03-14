@@ -35,6 +35,7 @@
 
 .slider-courusel {
   margin-right: 30px;
+  
 }
 
 .carousel .control-dots {
@@ -85,13 +86,21 @@
   background-color: rgb(255, 165, 0);
 }
 
+.info {
+  text-align: justify;
+  width: 800px;
+}
 .text {
   background-color: rgb(229, 228, 228);
 }
 .textinfo {
   text-align: justify;
 }
-
+.count-area {
+  background-color: rgb(246, 246, 246);
+  display: inline-block;
+  /* margin-top: 0; */
+}
 .count-area h5 {
   text-transform: capitalize;
   color: #f0a500;

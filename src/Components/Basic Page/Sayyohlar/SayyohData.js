@@ -6,6 +6,7 @@ import bayram from "./img/bayram.jpg";
 import diplomat from "./img/diplomat.jpg";
 import viza from "./img/viza.jpg";
 import { useTranslation } from "react-i18next";
+import { t } from "i18next";
 
 
 // const {t} = useTranslation();
@@ -17,24 +18,18 @@ const SayyohData = [
       title: "Umumiy ma'lumotlar",
       info: (
         <div>
-          {/* <strong>{t("useful")} </strong> {t("useful1")} <br /> <strong> Maydoni: </strong>{" "} */}
-          447,4 ming kv. km.
-          <br /> <strong> Aholisi: </strong> 34 million kishi.
-          <br /> <strong> Millatlar: </strong>
-          mamlakatda 134 dan ortiq millat vakillari yashaydi, ammo aholining
-          asosiy qismi o‘zbeklardir (83,8%).
-          <br /> <strong> Hududlar: </strong> 12 viloyat + Qoraqalpog‘iston
-          Respublikasi.
-          <br /> <strong> Mashhur shaharlari: </strong> Toshkent, Samarqand,
-          Buxoro, Xiva, Shahrisabz, Termiz, Qo‘qon, Farg‘ona, Mo‘ynoq.
-          <br /> <strong> Poytaxti: </strong>Toshkent. <br />{" "}
-          <strong> Til: </strong>asosiy til – o‘zbek tili, xalqaro aloqa tillari -
-          rus, ingliz. <br /> <strong> Din: </strong> O‘zbekiston – dunyoviy
-          davlat, aholining ko‘p qismi musulmon. Shuningdek, mamlakatda
-          xristianlik, buddizm va boshqa dinlarning vakillari istiqomat qiladi.
-          <br /> <strong> Soat mintaqasi: </strong> UTC +5.
-          <br /> <strong> Internet zonasi: </strong> .uz. <br />{" "}
-          <strong> Xalqaro telefon kodi: </strong> +998. <br />{" "}
+          <strong>{t("useful")} </strong> {t("useful1")} <br /> <strong> {t("useful2")} </strong>{" "}
+          {t("useful3")}
+          <br /> <strong> {t("useful4")} </strong> {t("useful5")}
+          <br /> <strong> {t("useful6")} </strong>
+          {t("useful7")}
+          <br /> <strong>{t("useful8")} </strong> {t("useful9")}
+          <br /> <strong> {t("useful10")} </strong> {t("useful11")}
+          <br /> <strong> {t("useful12")} </strong>{t("useful13")}<br />{" "}
+          <strong> {t("useful14")}</strong>{t("useful15")}<br /> <strong> {t("useful16")} </strong> {t("useful17")}
+          <br /> <strong> {t("useful18")} </strong> {t("useful19")}
+          <br /> <strong> {t("useful20")} </strong> {t("useful21")} <br />{" "}
+          <strong>{t("useful22")} </strong> +998. <br />{" "}
           <strong> Pul birligi: </strong> so‘m. <br /> <strong> Iqlimi: </strong>{" "}
           Qishi yumshoq, yozi issiq.
         </div>
