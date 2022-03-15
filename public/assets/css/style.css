@@ -445,7 +445,7 @@ fieldset[disabled] .btn-warning.active {
 }
 .btn-default {
   border-radius: 1px;
-  padding: 10px 20px;
+  padding: 2px 15px;
   border: 1px solid #fdc600;
   color: #000;
   background-color: #fdc600;
@@ -461,6 +461,7 @@ fieldset[disabled] .btn-warning.active {
   background-color: #fdc600;
   border-color: #f0f0f0;
   font-weight: 600;
+
 }
 .search-form {
   background-color: #fff;
@@ -1046,10 +1047,11 @@ label small {
   right: 0;
 }
 .yamm .dropdown-menu {
-  background-color: #fff;
+  /* background-color: #fff; */
   border: 0.3px solid rgba(227, 227, 227, 0.22);
   border-radius: 0px;
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.176);
+  
 }
 .ymm-sw .dropdown-menu {
   position: absolute;
