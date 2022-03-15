@@ -31,8 +31,7 @@ function AboutWe() {
           <div className="row">
             <div className="page-head-content">
               <h1 className="page-title">
-                “WORLD GLAMOUR TOUR” sayyohlik kompaniyasining axborot saytiga
-                xush kelibsiz!
+                
               </h1>
             </div>
           </div>
