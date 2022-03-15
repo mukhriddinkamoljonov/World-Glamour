@@ -8,11 +8,12 @@ import chat from "../../../img/chat.png";
 import heart from "../../../img/heart.png";
 import Tavsiya from "../Tavsiya";
 import Map from "../../Map/Map";
-import { t } from "i18next";
+import { useTranslation } from "react-i18next";
 
 function AboutWe() {
   const [items, setItems] = useState([]);
   const [isReady, setIsReady] = useState(null);
+  const { t } = useTranslation();
 
   useEffect(() => {
     axios
@@ -26,7 +27,9 @@ function AboutWe() {
       });
   }, []);
   return (
-    <div className="">
+    <div style={{ backgroundColor: "#fff" }}>
+      . <br />
+      <div className="page-ago">.</div>
       <div className="page-head">
         <div className="container">
           <div className="row">
@@ -36,7 +39,6 @@ function AboutWe() {
           </div>
         </div>
       </div>
-
       <div
         className="content-area blog-page padding-top-40"
         style={{ backgroundColor: "#fcfcfc", paddingBottom: "55px" }}
@@ -62,7 +64,7 @@ function AboutWe() {
                   <div className="row wow fadeInRight animated">
                     <div className="col-sm-6">
                       <p className="author-category">
-                        Biz <a href="/">Siz bilan</a> doim 
+                        Biz <a href="/">Siz bilan</a> doim
                         <a href="blog.html">Birgamiz</a>
                       </p>
                     </div>
@@ -131,7 +133,7 @@ function AboutWe() {
               <Tavsiya title="SIZGA HAM YOQISHI MUMKIN" count="4" />
             </div>
 
-            <div className="count-area">
+            <div className="count-area about-area">
               <div className="container">
                 <div className="row">
                   <div className="col-md-10 col-md-offset-1 col-sm-12 text-center page-title">
@@ -198,10 +200,10 @@ function AboutWe() {
             </div>
             <hr />
             {/* <Map/> */}
-            {/* <div className="map">
+            <div className="map">
               <p>
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d537.2651725468306!2d71.78190299388464!3d40.38157763842583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bb834e3d0e41df%3A0xde0b15447812c74f!2s%22Festival%22%20ko&#39;ngilochar%20markazi!5e0!3m2!1sru!2s!4v1645117370976!5m2!1sru!2s"
+                  src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d379.9043916871547!2d71.78534179578762!3d40.38148101716495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e0!4m5!1s0x38bb835ff02e68b3%3A0xab57cda94f3cd420!2sFarg&#39;ona%2C%20O%60zbekiston!3m2!1d40.3816117!2d71.78544219999999!4m3!3m2!1d40.38156!2d71.78533139999999!5e0!3m2!1suz!2s!4v1647342736955!5m2!1suz!2s"
                   width="600"
                   height="450"
                   style={{ border: 0 }}
@@ -209,8 +211,7 @@ function AboutWe() {
                   loading="lazy"
                 ></iframe>
               </p>
-            </div> */}
-           
+            </div>
           </div>
         </div>
       </div>

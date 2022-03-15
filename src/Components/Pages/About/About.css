@@ -35,7 +35,6 @@
 
 .slider-courusel {
   margin-right: 30px;
-  
 }
 
 .carousel .control-dots {
@@ -96,7 +95,7 @@
 .textinfo {
   text-align: justify;
 }
-.count-area {
+.about-area {
   background-color: rgb(246, 246, 246);
   display: inline-block;
   /* margin-top: 0; */
