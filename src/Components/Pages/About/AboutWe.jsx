@@ -8,6 +8,7 @@ import chat from "../../../img/chat.png";
 import heart from "../../../img/heart.png";
 import Tavsiya from "../Tavsiya";
 import Map from "../../Map/Map";
+import { t } from "i18next";
 
 function AboutWe() {
   const [items, setItems] = useState([]);
@@ -30,9 +31,7 @@ function AboutWe() {
         <div className="container">
           <div className="row">
             <div className="page-head-content">
-              <h1 className="page-title">
-                
-              </h1>
+              <h1 className="page-title">{t("useful53")}</h1>
             </div>
           </div>
         </div>
@@ -91,62 +90,31 @@ function AboutWe() {
                   id="post-content"
                   className="post-body single wow fadeInLeft animated"
                 >
-                  <h2>Hurmatli mehmon!</h2>
+                  <h2>{t("useful54")}</h2>
                   <div className="textinfo">
                     <p>
-                      ✔️ <strong>WORLD GLAMOUR TOUR</strong> MChJ kompaniyasi
-                      O‘zbekiston sayyohlik xizmatlari bozorida yangi
-                      hisoblanadi.
+                      ✔️ <strong>WORLD GLAMOUR TOUR</strong> {t("useful55")}
                     </p>
                     <p>
-                      ✔️ <strong>WORLD GLAMOUR TOUR</strong> kompaniyasining
-                      asosiy yo‘nalishlari mamlakatimizning tarixiy joylari, eng
-                      maftunkor go‘shalariga va bir qancha chet el davlatlariga
-                      maroqli sayohat uyushtirishingiz mumkin..
+                      ✔️ <strong>WORLD GLAMOUR TOUR</strong> {t("useful56")}
                     </p>
-                    <p>
-                      ✔️ Kompaniyaning rivojlanishi bilan sayyohlik
-                      yo'nalishlari geografiyasi kengayadi. Bizning arsenalimiz
-                      ham guruh, ham individual ekskursiyalar o'z ichiga oladi.
-                    </p>
-                    <p>
-                      ✔️ Har bir mehmon bizning do'stimiz va hamkorimiz! Biz
-                      mehmonlarimizga ularning talablari va ehtiyojlariga to'liq
-                      javob beradigan yuqori sifatli turistik mahsulotni taklif
-                      etamiz.
-                    </p>
+                    <p>✔️ {t("useful57")}</p>
+                    <p>✔️{t("useful58")}</p>
                   </div>
                   <div className="date-change">
                     <span className="date1">24/7/365</span>
-                    <span className="date2">Xizmatingizda</span>
+                    <span className="date2">{t("useful59")}</span>
                   </div>
 
                   <ol>
-                    <li>
-                      Xizmatlarimiz sifatli bo'lishiga qaramasdan, narxlar ham
-                      albatta hamyonbop.
-                    </li>
-                    <li>Aliquam tincidunt mauris eu risus.</li>
+                    <li>{t("useful60")}</li>
                   </ol>
 
-                  <h3>
-                    Qiziqarli sayohatlar olamida bizning mehmonimiz bo'ling!
-                  </h3>
+                  <h3>{t("useful61")}</h3>
 
                   <div>
-                    <p>
-                      Sayohat - bu hayotingizning eng yaxshi vaqti! Shuning
-                      uchun biz hayotni sevadigan odamlar tomonidan ataylab
-                      tanlanganmiz. Ular uchun sayohat - bu yangi bilimlarni
-                      izlash, yangi hayot tajribasi, yangi his-tuyg'ularni
-                      o'zlashtirish.
-                    </p>
-                    <p>
-                      Sizning sayohatingizni muhokama qilishdan xursandmiz.
-                      Istalgan vaqtda biz bilan bog'laning. Bizni tanlaganingiz
-                      uchun tashakkur. Biz har doim sizga qulay narxlardagi
-                      qulay mehmonxonalarni topishda yordam berishdan mamnunmiz.
-                    </p>
+                    <p>{t("useful62")}</p>
+                    <p>{t("useful63")}</p>
                   </div>
                 </div>
               </section>
@@ -154,73 +122,20 @@ function AboutWe() {
             <div className="blog-asside-right col-md-3">
               <div className="panel panel-default sidebar-menu wow fadeInRight animated">
                 <div className="panel-heading">
-                  <h3 className="panel-title">Turizm Agentligi</h3>
+                  <h3 className="panel-title">{t("useful64")}</h3>
                 </div>
                 <div className="panel-body text-widget">
-                  <p>
-                    Bizning kompaniyamiz ichki va tashqi turizm kompanyasi
-                    hisoblanadi. O'zbekiston bo'ylab barcha shaharlarga va
-                    ko'plab xalqaro mamlakatlarga sayohatingizni uyushtirib
-                    beradi.
-                  </p>
+                  <p>{t("useful65")}</p>
                 </div>
               </div>
               <Tavsiya title="SIZGA HAM YOQISHI MUMKIN" count="4" />
             </div>
-            <div className="panel sidebar-menu wow fadeInRight animated">
-              <div className="panel-heading">
-                <h3 className="panel-title">Tags</h3>
-              </div>
-              <div className="panel-body">
-                <ul className="tag-cloud">
-                  <li>
-                    <a href="/">
-                      <i className="fa fa-tags"></i> html5
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/">
-                      <i className="fa fa-tags"></i> css3
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/">
-                      <i className="fa fa-tags"></i> jquery
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/">
-                      <i className="fa fa-tags"></i> ajax
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/">
-                      <i className="fa fa-tags"></i> php
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/">
-                      <i className="fa fa-tags"></i> responsive
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/">
-                      <i className="fa fa-tags"></i> visio
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/">
-                      <i className="fa fa-tags"></i> bootstrap
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>{" "}
+
             <div className="count-area">
               <div className="container">
                 <div className="row">
                   <div className="col-md-10 col-md-offset-1 col-sm-12 text-center page-title">
-                    <h2>NIMA UCHUN 80% SAYYOHLAR BIZNI TANLAYDILAR?</h2>
+                    <h2>{t("useful66")}</h2>
                   </div>
                 </div>
                 <div className="row">
@@ -235,11 +150,8 @@ function AboutWe() {
                             <img src={globe} className="about-img" alt="" />
                           </div>
                           <div className="chart" data-percent="5000">
-                            <h4 className="about-h4">Eng yaxshi turlar</h4>
-                            <p>
-                              Faqat eng qiziqarli va sinalgan turlarni taklif
-                              etamiz.
-                            </p>
+                            <h4 className="about-h4">{t("useful67")}</h4>
+                            <p>{t("useful68")}</p>
                           </div>
                         </div>
                       </div>
@@ -249,11 +161,8 @@ function AboutWe() {
                             <img src={calendar} className="about-img" alt="" />
                           </div>
                           <div className="chart" data-percent="12000">
-                            <h4 className="about-h4">Tezkor bronlashtirish</h4>
-                            <p>
-                              Erta bronlashtirish 30 % gacha tejash imkonini
-                              beradi.
-                            </p>
+                            <h4 className="about-h4">{t("useful69")}</h4>
+                            <p>{t("useful70")}</p>
                           </div>
                         </div>
                       </div>
@@ -266,13 +175,8 @@ function AboutWe() {
                             <img src={chat} className="about-img" alt="" />
                           </div>
                           <div className="chart" data-percent="120">
-                            <h5 className="about-h5">
-                              Vizali qo‘llab-quvvatlash
-                            </h5>
-                            <p>
-                              Viza bilan bog‘liq eng murakkab muammolarni hal
-                              qilishga yordam .
-                            </p>
+                            <h5 className="about-h5">{t("useful71")}</h5>
+                            <p>{t("useful72")}</p>
                           </div>
                         </div>
                       </div>
@@ -282,11 +186,8 @@ function AboutWe() {
                             <img src={heart} className="about-img" alt="" />
                           </div>
                           <div className="chart" data-percent="5000">
-                            <h4 className="about-h4">Istalgan turlar</h4>
-                            <p>
-                              Sizning hamyon va qiziqishlaringizga mos turlarni
-                              tanlab beramiz
-                            </p>
+                            <h4 className="about-h4">{t("useful73")}</h4>
+                            <p>{t("useful74")}</p>
                           </div>
                         </div>
                       </div>
@@ -309,57 +210,7 @@ function AboutWe() {
                 ></iframe>
               </p>
             </div> */}
-            <hr />
-            <div className="row">
-              <div class="col-sm-4">
-                <h3>
-                  <i class="fa fa-map-marker"></i> Address
-                </h3>
-                <p>
-                  13/25 shibuia <br />
-                  Fergana <br />
-                  Festival kochasi
-                  <br />
-                  <strong>Uzbekistan</strong>
-                </p>
-              </div>
-              <div class="col-sm-4">
-                <h3>
-                  <i class="fa fa-phone"></i> Qo'ng'iroqlar markazi
-                </h3>
-                <p class="text-muted">
-                  Agar Uzbekistandan qo'ng'iroq qilsangiz, bu raqam bepul, aks
-                  holda elektron aloqa shaklidan foydalanishni maslahat beramiz.
-                </p>
-                <p>
-                  <strong>+998(91) 658 78 41</strong>
-                </p>
-              </div>
-              <div class="col-sm-4">
-                <h3>
-                  <i class="fa fa-envelope"></i> Elektron pochta
-                </h3>
-                <p class="text-muted">
-                  Iltimos, bizga elektron pochta xabarini yozing yoki elektron
-                  chiptalar tizimimizdan foydalaning.
-                </p>
-                <ul>
-                  <li>
-                    <strong>
-                      <a href="mailto:">raymjonovbobur@gmail.com</a>
-                    </strong>
-                  </li>
-                  <li>
-                    <strong>
-                      <a href="https://e-visa.gov.uz/application">
-                        Uzbekistan Viza
-                      </a>
-                    </strong>
-                    - bizning chiptalarni qo'llab-quvvatlash platformamiz
-                  </li>
-                </ul>
-              </div>
-            </div>
+           
           </div>
         </div>
       </div>
