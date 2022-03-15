@@ -62,17 +62,17 @@ function AboutWe() {
                   <div className="row wow fadeInRight animated">
                     <div className="col-sm-6">
                       <p className="author-category">
-                        By <a href="/">John Snow</a> in
-                        <a href="blog.html">Webdesign</a>
+                        Biz <a href="/">Siz bilan</a> doim 
+                        <a href="blog.html">Birgamiz</a>
                       </p>
                     </div>
                     <div className="col-sm-6 right">
                       <p className="date-comments">
                         <a href="single.html">
-                          <i className="fa fa-calendar-o"></i> June 20, 2013
+                          <i className="fa fa-calendar-o"></i> Mart, 2022
                         </a>
                         <a href="single.html">
-                          <i className="fa fa-comment-o"></i> 8 Comments
+                          <i className="fa fa-comment-o"></i> 124 Comments
                         </a>
                       </p>
                     </div>
